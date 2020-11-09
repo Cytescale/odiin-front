@@ -199,7 +199,19 @@ return(
         return(
         <div id='home_app_bdy_cont' style={themeColor}>
                 <PostModal show={this.state.postModalVisi} onHide={() => {this.setState({ postModalVisi: !this.state.postModalVisi }) }}/>
+            
+            <div id='home_app_login_butt_bdy'>
+            {
+                this.state.windowWidth<650?
+                !this.state.isLogged?<input type='submit' value='Login / Sign UP' id='lb_first_stack_right_cont_cent_login_data_login_butt_home'></input>
+                :<span></span>
+                :<spam></spam>
+            }
+            
+            </div>
+            
             <div id='home_app_bdy_coont_top_cont'>
+            
                         <div id='home_app_bdy_cont_left_cont_logo_cont'>
                         {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk' href='#'>Wonder</a></span>:<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk_alt' href='#'>Wonder</a></span>}
                         </div>
