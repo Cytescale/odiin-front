@@ -204,7 +204,7 @@ return(
             {
                 this.state.windowWidth<650?
                 !this.state.isLogged?<input type='submit' value='Login / Sign UP' id='lb_first_stack_right_cont_cent_login_data_login_butt_home'></input>
-                :<span></span>
+                :<div id='home_app_bottom_post_butt_mob_cont'><button id='home_app_bottom_post_butt_mob'>Post</button></div>
                 :<spam></spam>
             }
             

@@ -564,6 +564,19 @@ background-color: #2F80ED;
     border-radius: 32px;
 }
 
+#home_app_bottom_post_butt_mob{
+    float: right;
+    border-style: none;
+    border-radius: 100px;
+    background-color: var(--app-primary-color);
+    color:#FEFEFE;
+    font-size: 23px;
+    font-family: quicksand;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 /*//////////////////////////////////////////////////////////*/
 
 
@@ -650,6 +663,6 @@ background-color: #2F80ED;
             font-weight: 600;
             font-size: 26px;
         }
-
+        
 
   }
