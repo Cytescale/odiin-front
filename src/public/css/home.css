@@ -395,6 +395,8 @@ background-color: #2F80ED;
     color:var(--main-tit-color);
     text-decoration: none;
     padding: 5px;
+    font-weight: 600;
+    font-family: quicksand;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 12px;
@@ -402,8 +404,9 @@ background-color: #2F80ED;
 #app_main_logo_lnk_alt{
     color:var(--main-tit-color);
     text-decoration: none;
-
+    font-family: quicksand;
     border-radius: 32px;
+    font-weight: 600;
 }
 
 #app_main_logo_lnk_alt:hover{

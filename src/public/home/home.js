@@ -39,6 +39,7 @@ export default class HomeClass extends React.Component{
     constructor(props){
         super(props);    
         this.state = {
+            isLogged:true,
             isDark:false,
             isDetail:true,
             postModalVisi:false,
@@ -197,75 +198,38 @@ return(
 
         return(
         <div id='home_app_bdy_cont' style={themeColor}>
-                    
-        {/* {this.state.windowWidth>1200?<img id='home_left_cor_des' src={this.state.isDark==true?des_light_1: des_1}></img>:<div></div>} */}
-                {/* <div id='home_app_bdy_cont_left_cont'>
-                        <div id='home_app_bdy_cont_left_cont_logo_cont'>
-                        {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk' href='#'>Wonder</a></span>:<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk_alt' href='#'>W</a></span>}
-                        </div>
-                        <div className='home_app_bdy_cont_left_cont_opt_class'>
-                            <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a>
-                            <button className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button>
-                            <button className='home_app_bdy_cont_left_cont_opt_butt_class'><svg  className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Saved</span>:<span></span>}</button>
-                            <button className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z' fill='currentColor' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Liked</span>:<span></span>}</button>
-                            <div className='home_app_bdy_cont_left_cont_hr_class'></div>
-                        
-                        <a href='/profile' style={this.state.currSite==5?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><img className='home_app_bdy_cont_left_cont_opt_butt_pro_img_class' src={pro_pic_1}></img>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Account</span>:<span></span>}</a>
-                        
-                        <div id='fill_div'><button className='home_app_bdy_cont_left_cont_opt_butt_bott_class'><img className='home_app_bdy_cont_left_cont_opt_butt_pro_img_class' src={this.state.isDark==true?  dark_sett_svg: sett_svg}></img>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Setting</span>:<span></span>}</button></div>
-                        </div>
-                          
-                </div> */}
                 <PostModal show={this.state.postModalVisi} onHide={() => {this.setState({ postModalVisi: !this.state.postModalVisi }) }}/>
-
-            {/* <div id='home_app_bdy_cont_cent_srch_cont'>
-                    <div id='home_app_bdy_cont_cent_srch_txt_cont'>
-                    <input type='text' id='home_app_bdy_cont_cent_srch_txt_fld' placeholder='Search wonder'></input>
-                    </div>
-                    <div id='home_app_bdy_cont_cent_srch_butt_cont'>
-                    <button id='home_app_bdy_cont_cent_filt_butt'><svg id='home_app_bdy_cont_cent_filt_img'  viewBox='0 0 512 512' ><title>Filter</title><path fill='none' stroke='var(--app-primary-color)' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M32 144h448M112 256h288M208 368h96'/></svg></button>
-                        <button id='home_app_bdy_cont_cent_upload_butt' onClick={this.props.onUpload}>Upload</button>
-                    </div>
-            </div> */}
-                {/* {this.state.currSite!=1?<button id='home_app_bdy_cont_right_upload_butt' onClick={() => {this.setState({ postModalVisi: !this.state.postModalVisi }) }}>Upload</button>:<span></span>}
-                        <div id='home_app_bdy_cont_rght_dark_butt_cont'>
-                        <div id='home_app_bdy_cont_rght_dark_butt_cont_tit'>
-                        <img id='home_app_bdy_cont_rght_dark_butt_cont_tit_ico'src={pal_svg}></img>Theme
-                    </div>
-
-                    <div id='home_app_color_cont_tit'>Colors</div>
-                    <div id='home_app_color_cont'>
-                        <button className='home_app_color' id='home_app_color_1' onClick={() => { this.setState({ currColor: 1 }) }}></button>
-                        <button className='home_app_color'id='home_app_color_2' onClick={() => { this.setState({ currColor: 2 }) }}></button>
-                        <button className='home_app_color'id='home_app_color_3' onClick={() => { this.setState({ currColor: 3 }) }}></button>
-                        <button className='home_app_color' id='home_app_color_4' onClick={() => { this.setState({ currColor: 4 }) }}></button>
-                    </div>
-        <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDark: !this.state.isDark }) }}><img src={this.state.isDark==true? dark_contra_svg : contra_svg} id='home_app_bdy_cont_rght_dark_butt_ico'></img><span className='home_app_bdy_cont_rght_dark_butt_tit'>{this.state.isDark==true? "Go Light!": "Go Dark!"}</span></button>
-        
-        <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDetail: !this.state.isDetail }) }}><span className='home_app_bdy_cont_rght_dark_butt_tit'>{this.state.isDetail==true? "Less Detail": "Detailed"}</span></button>
-                        </div>
-                        <div className='home_app_bdy_cont_left_cont_hr_class'></div>
-                 */}
             <div id='home_app_bdy_coont_top_cont'>
                         <div id='home_app_bdy_cont_left_cont_logo_cont'>
-                        {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk' href='#'>Wonder</a></span>:<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk_alt' href='#'>W</a></span>}
+                        {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk' href='#'>Wonder</a></span>:<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk_alt' href='#'>Wonder</a></span>}
                         </div>
                         <div id="home_app_bdy_top_right_cont">
                         <div id='home_app_bdy_cont_cent_srch_txt_cont'>
                         {this.state.windowWidth>650?<input type='text' id='home_app_bdy_cont_cent_srch_txt_fld' placeholder='Search wonder'></input>:<span></span>}
                     </div>
-                        <LoginButt/>
+                        
+                        
+                        {
+                            this.state.isLogged?<span>
+                                <button className='home_app_bdy_cont_left_cont_opt_butt_class'>
+                                    <svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button> 
+                                    <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a></span>
+                                    :
+                                    this.state.windowWidth>650?
+                                    <LoginButt/>:<span></span>
+                        }
+                        
                         <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDark: !this.state.isDark }) }}><img src={this.state.isDark==true? dark_contra_svg : contra_svg} id='home_app_bdy_cont_rght_dark_butt_ico'></img></button>
-                        <button className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button>
-                        <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a>
-                        </div>
+                       
+                    
+                    </div>
             </div>
             <div id='home_app_bdy_cont_cent_cont'>
                 <div id='home_app_bdy_cont_cent_pag_tit'>
                     Feed for you
                 </div>
                 {
-                this.drawMakePostLand(this.props.themeColor)
+                    this.state.isLogged?this.drawMakePostLand(this.props.themeColor):<span></span>
                 }
 
             <div id='home_app_bdy_cont_cent_bdy'>
