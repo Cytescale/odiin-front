@@ -1,13 +1,16 @@
 import React from 'react';
 import Cookies from 'universal-cookie';
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router } from 'react-router-dom';
 import '../css/priApp.css';
 import '../css/home.css';
 import '../css/post.css';
 import '../css/makepostland.css';
+import '../css/homeloginform.css';
 import Routers from  '../home/feeder';
+import {Button,Popover,OverlayTrigger} from 'react-bootstrap';
 import sett_svg from '../../assets/svg/settings_outline.svg';
 import contra_svg from '../../assets/svg/contrast_outline.svg';
 import pal_svg from '../../assets/svg/pal_outline.svg';
@@ -36,7 +39,7 @@ export default class HomeClass extends React.Component{
     constructor(props){
         super(props);    
         this.state = {
-            isDark:true,
+            isDark:false,
             isDetail:true,
             postModalVisi:false,
             currColor:1,    
@@ -104,9 +107,8 @@ export default class HomeClass extends React.Component{
     );
 }
 drawMakePostLand(style){
-return(<div id='app_bdy_make_post_cont'>
-
-
+return(
+<div id='app_bdy_make_post_cont'>
     <div id="app_make_post_cont_top">
     <img className='home_post_bdy_class_tit_cont_make_post_img' src={pro_pic_1}></img>
     <textarea id='app_make_post_data_txt' placeholder="What are you thinking?"></textarea>
@@ -120,11 +122,48 @@ return(<div id='app_bdy_make_post_cont'>
     <button className='app_make_post_gif_cont'>Gif</button>
     <button className='app_make_post_sub_butt'>Post</button>
     </div>
-
 </div>);
 }
     render(){
         let themeColor = {};
+
+        const popover = (
+            <Popover id="popover-basic">
+              <Popover.Content id="popover-basic-content">
+                  <div id="app_login_form_cont">
+                  <div id="lb_first_stack_right_cont_cent">
+                                    <div id="app_login_form_cont_tit">
+                                                Sign In to Wonder
+                                    </div>
+                                    <div className='lb_first_stack_right_cont_cent_login_data_pop'>
+                                        <input className='lb_first_stack_right_cont_cent_login_data_fld_pop' placeholder='Email or Phone number'></input>
+                                    </div>
+                                    <div className='lb_first_stack_right_cont_cent_login_data_pop'>
+                                        <input type='Password' className='lb_first_stack_right_cont_cent_login_data_fld_pop' placeholder='Password'></input>
+                                    </div>
+                                    <div className='lb_first_stack_right_cont_cent_login_data_pop'>
+                                        <a href='#' id="lb_first_stack_right_cont_cent_for_lnk">Forgot Password?</a>
+                                    </div>
+                                    <div className='lb_first_stack_right_cont_cent_login_data_pop'>
+                                        <input type='submit' value='Login' id='lb_first_stack_right_cont_cent_login_data_login_butt_pop'></input>
+                                    </div>
+                                    <div className='lb_first_stack_right_cont_cent_login_data_pop'>
+                                        <input type='submit' value='Sign Up' id='lb_first_stack_right_cont_cent_login_data_signup_butt_pop'></input>
+                                    </div>  
+                                    
+                                </div>
+                </div>
+              </Popover.Content>
+            </Popover>
+          );
+
+        const LoginButt = () => (
+            <OverlayTrigger trigger="click" placement="left" overlay={popover}>
+                <buttom id="home_app_bdy_cont_top_login_butt" >Login</buttom>
+            </OverlayTrigger>
+          );
+          
+
         if (this.state.isDark==true) {
             themeColor['--main-tit-color'] = '#fefefe'
             themeColor['--main-bg-color'] = '#000000'
@@ -177,7 +216,7 @@ return(<div id='app_bdy_make_post_cont'>
                         </div>
                           
                 </div> */}
-                {/* <PostModal show={this.state.postModalVisi} onHide={() => {this.setState({ postModalVisi: !this.state.postModalVisi }) }}/> */}
+                <PostModal show={this.state.postModalVisi} onHide={() => {this.setState({ postModalVisi: !this.state.postModalVisi }) }}/>
 
             {/* <div id='home_app_bdy_cont_cent_srch_cont'>
                     <div id='home_app_bdy_cont_cent_srch_txt_cont'>
@@ -215,7 +254,7 @@ return(<div id='app_bdy_make_post_cont'>
                         <div id='home_app_bdy_cont_cent_srch_txt_cont'>
                         {this.state.windowWidth>650?<input type='text' id='home_app_bdy_cont_cent_srch_txt_fld' placeholder='Search wonder'></input>:<span></span>}
                     </div>
-                        <buttom id="home_app_bdy_cont_top_login_butt" >Login</buttom>
+                        <LoginButt/>
                         <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDark: !this.state.isDark }) }}><img src={this.state.isDark==true? dark_contra_svg : contra_svg} id='home_app_bdy_cont_rght_dark_butt_ico'></img></button>
                         <button className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button>
                         <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a>

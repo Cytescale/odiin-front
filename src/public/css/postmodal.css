@@ -1,5 +1,6 @@
 .modal-backdrop {
-
+width: 100%;
+height: 100%;
 }
 #post_modal_tit_text{
     
@@ -14,6 +15,8 @@
 }
 #post_modal_bdy_cont
 {
+    height: 30vh;
+    width: 100%;
     display: inline-flex;
 }
 #post_modal_bdy_holder_cont{

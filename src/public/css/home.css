@@ -507,8 +507,8 @@ color: var(--main-tit-color);
     width: 100%;
     font-size: 22px;
     padding-left: 32px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color:var(--main-tit-color);
     font-weight: 600;
     border-bottom: 1px solid var(--main-bord-color);
@@ -523,20 +523,13 @@ color: var(--main-tit-color);
         width: fit-content;
         }
   #home_app_bdy_cont_left_cont{
-      margin-left: 32px;
-      width: 13%;
-      min-width: 170px;
+      
+      display: none;
   }
-#home_app_bdy_cont_cent_srch_cont{
-    width: 40%;
-min-width: 400px;
-top:0;
-}
 
 #home_app_bdy_cont_cent_cont{
     margin-left: 203px;
-    width: 40%;
-    
+    width: 40%;    
     min-width: 400px;
     height: auto;
     display: inline-block;
@@ -586,5 +579,6 @@ top:0;
         margin-left: 0;;
         display: inline-block;
         background-color: #F8F8F8;
+        border-style: none;
           }
   }

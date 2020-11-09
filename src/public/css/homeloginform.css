@@ -1,0 +1,68 @@
+#popover-basic{
+    width: 350px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 16px;
+    background-color: var(--main-bg-color);
+
+}
+#popover-basic-content{
+    margin: 0px;
+    padding: 0px;
+}
+#app_login_form_cont{
+   
+    margin: 0;
+    padding: 0;
+}
+#app_login_form_cont_tit{
+    font-family: quicksand;
+    font-size: 22px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    color:#BDBDBD;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.lb_first_stack_right_cont_cent_login_data_pop{
+margin-bottom: 10px;
+}
+.lb_first_stack_right_cont_cent_login_data_fld_pop{
+height: 42px;
+width: 100%;
+border-style: none;
+padding-left: 12px;
+border-top: 1px solid var(--main-bord-color);
+border-bottom: 1px solid  var(--main-bord-color);
+}
+#lb_first_stack_right_cont_cent_login_data_login_butt_pop{
+width:80%;
+height: 42px;
+margin-left: 10%;
+margin-top: 16px;
+border-style: none;
+background-color: var(--app-primary-color);
+border-radius: 100px;
+color:#FEFEFE;
+font-weight: 500;
+font-family: quicksand;
+font-size: 18px;
+
+}
+#lb_first_stack_right_cont_cent_login_data_signup_butt_pop{
+    width:80%;
+    height: 42px;
+    margin-left: 10%;
+
+    border-style: none;
+    background-color: var(--main-bord-color);
+    border-radius: 100px;
+    color: var(--app-primary-color);
+    font-weight: 500;
+    font-family: quicksand;
+    font-size: 18px;
+}
