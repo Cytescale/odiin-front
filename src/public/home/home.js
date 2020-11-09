@@ -216,22 +216,27 @@ return(
                         {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk' href='#'>Wonder</a></span>:<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'><a id='app_main_logo_lnk_alt' href='#'>Wonder</a></span>}
                         </div>
                         <div id="home_app_bdy_top_right_cont">
-                        <div id='home_app_bdy_cont_cent_srch_txt_cont'>
-                        {this.state.windowWidth>650?<input type='text' id='home_app_bdy_cont_cent_srch_txt_fld' placeholder='Search wonder'></input>:<span></span>}
-                    </div>
-                        
                         
                         {
                             this.state.isLogged?<span>
-                                <button className='home_app_bdy_cont_left_cont_opt_butt_class'>
-                                    <svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button> 
-                                    <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a></span>
+                                    <div id='home_app_bdy_cont_left_cont_pro_cont'><button className='home_app_bdy_cont_left_cont_opt_butt_class'><img className='home_post_bdy_class_top_pro_ico' src={pro_pic_1}></img>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Profile</span>:<span></span>}</button></div>
+                                    <button className='home_app_bdy_cont_left_cont_opt_butt_class'>
+                                    <svg className='home_app_bdy_cont_left_cont_opt_butt_img_class'  viewBox='0 0 512 512'><path d='M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z' fill='none' stroke='currentColor' stroke-miterlimit='10' strokeWidth='32'/><path d='M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32'/><path d='M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' strokeWidth='32'/></svg>
+                                    {this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Following</span>:<span></span>}</button> 
+                                    <a href='/feed' style={this.state.currSite==1?{color:'var(--app-primary-color)'}:{}} className='home_app_bdy_cont_left_cont_opt_butt_class'><svg className='home_app_bdy_cont_left_cont_opt_butt_img_class' viewBox='0 0 512 512'><path d='M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path d='M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z' fill='none' stroke='currentColor' stroke-linejoin='round' strokeWidth='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' strokeWidth='32' d='M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192'/><path d='M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z' fill='currentColor'/></svg>{this.state.windowWidth>650?<span className='home_app_bdy_cont_left_cont_opt_butt_tit_class'>Feed</span>:<span></span>}</a>
+                                    
+                                    </span>
+                                    
                                     :
                                     this.state.windowWidth>650?
-                                    <LoginButt/>:<span></span>
+                                    <span>
+                                    <LoginButt/>
+                                    
+                                    </span>
+                                    :<span></span>
                         }
                         
-                        <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDark: !this.state.isDark }) }}><img src={this.state.isDark==true? dark_contra_svg : contra_svg} id='home_app_bdy_cont_rght_dark_butt_ico'></img></button>
+                        {/* <button id='home_app_bdy_cont_rght_dark_butt' onClick={() => { this.setState({ isDark: !this.state.isDark }) }}><img src={this.state.isDark==true? dark_contra_svg : contra_svg} id='home_app_bdy_cont_rght_dark_butt_ico'></img></button> */}
                        
                     
                     </div>

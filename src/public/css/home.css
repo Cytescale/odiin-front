@@ -86,8 +86,10 @@ margin-top: 16px;
     border-radius: 32px;
 }
 .home_app_bdy_cont_left_cont_opt_butt_tit_class{
-   
+    font-size: 18px;
     padding-left: 12px;
+    font-family: quicksand;
+    font-weight: 500;
     vertical-align: middle;
 }
 #fill_div{
@@ -137,6 +139,7 @@ border-bottom: 1px solid var(--app-primary-color);
 #home_app_bdy_cont_cent_srch_txt_cont{
     width: 30%;
     height: 100%;   
+    float: right;
     display: inline-flex;
     
 }
@@ -163,7 +166,6 @@ border-bottom: 1px solid var(--app-primary-color);
     background-color: var(--main-search-bar-color);
     border-style: none;
     border-radius: 100px;
-    
     font-family: quicksand;
     color: var(--main-tit-color);
 }
@@ -421,6 +423,7 @@ background-color: #2F80ED;
     color:var(--main-tit-color);
     text-decoration: none;
     padding: 5px;
+    font-size: 22px;
     font-weight: 600;
     font-family: quicksand;
     padding-left: 20px;
@@ -482,6 +485,7 @@ background-color: #2F80ED;
 }
 
 #home_app_bdy_cont_rght_dark_butt{
+    display: inline-flex;
     float: right;
     width:auto; 
     height: auto;
@@ -549,6 +553,15 @@ background-color: #2F80ED;
     font-weight: 600;
     border-bottom: 1px solid var(--main-bord-color);
     background-color: var(--main-bg-color);
+}
+#home_app_bdy_cont_left_cont_pro_cont{
+    display: inline-flex;
+    float:right;
+}
+.home_post_bdy_class_top_pro_ico{
+    width:32px;
+    height:32px;
+    border-radius: 32px;
 }
 
 /*//////////////////////////////////////////////////////////*/
