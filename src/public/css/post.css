@@ -85,11 +85,9 @@
     
 }
 #home_post_bdy_class_bdy_cont_img{
-    width:96%;
+    width:100%;
     margin-top: 2%;
-    margin-left:2%;
-    margin-right: 2%;
-    border-radius: 7px;
+
     height: 100%;
     border: 1px solid var(--main-bord-color);
     object-fit: cover;
