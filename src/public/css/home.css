@@ -464,6 +464,7 @@ background-color: #2F80ED;
 #home_app_bdy_top_right_cont{
     float:right;
     right:0;
+    margin-right: 32px;
     width: 100%;
  
 }

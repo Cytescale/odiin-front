@@ -40,7 +40,7 @@ export default class HomeClass extends React.Component{
         super(props);    
         this.state = {
             isLogged:true,
-            isDark:false,
+            isDark:true,
             isDetail:true,
             postModalVisi:false,
             currColor:1,    
@@ -203,8 +203,8 @@ return(
             <div id='home_app_login_butt_bdy'>
             {
                 this.state.windowWidth<650?
-                !this.state.isLogged?<input type='submit' value='Login / Sign UP' id='lb_first_stack_right_cont_cent_login_data_login_butt_home'></input>
-                :<div id='home_app_bottom_post_butt_mob_cont'><button id='home_app_bottom_post_butt_mob'>Post</button></div>
+                !this.state.isLogged?<input type='submit' value='Login or Sign UP' id='lb_first_stack_right_cont_cent_login_data_login_butt_home'></input>
+                :<div id='home_app_bottom_post_butt_mob_cont'><button id='home_app_bottom_post_butt_mob' onClick={() => { this.setState({ postModalVisi: !this.state.postModalVisi }) }}>Post</button></div>
                 :<spam></spam>
             }
             
