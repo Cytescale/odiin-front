@@ -48,7 +48,7 @@ body {
   }
 .app_bottom_bar_main_bdy_col{
     float: left;
-    width: 33.33%;
+    width: 25%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ margin-top: 16px;
     font-size: 18px;
     padding-left: 12px;
     font-family: quicksand;
-    font-weight: 500;
+    font-weight: 600;
     vertical-align: middle;
 }
 #fill_div{
@@ -278,6 +278,20 @@ width: 18%;
 height: 100%;
 position: fixed;
 
+}
+#home_app_bdy_cont_left_cont_upl_cont{
+float: right;
+
+    height: 100%;
+    display: inline-flex;
+}
+#home_app_bdy_cont_left_cont_upl_butt{
+border-style: none;
+border-radius: 100px;
+background-color: var(--app-primary-color);
+color:#FEFEFE;
+font-family: quicksand;
+width: 120px;
 }
 #home_app_bdy_cont_rght_foot_lik_cont{
     position: absolute;
@@ -565,8 +579,7 @@ background-color: #2F80ED;
     color: var(--main-tit-color);
     margin-right: 5px;
     padding: 7px;
-    padding-left: 9px;
-    padding-right: 9px;
+    
 }
 .home_app_bdy_cont_left_cont_opt_butt_class:hover{
     animation-name: left_butt_hover_anim;

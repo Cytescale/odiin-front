@@ -104,7 +104,7 @@ right: 0;
 .app_make_post_sub_butt{
     background-color: var(--app-primary-color);
         border-style:none;
-        color:var(--main-tit-color);
+        color:#FEFEFE;
         padding-left: 32px;
         padding-right:32px;
         padding-top: 5px;
