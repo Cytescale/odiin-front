@@ -4,14 +4,14 @@
     padding: 0px;
     padding-bottom: 16px;
     background-color: var(--main-bg-color);
-
 }
 #popover-basic-content{
     margin: 0px;
     padding: 0px;
+    
 }
 #app_login_form_cont{
-   
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
 }
