@@ -5,7 +5,7 @@ import HomeClass from './public/home/home';
 
 ReactDOM.render(
   <React.StrictMode>  
-    <HomeClass isDark='false' />
+    <LoginClass isDark='false' />
   </React.StrictMode>,
   document.getElementById('root')
 );
