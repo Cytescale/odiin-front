@@ -565,19 +565,19 @@ background-color: #2F80ED;
 }
 
 .home_app_bdy_cont_left_cont_opt_butt_class{
-    float: right;
+    float: left;
     width:auto; 
     height: auto;
     background-color: rgba(0, 0, 0, 0.0);
     border-style: none;
     border-color: #000000;
-    border-radius: 100px;
+    
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     color: var(--main-tit-color);
-    margin-right: 5px;
+    margin-left: 10px;
     padding: 7px;
     
 }
@@ -616,6 +616,7 @@ background-color: #2F80ED;
 #home_app_bdy_cont_left_cont_pro_cont{
     display: inline-flex;
     float:right;
+    margin-right: 10px;
 }
 .home_post_bdy_class_top_pro_ico{
     width:32px;

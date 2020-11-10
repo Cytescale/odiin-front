@@ -11,9 +11,7 @@ export default class PostModal extends React.Component{
     render(){
         return (             
             <Modal {...this.props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered className='makePostModalClass'>
-              <Modal.Header closeButton>
-
-              </Modal.Header>
+              
               <Modal.Body id='post_modal_bdy_cont'>
               <div id='app_bdy_make_post_cont_modal'>
               <div id="app_make_post_cont_top">
