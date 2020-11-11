@@ -156,6 +156,7 @@ body {
   }
   #home_app_bdy_cent_top_cont{
       position: fixed;
+      z-index: 20;
       display: inline-block;
         width: calc(100% - 200px);
       height: 72px;
@@ -240,4 +241,3 @@ padding-left: 5px;
     color:#EB5757;
     text-decoration: none;
 }
-

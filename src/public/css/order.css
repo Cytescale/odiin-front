@@ -5,3 +5,145 @@
      margin-left:22px;
      margin-top:10px;
 }
+.app_order_num_lay_data_cont{
+padding: 10px;
+}
+.app_order_num_lay_data{
+font-family: inter;
+display: inline;
+font-size:32px;
+padding-left:12px;
+}
+.app_order_num_lay_data_butt{
+float:right;
+display: inline;
+}
+#app_order_num_lay_data_butt_min{
+width:62px;
+height: 42px;
+border-style: none;
+font-family: inter;
+font-size:18px;
+font-weight: 600;
+color:#fefefe;
+border-radius: 0px;
+border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+
+}
+#app_order_num_lay_data_butt_min:hover{
+     
+}
+
+#app_order_num_lay_data_butt_pl{
+     width:62px;
+     color:#fefefe; 
+     border-style: none;
+     height: 42px;border-radius: 0px;
+
+     border-top-right-radius: 8px;
+     border-bottom-right-radius: 8px;
+     font-family: inter;
+font-size:18px;
+font-weight: 600;
+   
+}
+#app_order_num_lay_data_butt_pl:hover{
+   
+}
+.app_order_dec_note_text_ar{
+     height:100px;
+     width: 100%;
+     border-color:#fefefe;
+}
+.app_order_des_lay_data{
+     font-family: inter;
+     display: inline;
+     font-size:16px;
+     padding-left:12px 
+}
+.app_order_new_alrt_cont{
+     margin-top:22px;
+}
+
+.app_order_chk_tit_main_cont{
+     border-bottom: 1px solid #e0e0e0;
+     padding-bottom:10px;
+     }
+     
+     .app_order_chk_tit_main_det_cont{
+         display: inline;
+         font-size:17px;
+         font-weight: 600;
+     
+     }
+     .app_order_chk_tit_main_char_cont{
+     float: right;
+     display: inline;
+     font-size:17px;
+     font-weight: 600;
+     }
+     #app_order_det_data{
+         width: 100%;
+         height: 50px;
+     }
+     .app_order_sub_main_cont{
+         
+         width:200px;
+     
+     border-bottom:1px solid #e0e0e0;
+     }
+     .app_order_sub_main_cont_tit_cont{
+     display: inline;
+     }
+     .app_order_sub_main_cont_cost_cont{
+         display: inline;
+         float:right;
+         font-weight: 600;
+     }
+     .app_order_est_main_cont{
+     
+         width:200px;
+     
+     border-bottom:1px solid #e0e0e0;
+     }
+     .app_order_sub_cont{
+         
+         display: block;
+         height: 100%;       
+     }
+     .app_order_up_main_cont{
+     padding: 10px;
+     border-top: 1px solid #e0e0e0;
+     margin-top:20px;
+     }
+     
+     .app_order_up_main_cont_tit{
+     display: inline;
+     font-size:22px;
+     font-weight: 600;
+     font-family: quicksand;
+     color:#525252;
+     
+     }
+     
+     .app_order_up_main_cont_cost{
+         display: inline;    
+         float: right;
+         font-size: 32px;
+         font-family: inter;
+         font-weight: 600;
+         color:#6FCF97;
+         text-decoration: underline;
+         
+     }
+
+     #a_o_c_b{
+          width:100%;
+          height:52px;   
+          margin-top:22px;
+          font-size:20px;
+          font-family: quicksand;
+          font-weight: 600;
+          
+     }
