@@ -6,6 +6,8 @@ import history from '../home/history';
 
 import BillingPage from  '../billing/billing.js';
 import SettingPage from '../setting/setting.js';
+import OrderPage from '../order/order.js';
+
 export default class Routers extends React.Component {
     constructor(props){
         super(props)
@@ -23,6 +25,9 @@ export default class Routers extends React.Component {
                     </Route>
                     <Route path="/billing">
                             <BillingPage {...this.props}/>
+                    </Route>
+                    <Route path="/order">
+                            <OrderPage {...this.props}/>
                     </Route>
                 </Switch>
             </Router>
