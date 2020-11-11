@@ -1,0 +1,44 @@
+#app_billing_main_bdy_tit_main_cont{
+    background-color: #fefefe;
+    height: auto;
+    width: 100%;
+    padding:32px;   
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e0e0e0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: 0px 2px 4px #e0e0e0;
+    
+}
+.app_billing_main_cont{
+padding:22px;
+margin-top:32px;
+border-radius: 6px;
+border: 1px solid #e0e0e0;
+}
+.app_billing_main_cont_tit{
+font-family: inter;
+font-size:25px;
+
+}
+
+
+.app_billing_main_cont_tit_data_cont{
+
+}
+
+.app_billing_main_cont_tit_data_cont_ordr_tit{
+display: inline;
+height: 100%;
+font-size:17px;
+
+vertical-align: middle;
+color:#525252;
+}
+.app_billing_main_cont_tit_data_cont_price_tit{
+    color:#6FCF97;  
+    font-weight: 600;
+    font: quicksand;
+    font-size: 37px;
+}
