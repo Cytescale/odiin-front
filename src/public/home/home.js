@@ -3,6 +3,7 @@ import {Accordion,Card,Popover,OverlayTrigger} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
 import '../css/home.css';
+import axios from 'axios';
 import Routers from  '../home/feeder';
 import pro_pic_1 from '../../assets/pro_pic_1.jpeg';
 export default class HomeClass extends React.Component{
@@ -16,6 +17,23 @@ export default class HomeClass extends React.Component{
             currSite:0,
             windowWidth: window.innerWidth
           }
+
+          axios("http://172.20.10.3:8080/isAuth",{ // you may send any data, encoded as you wish. shall match content-type 
+          cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: 'same-origin', // include, same-origin, *omit
+          headers: {
+            'content-type': 'application/json'
+          },
+          method: 'GET', // *GET, POST, PUT, DELETE, etc.
+          mode: 'no-cors', // no-cors, cors, *same-origin
+          redirect: 'follow', // *manual, follow, error
+          referrer: 'no-referrer' // *client, no-referrer
+          }).then((res) => {
+              console.log("---------------------------------------------------------");
+              console.log("got data"+JSON.stringify(res.data));
+          }).catch(err=>{
+              console.log(err);
+          });
 }
   handleResize = (e) => {
   this.setState({ windowWidth: window.innerWidth });
