@@ -47,7 +47,7 @@ body {
 
 
 .app_logo_link:hover{
-    color: #212121;
+    color: #fefefe;
     text-decoration: none;
 }
 #login_main_bdy_main_cont{
@@ -124,7 +124,7 @@ border-width: 1px;
     font-size: 27px;    
     vertical-align: middle;
     width: 100%;
-    background-color: #212121;
+    background-color:#001F49 ;
     vertical-align: center;
     padding: 15px;
     font-family: pacifico;

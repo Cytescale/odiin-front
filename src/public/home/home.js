@@ -100,18 +100,17 @@ export default class HomeClass extends React.Component{
                                </div>
                 </div>
                 <div id='home_app_bdy_cent_cont'>
-                    <div id='home_app_bdy_cent_top_cont'>
-                            <div id='home_app_bdy_cent_pro_cont'>
-                            {/* <div id='home_app_top_add_ord_butt_cont'><button id='home_app_top_add_ord_butt'>New order</button></div> */}
-                            <OverlayTrigger trigger="click" placement="left" overlay={topBarPropop}>
-                            <button className='home_app_bdy_cent_pro_cont_butt'><img className='home_app_bdy_cent_pro_cont_ico' src={pro_pic_1}></img></button>
-                            </OverlayTrigger>
-                                
-                                
-                                </div>
-                    </div>
                         <div id='home_app_bdy_cent_cont_bdy'><Routers onChangeSite={(i)=>{this.setState({currSite:i})}}/></div>
                 </div>
         </div>);
     }
 }
+
+{/* <div id='home_app_bdy_cent_top_cont'>
+                            <div id='home_app_bdy_cent_pro_cont'>
+                         <div id='home_app_top_add_ord_butt_cont'><button id='home_app_top_add_ord_butt'>New order</button></div> 
+                            <OverlayTrigger trigger="click" placement="left" overlay={topBarPropop}>
+                            <button className='home_app_bdy_cent_pro_cont_butt'><img className='home_app_bdy_cent_pro_cont_ico' src={pro_pic_1}></img></button>
+                            </OverlayTrigger>                         
+                                </div>
+</div> */}
