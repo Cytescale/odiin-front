@@ -20,13 +20,13 @@ export default class Routers extends React.Component {
         return (
             <Router history={history}>
                 <Switch> 
-                    <Route path="/setting" >
+                    <Route path="/dash/setting" >
                             <SettingPage {...this.props}/>
                     </Route>
-                    <Route path="/billing">
+                    <Route path="/dash/billing">
                             <BillingPage {...this.props}/>
                     </Route>
-                    <Route path="/order">
+                    <Route path="/dash/order">
                             <OrderPage {...this.props}/>
                     </Route>
                 </Switch>

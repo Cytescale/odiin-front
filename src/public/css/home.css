@@ -150,7 +150,8 @@ body {
 }
 
   #home_app_bdy_cent_cont{
-      height: 100vh;
+      height: 100%;
+      background-color: #f8f8f8;
       margin-left: 200px;
       
   }
