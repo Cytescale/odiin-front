@@ -1,37 +1,28 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import {Button,Spinner,Alert} from 'react-bootstrap';
 import '../css/login.css';
 import axios from 'axios';
+import qs from 'qs';
+import config_file from'../../server.config.json'
 
 
+
+    
 export default class LoginClass extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             uname: null,
-            pass: null
+            pass: null,
+            errCode:false,
+            isLoading:false,
+            isSucess:false
           }
-          axios({
-            url:"http://167.71.238.108:8080/getdata",
-            body: JSON.stringify(this.state),
-            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: 'same-origin', // include, same-origin, *omit
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-              },
-            method: 'GET', // *GET, POST, PUT, DELETE, etc.
-            mode: 'cors', // no-cors, cors, *same-origin
-            redirect: 'follow', // *manual, follow, error
-            }).then((res) => {
-                console.log("---------------------------------------------------------");
-                console.log("got data"+JSON.stringify(res.data));
-            }).catch(err=>{
-                console.log(err);
-    
-            });
+          
     }
 
+
+    
     onUnameChange(event) {
         this.setState({uname: event.target.value})
     }
@@ -39,28 +30,44 @@ export default class LoginClass extends React.Component{
     onPassChange(event) {
         this.setState({pass: event.target.value})
     }
+       AxiosgetLogin(user) {
+         axios(config_file.production.api_server+"/loginattempt", {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache', 
+            credentials: 'include', 
+            headers: {
+               'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            data: qs.stringify(user)// body data type must match "Content-Type" header
+          }).then(res=>{
+            console.log("LOGIN RESPONSE"+JSON.stringify(res.data));   
+            this.setState({errCode:res.data.errcode,isLoading:false});
+            if(res.data.errcode===false){
+              this.setState({isSucess:true});  
+            }else{
+                this.setState({isSucess:false});  
+            }
+          }).catch(err=>{console.log(err)});
+      }
 
     loginSubmit(e){
-        
-        
-        e.preventDefault(); 
-        console.log("DATA SUB "+JSON.stringify(this.state));
-        axios("http://167.71.238.108:8080/loginattempt",{
-        body: JSON.stringify(this.state),
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        headers: { 'Content-Type': 'application/json' },
-        redirect: 'follow', // *manual, follow, error
-        }).then((res) => {
-            console.log("---------------------------------------------------------");
-            console.log("got data"+JSON.stringify(res.data));
-        }).catch(err=>{
-            console.log(err);
-
-        });
+        e.preventDefault();
+        this.setState({errCode:false,isLoading:true})
+        const ddata = new FormData(e.target); 
+        console.log("EVENT DATA"+JSON.stringify(ddata));
+        const user={
+            uname:this.state.uname,
+            pass:this.state.pass
+        }
+        console.log("DATA SUBMIT"+JSON.stringify(this.state));
+        this.AxiosgetLogin(user);
     }
 
     render(){
-       
+
         return (
             <div id='lb_main_stack'>
                    <div id='login_head_main_body_cont'>
@@ -76,14 +83,25 @@ export default class LoginClass extends React.Component{
                     */}
             
             <div className='login_frm_cont'>
-                    <form method='POST' action='' onSubmit={this.loginSubmit.bind(this)}>
+                    <form onSubmit={this.loginSubmit.bind(this)}>
                       <div className='l_f_c_e' id='l_f_c_u_c'>Username</div>
-                  <div className='l_f_c_tt'id='l_f_c_u_f'><input type="text" name='uname' onChange={this.onUnameChange.bind(this)} autoComplete='true' className="form-control" id='login_unm_txt' placeholder=" " aria-label="username"  aria-describedby="basic-addon1"></input></div>
+                  <div className='l_f_c_tt'id='l_f_c_u_f'><input type="text" disabled={this.state.isLoading} name='uname' onChange={this.onUnameChange.bind(this)} autoComplete='true' className="form-control" id='login_unm_txt' placeholder=" " aria-label="username"  aria-describedby="basic-addon1"></input></div>
                   <div className='l_f_c_e' id='l_f_c_p_c'>Password</div>
-                  <div className='l_f_c_tt'id='l_f_c_p_f'><input type="password" name='pass'onChange={this.onPassChange.bind(this)}  autoComplete='true' className="form-control" id='login_pass_txt' placeholder=" " aria-label="password"  aria-describedby="basic-addon1"></input></div>
+                  <div className='l_f_c_tt'id='l_f_c_p_f'><input type="password" disabled={this.state.isLoading}  name='pass'onChange={this.onPassChange.bind(this)}  autoComplete='true' className="form-control" id='login_pass_txt' placeholder=" " aria-label="password"  aria-describedby="basic-addon1"></input></div>
                   <div id='l_f_c_f_l_a'>By continuing, you agree to Cytescale's Terms and Conditions and Privacy Notice.</div>     
-                  
-                  <Button id='l_f_c_b' type='submit' >Log in to Cytescale</Button> 
+                <Button id='l_f_c_b' type='submit' disabled={this.state.isLoading}>{!this.state.isLoading?<span>Log in to Cytescale</span>:<Spinner animation="grow" variant="primary" />}</Button> 
+                    {
+                        this.state.errCode===true?<div id='app_login_alrt_cont'>
+                        <Alert variant="danger">
+                            Invalid username or password :(
+                        </Alert>
+                    </div>:this.state.isSucess===true?<div id='app_login_alrt_cont'>
+                        <Alert variant="success">
+                            Login Successfull
+                        </Alert>
+                    </div>:<span></span>   
+                    }
+                    
                   <div id='l_f_c_f_c'><a href='#' id='l_f_c_f_l'>Forgot the password?</a></div>     
                   </form>
                         </div> 

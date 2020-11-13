@@ -1,0 +1,8 @@
+{
+     "development": {
+         "api_server":"http://localhost:8080"
+     },
+     "production": {
+          "api_server":"http://167.71.238.108:8080"
+     }
+ }
