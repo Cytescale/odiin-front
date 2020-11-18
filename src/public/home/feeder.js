@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Switch, Route } from "react-router";
+import { Router, Switch, Route ,Redirect} from "react-router";
 import Feed from '../feed/feed';
 import Profile from '../profile/profile';
 import history from '../home/history';
@@ -20,6 +20,9 @@ export default class Routers extends React.Component {
         return (
             <Router history={history}>
                 <Switch> 
+                    <Route exact path="/dash/">
+                        <SettingPage {...this.props}/>
+                    </Route>
                     <Route path="/dash/setting" >
                             <SettingPage {...this.props}/>
                     </Route>
@@ -29,6 +32,7 @@ export default class Routers extends React.Component {
                     <Route path="/dash/order">
                             <OrderPage {...this.props}/>
                     </Route>
+
                 </Switch>
             </Router>
         )

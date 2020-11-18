@@ -1,13 +1,13 @@
 import React from 'react';
 import {Button,Spinner,Alert} from 'react-bootstrap';
+import  { Redirect } from 'react-router-dom'
 import '../css/login.css';
 import axios from 'axios';
 import qs from 'qs';
+import history from '../home/history';
 import config_file from'../../server.config.json'
-
-
-
-    
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 export default class LoginClass extends React.Component{
     constructor(props){
         super(props);
@@ -19,19 +19,16 @@ export default class LoginClass extends React.Component{
             isSucess:false
           }
           
+          this.AxiosgetLogin = this.AxiosgetLogin.bind(this);
     }
-
-
-    
     onUnameChange(event) {
         this.setState({uname: event.target.value})
     }
-  
     onPassChange(event) {
         this.setState({pass: event.target.value})
     }
        AxiosgetLogin(user) {
-         axios(config_file.production.api_server+"/loginattempt", {
+         axios(config_file.development.api_server+"/loginattempt", {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache', 
@@ -47,6 +44,12 @@ export default class LoginClass extends React.Component{
             this.setState({errCode:res.data.errcode,isLoading:false});
             if(res.data.errcode===false){
               this.setState({isSucess:true});  
+                if(res.data.user!==null){
+                    cookies.set("user_token",res.data.user, { path: "/" });
+                    history.push("/dash");
+                    history.go(0);
+                    this.props.setLog(true,res.data.user);
+                }
             }else{
                 this.setState({isSucess:false});  
             }
@@ -67,7 +70,13 @@ export default class LoginClass extends React.Component{
     }
 
     render(){
-
+        // if(this.state.isSucess===true){
+        //     return(<Redirect
+        //         to={{
+        //           pathname: "/dash",
+        //         }}
+        //       />);
+        // }
         return (
             <div id='lb_main_stack'>
                    <div id='login_head_main_body_cont'>
