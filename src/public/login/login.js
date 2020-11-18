@@ -28,7 +28,7 @@ export default class LoginClass extends React.Component{
         this.setState({pass: event.target.value})
     }
        AxiosgetLogin(user) {
-         axios(config_file.development.api_server+"/loginattempt", {
+         axios(config_file.production.api_server+"/loginattempt", {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache', 
