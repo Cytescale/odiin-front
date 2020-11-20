@@ -1,5 +1,6 @@
 import React from 'react';
 import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button} from 'react-bootstrap';
+import ScrollAnimation from 'react-animate-on-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
 import '../css/land.css';
@@ -28,6 +29,7 @@ export default class LandClass extends React.Component{
             windowWidth: window.innerWidth
           }
           this.listenToScroll = this.listenToScroll.bind(this);
+          
           this.listenToScroll();
 }
   handleResize = (e) => {
@@ -40,7 +42,10 @@ export default class LandClass extends React.Component{
  componentWillUnmount() {
   window.addEventListener("resize", this.handleResize);
  }
- 
+     Animation = () => (
+     <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
+   )
+   
  componentDidMount() {
      window.addEventListener('scroll', this.listenToScroll)
    }
@@ -140,6 +145,7 @@ export default class LandClass extends React.Component{
                               </div>    
                          </div>
                </div>
+              
                <div id='app_land_stack_2'>
                          
                          <div id='app_land_stack_2_dat_cont'>
@@ -156,6 +162,7 @@ export default class LandClass extends React.Component{
                          
 
                </div>
+               <ScrollAnimation animateIn="fadeIn">
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_head_main_cont'>
                          What we provide?
@@ -170,7 +177,7 @@ export default class LandClass extends React.Component{
                                         </div>
                                         <div className='app_land_stack_3_head_bdy_dat_info_class'>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_tit'>
-                                                       Multiple Design Formats
+                                             We Accept Everything!    
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
                                              Designs in any and every format are accepted.
@@ -239,6 +246,7 @@ export default class LandClass extends React.Component{
                               </div>
                     </div>
                </div>
+               </ScrollAnimation>
                <div id='app_land_stack_4'>
                          <div id='app_land_stack_4_head_main_cont'>
                               The Real-time order tracking
