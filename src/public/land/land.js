@@ -12,6 +12,8 @@ import fea3 from  '../../assets/svg/fea3.svg';
 import fea4 from  '../../assets/svg/fea4.svg';
 import homegit from '../../assets/svg/homegit.svg';
 import homesupportico from '../../assets/landsupport.png';
+import homeiphone from  '../../assets/svg/iphone.svg';
+
 
 import axios from 'axios';
 export default class LandClass extends React.Component{
@@ -50,6 +52,9 @@ export default class LandClass extends React.Component{
                               <div id='app_land_stack_1_lay_1_grid_cont'>
                                    <img src={grid_svg}></img>
                               </div>
+                              <div id='app_land_stack_1_lay_1_iph_cont'>
+                                   <img src={homeiphone}></img>
+                              </div>
                          </div>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_2'>
                               <div id='app_land_stack_1_lay_2_dat'>
@@ -71,7 +76,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                   </div>
                                         </div>
-                                        <div id='app_land_stack_1_lay_2_dat_sub_head_cont'></div>
+     
                                         <div id='app_land_stack_1_lay_2_dat_bdy_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_main_moto_cont'>
                                                             You Design <div id='the_x'>X</div> We Code
@@ -84,7 +89,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
                                                             <div id='app_land_stack_1_lay_2_ext_1_sid_1' >We Make Your Design</div>
-                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_2'>Come to Reality</div>
+                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_2'>X Come to Reality</div>
 
                                                        </div>
                                                   </div>
@@ -98,7 +103,7 @@ export default class LandClass extends React.Component{
                                         <img src={homedesign}></img>  
                                      </div>   
                                      <div id='app_land_stack_2_dat_2'>
-                                        Cytescale&gt;  
+                                        Cytescale
                                      </div>   
                                      <div id='app_land_stack_2_dat_1'>
                                         <img src={homefront}></img>  
