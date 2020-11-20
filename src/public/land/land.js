@@ -24,8 +24,11 @@ export default class LandClass extends React.Component{
             isDark:false,
             logedUserId:null,
             currSite:0,
+            theposition: window.pageYOffset,
             windowWidth: window.innerWidth
           }
+          this.listenToScroll = this.listenToScroll.bind(this);
+          this.listenToScroll();
 }
   handleResize = (e) => {
   this.setState({ windowWidth: window.innerWidth });
@@ -38,10 +41,51 @@ export default class LandClass extends React.Component{
   window.addEventListener("resize", this.handleResize);
  }
  
+ componentDidMount() {
+     window.addEventListener('scroll', this.listenToScroll)
+   }
+   
+   componentWillUnmount() {
+     window.removeEventListener('scroll', this.listenToScroll)
+   }
+   
+   listenToScroll = () => {
+     const winScroll =
+       document.body.scrollTop || document.documentElement.scrollTop
+   
+     const height =
+       document.documentElement.scrollHeight -
+       document.documentElement.clientHeight
+   
+     const scrolled = winScroll / height
+   
+     this.setState({
+       theposition: scrolled,
+     })
+   }
+
     render(){
-         console.log(this.state.windowWidth);     
+         console.log(this.state.theposition);     
         return(
         <div className='app_bdy_land_main_bdy'>
+
+          {this.state.theposition>0.02?
+               <div id='app_land_fix_header'>
+               <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                                  <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
+                                                       <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
+                                                  </div>
+                                                  <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
+                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_2' >Contact</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_3' >Pricing</a></div>
+                                                  </div>
+                                                  <div id='app_fill'></div>
+                                                  <div id='app_land_stack_1_lay_2_dat_head_ext'>
+                                                       
+                                                  </div>
+                                        </div>    
+               </div>:<span></span>}
                <div id='app_land_stack_1'>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
                               <div id='app_land_stack_1_lay_1_eclp_cont'> 

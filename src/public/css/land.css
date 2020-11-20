@@ -2,6 +2,14 @@
 .app_bdy_land_main_bdy{
 
 }
+
+#app_land_fix_header{
+     position: fixed;
+     width: 100%;
+     z-index: 10;
+     box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
+}
+
 #app_land_stack_1{
      height: 100vh;
      width: 100%;
@@ -25,7 +33,7 @@
      position: absolute;
      bottom:0;
      margin:32px;
-     margin-left:15%;
+     margin-left:10%;
 }
 
 #app_land_stack_1_lay_1_eclp_1{
@@ -110,7 +118,7 @@ color:#000000;
      position: absolute;
      bottom:0;
      right:0;
-     margin-right:90px;
+     margin-right:80px;
      margin-bottom: 150px;
      
 }
