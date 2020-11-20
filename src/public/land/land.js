@@ -14,6 +14,7 @@ import fea4 from  '../../assets/svg/fea4.svg';
 import homegit from '../../assets/svg/homegit.svg';
 import homesupportico from '../../assets/landsupport.png';
 import homeiphone from  '../../assets/svg/iphone.svg';
+import Fade from 'react-reveal/Fade';
 
 
 import axios from 'axios';
@@ -162,7 +163,7 @@ export default class LandClass extends React.Component{
                          
 
                </div>
-               <ScrollAnimation animateIn="fadeIn">
+               <Fade bottom>
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_head_main_cont'>
                          What we provide?
@@ -246,7 +247,8 @@ export default class LandClass extends React.Component{
                               </div>
                     </div>
                </div>
-               </ScrollAnimation>
+               </Fade>
+               <Fade bottom>
                <div id='app_land_stack_4'>
                          <div id='app_land_stack_4_head_main_cont'>
                               The Real-time order tracking
@@ -279,6 +281,8 @@ uploaded on GitHub repositories for you to see</p>
                               </Carousel>
                          </div>
                </div>
+               </Fade>
+               <Fade bottom>
                <div id='app_land_stack_5'>
                          <div id='app_land_stack_5_lft_cont'>
                               <div id='app_land_stack_5_lft_sub_cont'>
@@ -314,7 +318,8 @@ uploaded on GitHub repositories for you to see</p>
 
                          </div>
                </div>
-               
+               </Fade>
+               <Fade bottom>
                <div id='app_land_stack_8'>   
                          <div className='app_land_stack_8_lft'>
                                    <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
@@ -336,7 +341,7 @@ uploaded on GitHub repositories for you to see</p>
                               </div>    
                          </div>
                </div>
-
+               </Fade>
                <div id='app_land_stack_9'>
                          <div id='app_land_stack_9_tit'>FAQ</div>          
                          <div id='app_land_stack_9_dat'>
