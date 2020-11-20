@@ -5,47 +5,64 @@ body {
     left:0;
     bottom:0;
     margin:0;
-    background-color: #fefefe;
+    
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+   
+
   }
+
+#home_app_main_main_toper{
+    height:58px;
+    width: 100%;
+    background-color: #fefefe;
+    box-shadow: 0px 6px 6px rgb(0,0,0,0.1);
+    position: fixed;
+    top:0;
+    left:0; 
+}
+
   #home_app_bdy_cont{
     display: inline;
     top:0;
     margin: 0;
-    background-color: var(--main-bg-color);
+    background-color: #133752   ;
   }
 
   #home_app_bdy_left_cont{
-    
-background: linear-gradient(180deg, #314B6F 0%, #183459 53.65%, #001F49 100%);
-box-shadow: inset 0px 11px 15px rgba(255, 255, 255, 0.04);
+
     width: 200px;
     height: 100vh;
+    margin-top:-32px;
     position: fixed;    
-    
+
   }
     #home_app_bdy_left_cont_log_cont{
     width: 100%;
     height: fit-content;
     text-align: center;
-    padding-top: 20px;
+    
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--main-bord-color);
+    
+    
     }
     #home_app_bdy_left_cont_log_tit{
         font-family: quicksand;
         font-weight: 600;
         color:#FEFEFE;
-        font-size: 22px;
+        font-size: 26px;
+        margin-bottom:10px;
     }
     .home_app_bdy_order_cont{
     width: 100%;
     height: fit-content;
     padding-top: 20px;
+
     padding-bottom: 20px;
+    border-top: 1px solid var(--main-bord-color);
     border-bottom: 1px solid var(--main-bord-color);
+    
     }
     .home_app_bdy_order_cont_tit{
         width: 100%;
@@ -153,9 +170,13 @@ box-shadow: inset 0px 11px 15px rgba(255, 255, 255, 0.04);
 
   #home_app_bdy_cent_cont{
       height: 100%;
-      background-color: #f8f8f8;
+      background-color: #fefefe;
       margin-left: 200px;
-      
+      margin-top:62px;
+      margin-bottom:62px;
+      border-top-left-radius: 32px;
+      border-bottom-left-radius: 32px;
+      box-shadow: 0px 0px 7px rgb(1,1,1,0.5);      
   }
   #home_app_bdy_cent_top_cont{
       position: fixed;
@@ -169,9 +190,7 @@ box-shadow: inset 0px 11px 15px rgba(255, 255, 255, 0.04);
     }
 
 #home_app_bdy_cent_cont_bdy{
-    padding-top:12px;
     
-
 }
 #home_app_bdy_cent_pro_cont{
     

@@ -1,0 +1,729 @@
+
+.app_bdy_land_main_bdy{
+
+}
+#app_land_stack_1{
+     height: 100vh;
+     width: 100%;
+     background: linear-gradient(107.54deg, #74C3FF 0%, #1C9CFC 100%);
+     z-index: 20px;
+}
+.app_land_stack_1_lay_class{
+     position: absolute;
+}
+#app_land_stack_1_lay_1{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+}
+#app_land_stack_1_lay_1_eclp_cont{
+     width:400px;
+     height: 400px;
+     display: flex;
+  justify-content: center;
+  align-items: center;     
+     position: absolute;
+     bottom:0;
+     margin:32px;
+     margin-left:15%;
+}
+
+#app_land_stack_1_lay_1_eclp_1{
+
+width: 79px;
+height: 80px;
+border-radius: 320px;
+background: #45B0FF;
+}
+#app_land_stack_1_lay_1_eclp_2{
+     width: 77px;
+height: 77px;
+margin-left: 32px;
+margin-top: 30px;
+border-radius: 320px;
+background: #44AFFF;
+}
+
+#app_land_stack_1_lay_1_eclp_3{
+     width: 49px;
+     height: 50px;
+     margin-top: 160px;
+     margin-left: -130px;
+     border-radius: 320px;
+     background: #44AFFF;
+}
+#app_land_stack_1_lay_1_grid_cont{
+     width:fit-content;
+     height: fit-content;
+     display: flex;
+  justify-content: center;
+  align-items: center;     
+     position: absolute;
+     bottom:0;
+     margin-bottom: -100px;;
+     margin-left:50%;
+
+}
+
+#app_land_stack_1_lay_2{
+     width: 100%;
+     padding: 32px;
+     height: 100%;
+     
+}
+#app_land_stack_1_lay_2_dat{
+     width: 100%;
+     height: 100%;
+     border-radius: 6px;
+     border: 1px solid #fefefe;
+     box-shadow: 0px 0px 12px rgb(0,0,0,0.25);
+}
+#app_land_stack_1_lay_2_dat_head_cont{
+     height: 62px;
+     width: 100%;
+     background-color: #FEFEFE;
+     display: inline-flex;
+ 
+}
+#app_land_stack_1_lay_2_dat_head_logo_cont{
+     height: 100%;
+     
+     width: fit-content;
+     padding-left: 32px;
+padding-right: 12px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app_land_stack_1_lay_2_dat_head_logo{
+font-size: 22px;
+font-weight: 600;
+font-family: quicksand;
+color:#646464;
+}
+
+
+#app_land_stack_1_lay_2_dat_head_lnk_cont{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:32px;
+}
+.pp_land_stack_1_lay_2_dat_head_lnk_class{
+     display: inline;
+}
+
+#app_land_stack_1_lay_2_dat_head_lnk_1{
+     color:#ABABAB;
+     
+}
+#app_land_stack_1_lay_2_dat_head_lnk_2{
+     margin-left:32px;
+     color:#ABABAB;
+}
+#app_land_stack_1_lay_2_dat_head_lnk_3{
+     margin-left:32px;
+     color:#6FCF97;
+}
+#app_land_stack_1_lay_2_dat_head_ext{
+     height: 100%;
+     width: 100%;
+     
+}
+#app_land_stack_1_lay_2_dat_head_ext_data{
+     width: 100px;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: right;
+}
+#app_land_stack_1_lay_2_dat_head_ext_data_ecl_2{
+     width: 18px;
+     height: 18px;
+     border-radius: 320px;
+     background-color: #EE6A5E;
+     margin-right: 10px;
+}
+#app_land_stack_1_lay_2_dat_head_ext_data_ecl_3{
+     width: 18px;
+     margin-right: 10px; 
+     height: 18px;
+     border-radius: 320px;
+     background-color: #F8E7AA;
+}
+#app_land_stack_1_lay_2_dat_head_ext_data_ecl_1{
+     width: 18px;
+     margin-right: 10px; 
+     height: 18px;
+     border-radius: 320px;
+     background-color: #6FCF97;
+}
+
+
+#app_land_stack_1_lay_2_dat_bdy_cont{
+width: 100%;
+height:100%;
+margin-top: -62px;
+
+}
+#the_x{
+     
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 172px;
+line-height: 121.5%;
+color: #145789;
+padding-left:16px;
+padding-right:16px;
+}
+
+#app_land_stack_1_lay_2_dat_bdy_main_moto_cont{
+
+margin-top: 15%;
+     font-family: inter;
+  display: flex;
+justify-content: center;
+align-items: center;
+color:#FEFEFE;
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 77px;
+}
+#app_land_stack_1_lay_2_dat_bdy_sub_moto_cont{
+     font-family: Quicksand;
+font-style: normal;
+color:#FEFEFE;
+font-weight: 500;
+font-size: 18px;
+line-height: 121.5%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont{
+     width: 50%;;
+}
+#app_land_stack_1_lay_2_ext_1_cont{
+     position: absolute;
+     
+     width: 300px;
+     height: 300px;
+     bottom:0;
+     left:0;
+     margin:32px;
+}
+#app_land_stack_1_lay_2_ext_1_sid_1{
+     
+     text-align: center;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 22px;
+     line-height: 158%;
+     color: #ADDCFF;   
+     position: absolute;  
+     margin-left: -92px;
+     bottom:0;
+     margin-bottom:142px;
+     transform: rotate(90deg);
+
+}
+#app_land_stack_1_lay_2_ext_1_sid_2{
+          position: absolute;
+          bottom:0;
+     margin-left: 38px;
+     margin-bottom: 5px;          
+     text-align: center;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 158%;
+     color: #ADDCFF;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+#app_land_stack_2{
+     width: 100%;
+     height: 80vh;
+     
+}
+#app_land_stack_2_dat_cont{
+     display: inline-flex;
+     width:100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;         
+}
+#app_land_stack_2_dat_1{
+
+}
+#app_land_stack_2_dat_2{
+     padding-left:10%;
+     padding-right:10%;
+     padding-top:12px;
+     padding-bottom:12px;
+     background-color: #f8f8f8;
+     border-radius: 320px;
+     font-family: quicksand;
+     font-size: 27px;
+     font-weight: 600;
+
+}
+/*///////////////////////////////////////////////////////////*/
+#app_land_stack_3{
+     width: 100%;
+     height: auto;
+     
+}
+#app_land_stack_3_head_main_cont{
+     width: 100%;
+     background-color: #FFDEAE;
+     font-family: inter;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 38px;
+     line-height: 121.5%;
+     color: #000000;
+     display: flex;
+     justify-content: center;
+     align-items: center;         
+     height: 182px;
+     
+}
+#app_land_stack_3_head_bdy_cont{
+     height: 100%;
+     width: 100%;
+     margin-top:0px;
+     display: inline-flex;
+}
+
+
+#land_col_1{
+     width: 50%;
+     padding: 62px;
+     
+     }
+     
+     #land_col_2{
+          padding: 62px;
+          width: 50%;
+     }
+#land_rw1_cl_1{
+     margin-top: 62px;
+     width: 100%;  
+     padding-bottom: 51px;   
+     border-bottom: 1px solid #e0e0e0;
+}
+#land_rw1_cl_2{
+     margin-top: 51px;
+     width: 100%;
+     
+}
+#land_rw2_cl_1{
+     width: 100%;
+     margin-top: 62px;
+     padding-bottom: 51px;   
+     border-bottom: 1px solid #e0e0e0;
+}
+#land_rw2_cl_2{
+     margin-top: 51px;
+     width: 100%;     
+     margin-bottom: 62px;
+}
+
+.app_land_stack_3_head_bdy_dat_class{
+width:100%;
+height: 100%;
+display: block;
+
+}
+.app_land_stack_3_head_bdy_dat_ico_class{
+width: 100%;     
+height: 25%;
+display: flex;
+  justify-content: center;
+  align-items: center;    
+   
+}
+.app_land_stack_3_head_bdy_dat_info_class{
+     
+     width: 100%;
+     height: 100%;
+
+}
+
+.app_land_stack_3_head_bdy_dat_info_class_tit{
+     font-family: quicksand;
+     font-size: 20px;
+     line-height: 158%;
+     /* or 38px */
+     display: flex;
+     justify-content: center;
+     align-items: center;     
+     color: #000000;
+     font-weight: 600;
+     margin-top:32px;
+}
+
+.app_land_stack_3_head_bdy_dat_ico_class_ico{
+     height: 150px;
+     width: 150px;
+}
+
+.app_land_stack_3_head_bdy_dat_info_class_data{
+
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 158%;
+     /* or 30px */
+     width: 100%;
+     padding-left:52px;
+     padding-right:52px;
+     text-align: center;
+     margin-top:14px;
+     color: #000000;
+     display: flex;
+  justify-content: center;
+  align-items: center;     
+         font-family: quicksand;
+}
+
+
+
+/*//////////////////////////////////////////////////*/
+#app_land_stack_4{
+     width: 100%;
+     height: 100vh;
+     display: inline-flex;
+}
+#app_land_stack_4_head_main_cont{
+     width: 50%;
+     background-color:#CEF2EC;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 38px;
+     line-height: 121.5%;
+     color: #000000;
+     display: flex;
+     justify-content: center;
+     align-items: center;         
+     height: 100%;
+     padding-left: 72px;
+     padding-right: 72px;
+}
+
+#app_land_stack_4_data_cont{
+     width: 50%;
+     height: 100%;
+     background-color: #f5f5f5;
+     color: #000000;
+}
+
+#car{
+     color: #000000;
+     width:100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;         
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-indicators li {
+     background-color: #bdbdbd;
+
+ }
+ .carousel-indicators .active {
+     background-color: #000000;
+ }
+
+#carIte{
+     height: 100%;
+     font-family: Quicksand;
+     width: 100%;
+
+     color: #000000;
+}
+#carcap{
+     padding-top:32px;
+     color: #000000;
+}
+
+.app_land_stack_4_data_cont_ico_class{
+     width: 100%;
+     padding:140px;
+}
+#capcap{
+
+}
+
+
+/*////////////////////////////////////////////////////////////////*/
+#app_land_stack_5{
+     width: 100%;
+     height: 100vh;
+     background-color: #14348E;
+     display: inline-flex;
+}
+
+#app_land_stack_5_lft_cont{
+width: 50%;
+height: 100%;
+display: flex;
+  justify-content: center;
+  align-items: center;     
+}
+#app_land_stack_5_lft_cont_tit{
+     color:#FEFEFE;
+     font-family: inter;
+     font-weight: 800;
+     font-size:42px;
+     width: fit-content;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 32px;
+     padding-right: 32px;
+     border-top: 2px solid #fefefe;
+     background-color: #2549AF;
+}
+
+#app_land_stack_5_rgt_cont{
+     width: 50%;
+     height: 100%;
+     padding:62px;
+     display: flex;
+  justify-content: center;
+  align-items: center;     
+}
+
+#app_land_stack_5_rgt_cont_form_cont{
+     width: 70%;
+     float: right;
+     height: 100%;
+     background-color: #fefefe;
+     box-shadow: 0px 6px 6px rgb(1,1,1,0.3);
+     padding:32px;
+     border-radius: 8px;
+}
+
+#app_land_stack_5_lft_cont_sub_tit{
+     color:#FEFEEF;
+     font-size:19px;
+     font-family: inter;
+     margin-top:22px;
+     width: 50%;
+    
+}
+.app_land_stack_5_lft_cont_sub_data_tit{
+     color:#fefefe;
+     margin-top:32px;
+     font-size:22px;
+     font-family: inter;
+}
+.app_land_stack_5_lft_cont_sub_data{
+     color:#FEFEFE;
+     font-family: quicksand;
+     font-size: 18px;
+     margin-top:12px;
+}
+.app_land_stack_5_lft_cont_sub_data_ico{
+     width: 32px;
+     height: 32px;
+     margin-right: 10px;
+}
+
+#app_land_stack_5_rgt_cont_txt{
+height: 80px;
+width: 100%;
+resize: none;
+outline: none;
+border-style: none;
+padding:10px;
+}
+
+.app_land_stack_5_rgt_cont_form_cont_sub_butt{
+     width:100%;
+     height: 52px;
+     margin-top:32px;
+}
+
+/*////////////////////////////////////////////////////////*/
+#app_land_stack_6{
+     width: 100%;
+     height: 200px;
+     background-color: #212121;
+     display: inline-flex;
+}
+
+#app_land_stack_6_left_cont{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 800;
+     font-size: 60px;
+     line-height: 121.5%;     
+     color: #FFFFFF;
+     display: flex;
+  justify-content: center;
+  align-items: center;    
+  width: 50%;
+  height: auto;
+}
+#app_land_stack_6_rgt_cont{
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+#app_land_stack_6_rgt_data{
+     font-family: quicksand;
+     color:#2F80ED;
+     font-size: 30px;
+     background-color: #fefefe;
+     padding-left: 42px;
+     padding-right: 42px;
+     border-radius: 8px;
+     font-weight: 800;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+/*//////////////////////////////////////////////////////////////////*/
+
+#app_land_stack_8{
+     width: 100%;
+     height: 100vh;
+     background-color: #f5f5f5;
+     display: inline-flex;
+     margin:0;
+}
+.app_land_stack_8_lft{
+width: 50%;
+margin:0;
+height: 100%;
+background-color: #035946;
+}
+.app_land_stack_8_rgt{
+width: 50%;
+margin:0;
+height: 100%;
+padding:72px;
+display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#app_land_stack_8_rgt_tit{
+font-family: inter;
+font-size:58px;
+font-weight:800;
+width: fit-content;
+border-bottom: 5px solid #000000;
+}
+
+#app_land_stack_8_rgt_dat{
+     font-family: quicksand;
+     font-size:20px;
+     margin-top:12px;
+     color:#000000;
+     font-weight: 500;
+     
+}
+
+/*//////////////////////////////////////////////////////////////*/
+#app_land_stack_7{
+     width: 100%;
+     height: 300px;
+     background-color: #000000;
+
+}
+/*///////////////////////////////////////////////////////////////*/
+#app_land_stack_9{
+     height: 100%;
+     width: 100%;
+     background-color: #FEFEFE;
+}
+#app_land_stack_9_tit{
+     width: 90%;
+     margin-left:5%;
+     margin-right: 5%;
+     border-bottom: 1px solid #000000;
+     padding-top:32px;
+     text-align: center;
+     padding-bottom:32px;
+     font-weight: 500;
+     font-family: Elsie;
+     font-size:52px;
+}
+
+#app_land_stack_9_dat{
+     width: 100%;
+     display: inline-flex;   
+     padding:62px;      
+     
+
+}
+#app_land_stack_9_dat_col_1{
+     width: 50%; 
+}
+#app_land_stack_9_dat_col_2{
+     width: 50%;
+
+}
+#app_land_stack_9_dat_ques_cont{
+font-family: quicksand;
+width: 90%;
+padding-bottom: 32px;
+margin-bottom: 82px;
+border-bottom: 1px solid #000000;
+}
+#app_land_stack_9_dat_ques_ans{
+     font-size:16px;
+     margin-top:12px;
+     font-weight: 400;
+     font-family: inter;
+}
+#app_land_stack_9_dat_ques_tit{
+ font-size:22px;
+ font-weight: 600;    
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+#app_land_stack_10{
+     width: 100%;
+     border-top: 1px  solid #bdbdbd;
+     border-bottom: 1px solid #bdbdbd;
+     text-align: center;
+     padding:62px;
+     font-family: inter;
+     font-size: 17px;
+}

@@ -76,6 +76,9 @@ export default class HomeClass extends React.Component{
           );
         return(
         <div id='home_app_bdy_cont' style={themeColor}>
+
+                
+
                 <div id='home_app_bdy_left_cont'>                    
                                <div id='home_app_bdy_left_cont_log_cont'>
                                 <div id='home_app_bdy_left_cont_log_tit'>

@@ -3,6 +3,7 @@ import { Router, Switch, Route,Redirect  } from "react-router";
 import history from '../home/history';
 import LoginPage from  '../login/login.js';
 import HomePage from '../home/home.js';
+import LandPage from '../land/land.js';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -40,7 +41,7 @@ export default class Routers extends React.Component {
             <Router history={history}>
                 <Switch> 
                     <Route exact path="/" >
-                    {this.state.isLogged===true?<Redirect to='/dash'/>:<Redirect to='/login'></Redirect>}
+                    <LandPage></LandPage>
                     </Route>
                     <Route path="/login">
                     {/* {this.state.isLogged===true?<HomePage {...this.props}/>:<LoginPage {...this.props} setLog={this.setLoggedIn.bind(this)}/>} */}
