@@ -4,6 +4,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
 import '../css/land.css';
+import '../css/land_res_1080.css';
+import '../css/land_res_phn.css';
 import grid_svg from '../../assets/svg/grid.svg';
 import homedesign from '../../assets/svg/homedesign.svg';
 import homefront from '../../assets/svg/homefront.svg';
@@ -15,7 +17,9 @@ import homegit from '../../assets/svg/homegit.svg';
 import homesupportico from '../../assets/landsupport.png';
 import homeiphone from  '../../assets/svg/iphone.svg';
 import Fade from 'react-reveal/Fade';
-
+import face_log from '../../assets/logo_facebook.svg';
+import gog_log from '../../assets/logo_google.svg';
+import int_log from '../../assets/logo_inst.svg';
 
 import axios from 'axios';
 export default class LandClass extends React.Component{
@@ -71,13 +75,19 @@ export default class LandClass extends React.Component{
    }
 
     render(){
-         console.log(this.state.theposition);     
+     const height =
+     document.documentElement.scrollHeight -
+     document.documentElement.clientHeight;
+
+         var setWid = (this.state.theposition*100)+"%";
         return(
         <div className='app_bdy_land_main_bdy'>
-
+          <div className='app_float_butt'>
+                    <a className='app_float_butt_lnk' href='#'>Contact Us</a>
+          </div>
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
-               <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
@@ -90,7 +100,8 @@ export default class LandClass extends React.Component{
                                                   <div id='app_land_stack_1_lay_2_dat_head_ext'>
                                                        
                                                   </div>
-                                        </div>    
+                                   </div> 
+                         <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
                <div id='app_land_stack_1'>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
@@ -100,14 +111,15 @@ export default class LandClass extends React.Component{
                                         <div id='app_land_stack_1_lay_1_eclp_3'></div>
                               </div>
                               <div id='app_land_stack_1_lay_1_grid_cont'>
-                                   <img src={grid_svg}></img>
+                                   <img className='app_land_stack_1_lay_1_grid_cont_ico'src={grid_svg}></img>
                               </div>
                               <div id='app_land_stack_1_lay_1_iph_cont'>
-                                   <img src={homeiphone}></img>
+                                   <img className='app_land_stack_1_lay_1_iph_cont_ico'src={homeiphone}></img>
                               </div>
                          </div>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_2'>
                               <div id='app_land_stack_1_lay_2_dat'>
+                              {this.state.windowWidth>850?
                                         <div id='app_land_stack_1_lay_2_dat_head_cont'>
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
@@ -125,11 +137,22 @@ export default class LandClass extends React.Component{
                                                             <div id='app_land_stack_1_lay_2_dat_head_ext_data_ecl_2'></div>
                                                        </div>
                                                   </div>
-                                        </div>
+                                        </div>:<span></span>}
      
                                         <div id='app_land_stack_1_lay_2_dat_bdy_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_main_moto_cont'>
-                                                            You Design <div id='the_x'>X</div> We Code
+                                                            You Design 
+                                                            {
+                                                            this.state.windowWidth<850?
+                                                            <br></br>:<span></span>
+                                                            }
+                                                            <div id='the_x'>X</div> 
+                                                            {
+                                                            this.state.windowWidth>850?
+                                                            <br></br>:<span></span>
+                                                            }
+
+                                                            We Code
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >
@@ -139,7 +162,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
                                                             <div id='app_land_stack_1_lay_2_ext_1_sid_1' >We Make Your Design</div>
-                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_2'>X Come to Reality</div>
+                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_2'>X  Come to Reality</div>
 
                                                        </div>
                                                   </div>
@@ -163,15 +186,34 @@ export default class LandClass extends React.Component{
                          
 
                </div>
-               <Fade bottom>
+               
+               <div id='app_land_stack_11'>
+                         <div id='app_land_stack_11_lft'>
+                                   Contact<br></br>
+                                   Us<br></br>
+                                   Now<br></br>
+                                   to<br></br>
+                                   Order
+                         </div>
+                         <div id='app_land_stack_11_rgt'>
+                                   Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
+
+                                   <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
+
+                                   <br></br><br></br>Drop us a mail, and we will carry it further from there.
+
+                                   <br></br><span className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</span>
+                         </div>
+               </div>
+
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_head_main_cont'>
                          What we provide?
                     </div>
                     <div id='app_land_stack_3_head_bdy_cont'> 
                               <div id='land_col_1'>
-                              <div id='land_rw1_cl_1' >
-                                   
+                              <Fade bottom>
+                              <div id='land_rw1_cl_1' >     
                                    <div className='app_land_stack_3_head_bdy_dat_class'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea1} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
@@ -188,7 +230,8 @@ export default class LandClass extends React.Component{
                                    </div>
 
                               </div>
-     
+                              </Fade>
+                              <Fade bottom>
                               <div id='land_rw1_cl_2' >
                               <div className='app_land_stack_3_head_bdy_dat_class'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
@@ -206,10 +249,12 @@ export default class LandClass extends React.Component{
                                    </div>
 
                               </div>
+                              </Fade>
                               </div>
 
 
                               <div id='land_col_2'>
+                              <Fade bottom>
                               <div id='land_rw2_cl_1' >
 
                               <div className='app_land_stack_3_head_bdy_dat_class'>
@@ -227,6 +272,8 @@ export default class LandClass extends React.Component{
                                    </div>
 
                               </div>
+                              </Fade>
+                              <Fade bottom>
                               <div id='land_rw2_cl_2' >
 
                               <div className='app_land_stack_3_head_bdy_dat_class'>
@@ -244,10 +291,11 @@ export default class LandClass extends React.Component{
                                    </div>
 
                               </div>
+                              </Fade>
                               </div>
                     </div>
                </div>
-               </Fade>
+               
                <Fade bottom>
                <div id='app_land_stack_4'>
                          <div id='app_land_stack_4_head_main_cont'>
@@ -268,7 +316,7 @@ export default class LandClass extends React.Component{
 uploaded on GitHub repositories for you to see</p>
                               </Carousel.Caption>
                               </Carousel.Item>
-                              <Carousel.Item id='carIte'>
+                              {/* <Carousel.Item id='carIte'>
                               <img
                                    className="app_land_stack_4_data_cont_ico_class"
                                    src={homegit}
@@ -277,7 +325,7 @@ uploaded on GitHub repositories for you to see</p>
                                    <h3>Easy Contact Options</h3>
                                    <p id='capcap'>We never leave you. feel free to contact us anytime you want.</p>
                               </Carousel.Caption>
-                              </Carousel.Item>
+                              </Carousel.Item> */}
                               </Carousel>
                          </div>
                </div>
@@ -319,7 +367,6 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                </div>
                </Fade>
-               <Fade bottom>
                <div id='app_land_stack_8'>   
                          <div className='app_land_stack_8_lft'>
                                    <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
@@ -341,22 +388,27 @@ uploaded on GitHub repositories for you to see</p>
                               </div>    
                          </div>
                </div>
-               </Fade>
+
                <div id='app_land_stack_9'>
                          <div id='app_land_stack_9_tit'>FAQ</div>          
                          <div id='app_land_stack_9_dat'>
                                    <div id='app_land_stack_9_dat_col_1'>
                                              <div>
                                              <div id='app_land_stack_9_dat_ques_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>1. How can we do this?</div>
-                                                  <div id='app_land_stack_9_dat_ques_ans'>You can do thisYou can do thisYou can do thisYou can do thisYou can do this
-                                                  You can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do this</div>
+                                                  <div id='app_land_stack_9_dat_ques_tit'>1. What is the estimated time to get the project done?</div>
+                                                  <div id='app_land_stack_9_dat_ques_ans'>
+                                                  Depending on the scale of the project, the time may vary. As a team, 
+                                                  we are absolutely on our toes to get the project to its destination with industry-standard quality.
+                                                  Roughly, we asssure you maximum 15 days of persistent work and completion of project.
+                                                  Trust us, we never miss our deadlines!</div>
                                              </div>
 
                                              <div id='app_land_stack_9_dat_ques_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>2. How can we do this?</div>
-                                                  <div id='app_land_stack_9_dat_ques_ans'>You can do thisYou can do thisYou can do thisYou can do thisYou can do this
-                                                  You can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do this</div>
+                                                  <div id='app_land_stack_9_dat_ques_tit'>2.How does order tracking exactly work?</div>
+                                                  <div id='app_land_stack_9_dat_ques_ans'>
+                                                  We keep you updated at every major/minor updates on E-mail, Github or the way you prefer.
+                                                  The development process is completely transparent and you can ask for any queries to the development team,
+                                                  we are readily available to respond on the go.</div>
                                              </div>
                                              </div>
                                    </div>
@@ -364,14 +416,18 @@ uploaded on GitHub repositories for you to see</p>
                                    <div id='app_land_stack_9_dat_col_2'>
                                              
                                              <div id='app_land_stack_9_dat_ques_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>3. How can we do this?</div>
-                                                  <div id='app_land_stack_9_dat_ques_ans'>You can do thisYou can do thisYou can do thisYou can do thisYou can do this
-                                                  You can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do this</div>
-                                             </div>
+                                                  <div id='app_land_stack_9_dat_ques_tit'>3. How to make a order?</div>
+                                                  <div id='app_land_stack_9_dat_ques_ans'>
+                                                       You just have to contact us with the provided information or
+                                                       send us an email with designs attached and we will start our 
+                                                       work right way. No hastle no complications.
+                                                  </div>
+                                             </div>    
                                              <div id='app_land_stack_9_dat_ques_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>4. How can we do this?</div>
-                                                  <div id='app_land_stack_9_dat_ques_ans'>You can do thisYou can do thisYou can do thisYou can do thisYou can do this
-                                                  You can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do thisYou can do this</div>
+                                                  <div id='app_land_stack_9_dat_ques_tit'>4. What kind of frontend solutions we offer?</div>
+                                                  <div id='app_land_stack_9_dat_ques_ans'>We provide frontend solutions for websites , webpages and andriod application in native code or in frameworks such as
+                                                  React, React Native , Java Native
+                                                  </div>
                                              </div>
                                              
                                    </div>
@@ -394,7 +450,25 @@ uploaded on GitHub repositories for you to see</p>
 
 
                </div>
-               <div id='app_land_stack_7'></div>
+               <div id='app_land_stack_7'>
+                    {/* <div id='app_land_stack_7_lft'>
+                    <a className='app_land_stack_7_lnk_logo' href='#'>Cytescale</a>
+                         <a className='app_land_stack_7_lnk_class' href='#'>Home</a>
+                         <a className='app_land_stack_7_lnk_class' href='#'>Privacy</a>4
+                         <a className='app_land_stack_7_lnk_class' href='#'>Contact</a>
+                         <a className='app_land_stack_7_lnk_class' href='#'>Terms of use</a>
+                         <a className='app_land_stack_7_lnk_class' href='#'>About Us</a>
+                         <a className='app_land_stack_7_lnk_class' href='#'>Refund policy</a>
+                    </div> */}
+                    <div id='app_land_stack_7_rgt'>
+                         <div id='app_land_stack_7_rgt_dat'>
+                         <a className='app_land_stack_7_lnk_class'></a>
+                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
+                         </div>
+                    </div>
+               </div>
 
         </div>);
      }

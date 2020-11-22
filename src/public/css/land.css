@@ -3,12 +3,49 @@
 
 }
 
+
+
+.app_float_butt{
+     position:fixed;
+     right:0;
+     bottom:0;
+     
+     background:#6FCF97;
+     color:#fefefe;
+     font-size:20px;
+     padding:15px;
+     padding-left:22px;
+     padding-right:22px;
+     box-shadow: 0px 0px 6px rgb(0,0,0,0.09);
+     z-index:20;
+     font-family:inter;
+}
+.app_float_butt_lnk{
+     color:#fefefe
+}
+.app_float_butt_lnk:hover{
+     text-decoration:none;
+     color:#FEFEFE;
+}
+
 #app_land_fix_header{
      position: fixed;
      width: 100%;
-     z-index: 10;
+     z-index: 10;  
+     background-color:#fefefe;
      box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
+
+#app_prog_cont{
+     width:50%;
+     height: 12px;
+     background-color:#F6BC4F;
+     border-top-right-radius: 32px;
+     border-bottom-right-radius: 32px;
+     z-index:22;     
+     
+}
+
 
 #app_land_stack_1{
      height: 100vh;
@@ -97,7 +134,7 @@ background: #44AFFF;
      width: 100%;
      background-color: #FEFEFE;
      display: inline-flex;
- 
+     
 }
 #app_land_stack_1_lay_2_dat_head_logo_cont{
      height: 100%;
@@ -317,6 +354,7 @@ align-items: center;
 #app_land_stack_3{
      width: 100%;
      height: auto;
+     margin-top:-10px;
      
 }
 #app_land_stack_3_head_main_cont{
@@ -660,7 +698,7 @@ padding:10px;
 #app_land_stack_8{
      width: 100%;
      height: 100vh;
-     background-color: #035946;
+     background-color: #f7f7f7;
      display: inline-flex;
      margin:0;
 }
@@ -668,7 +706,7 @@ padding:10px;
 width: 50%;
 margin:0;
 height: 100%;
-background-color: #035946;
+background-color: #000000;
 }
 .app_land_stack_8_rgt{
 width: 50%;
@@ -681,18 +719,18 @@ display: flex;
 }
 #app_land_stack_8_rgt_tit{
 font-family: inter;
-color:#fefefe;
+color:#000000;
 font-size:58px;
 font-weight:800;
 width: fit-content;
-border-bottom: 5px solid #fefefe;
+border-bottom: 5px solid #000000;
 }
 
 #app_land_stack_8_rgt_dat{
      font-family: quicksand;
      font-size:20px;
      margin-top:12px;
-     color:#fefefe;
+     color:#000000;
      font-weight: 500;
      
 }
@@ -706,10 +744,57 @@ border-bottom: 5px solid #fefefe;
 /*//////////////////////////////////////////////////////////////*/
 #app_land_stack_7{
      width: 100%;
-     height: 300px;
+     height: auto;
      background-color: #000000;
-
+     display: inline-flex;
+     padding:20px;
 }
+.app_land_stack_7_lnk_logo{
+     color:#fefefe;
+
+     font-family: quicksand;
+     font-weight:600;
+     font-size:15px;     
+     padding:10px;  
+}    
+.app_land_stack_7_lnk_logo:hover{
+     color:#FEFEFE;
+     text-decoration: none;
+}
+.app_land_stack_7_lnk_class{
+     font-family: inter;
+     color:#fefefe;
+     padding:10px;
+     font-size:13px;
+     
+}
+.app_land_stack_7_lnk_class:hover{
+     color:#FEFEFE;
+     text-decoration: none;
+}
+
+#app_land_stack_7_lft{
+display: inline-flex;
+width: 50%;
+}
+#app_land_stack_7_rgt{
+width:100%;
+height:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+#app_land_stack_7_rgt_dat{
+ 
+}
+.app_land_stack_7_lnk_ico{
+     width:32px;
+     height:32px;
+}
+
+
+
+
 /*///////////////////////////////////////////////////////////////*/
 #app_land_stack_9{
      height: 100%;
@@ -771,3 +856,38 @@ border-bottom: 1px solid #000000;
      font-family: inter;
      font-size: 17px;
 }
+/*////////////////////////////////////////////////*/
+#app_land_stack_11{
+display: inline-flex;
+width:100%;
+height:80vh;
+margin:0px;
+padding:0px;
+}
+#app_land_stack_11_lft{
+width:50%;
+padding:62px;
+color:#fefefe;
+font-size:52px;
+font-family:inter;
+font-weight: 600;
+height:100%;
+background-color: #035946;
+
+}
+#app_land_stack_11_rgt{
+     width:50%;
+     background-color:#f6f6f6;     
+     height:100%;
+     color:#000000;
+     font-family:inter;
+     padding:82px;
+     font-size:22px;
+
+}
+.app_land_stack_11_rgt_high{
+     font-weight: 800;
+     font-family:quicksand;
+     color:#14348E;
+}
+
