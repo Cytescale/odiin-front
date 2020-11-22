@@ -20,6 +20,7 @@ import Fade from 'react-reveal/Fade';
 import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_google.svg';
 import int_log from '../../assets/logo_inst.svg';
+import up_arrow from '../../assets/svg/up_arrow.svg';
 
 import axios from 'axios';
 export default class LandClass extends React.Component{
@@ -81,10 +82,15 @@ export default class LandClass extends React.Component{
 
          var setWid = (this.state.theposition*100)+"%";
         return(
+
         <div className='app_bdy_land_main_bdy'>
+          {this.state.theposition>0.02?
           <div className='app_float_butt'>
                     <a className='app_float_butt_lnk' href='#'>Contact Us</a>
-          </div>
+          </div>:<span></span>}
+          {this.state.windowWidth<850?this.state.theposition>0.02?<div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div>:<span></span>:<span></span>}
+
+
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
@@ -140,6 +146,7 @@ export default class LandClass extends React.Component{
                                         </div>:<span></span>}
      
                                         <div id='app_land_stack_1_lay_2_dat_bdy_cont'>
+                                             <div id='app_land_stack_1_lay_2_dat_bdy_cont_sub'>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_main_moto_cont'>
                                                             You Design 
                                                             {
@@ -147,11 +154,6 @@ export default class LandClass extends React.Component{
                                                             <br></br>:<span></span>
                                                             }
                                                             <div id='the_x'>X</div> 
-                                                            {
-                                                            this.state.windowWidth>850?
-                                                            <br></br>:<span></span>
-                                                            }
-
                                                             We Code
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
@@ -165,6 +167,7 @@ export default class LandClass extends React.Component{
                                                             <div id='app_land_stack_1_lay_2_ext_1_sid_2'>X  Come to Reality</div>
 
                                                        </div>
+                                                       </div>
                                                   </div>
                               </div>    
                          </div>
@@ -173,15 +176,17 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2'>
                          
                          <div id='app_land_stack_2_dat_cont'>
+                         
                                    <div id='app_land_stack_2_dat_1'>
-                                        <img src={homedesign}></img>  
+                                        <img className='app_land_stack_2_dat_1_ico'src={homedesign}></img>  
                                      </div>   
                                      <div id='app_land_stack_2_dat_2'>
                                         Cytescale
                                      </div>   
                                      <div id='app_land_stack_2_dat_1'>
-                                        <img src={homefront}></img>  
+                                        <img className='app_land_stack_2_dat_1_ico' src={homefront}></img>  
                                      </div>   
+                         
                          </div>
                          
 
@@ -189,11 +194,11 @@ export default class LandClass extends React.Component{
                
                <div id='app_land_stack_11'>
                          <div id='app_land_stack_11_lft'>
-                                   Contact<br></br>
-                                   Us<br></br>
-                                   Now<br></br>
-                                   to<br></br>
-                                   Order
+                                   You <br></br>
+                                   seem<br></br>
+                                   Interested<br></br>
+                                   already<br></br>
+                                   Get In Touch
                          </div>
                          <div id='app_land_stack_11_rgt'>
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!

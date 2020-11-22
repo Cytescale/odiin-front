@@ -6,6 +6,28 @@
      overflow-x:hidden;
 }
 
+#up_arr_cont{
+position: fixed;
+bottom:0;
+width: 52px;
+margin:22px;
+margin-bottom: 72px;
+height: 52px;
+border-radius: 320px;
+vertical-align: middle;
+border: 2px solid #14348E;
+z-index: 999999999;
+background-color: #fefefe;
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+
+#up_arr_cont_ico{
+     vertical-align: middle;
+width: 42px;
+height: 42px;
+}
 
 .app_float_butt{
      position:fixed;
@@ -19,7 +41,7 @@
      padding-right:22px;
      margin-right: -45px;
      box-shadow: 0px 0px 6px rgb(0,0,0,0.09);
-     z-index:20;
+     z-index:1000000;
      font-family:inter;
      margin-bottom: 30%;
      transform: rotate(-90deg);
@@ -221,8 +243,9 @@ color:#000000;
 #app_land_stack_1_lay_2_dat_bdy_cont{
 width: 100%;
 height:100%;
-
-
+display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #the_x{
      
@@ -238,7 +261,7 @@ padding-right:16px;
 }
 
 #app_land_stack_1_lay_2_dat_bdy_main_moto_cont{
-margin-top: 95%;
+
      font-family: inter;
   width:100%;
 color:#FEFEFE;
@@ -310,20 +333,24 @@ align-items: center;
 /*///////////////////////////////////////////////////////////////////////*/
 #app_land_stack_2{
      width: 100%;
-     height: 80vh;
-     display:none;
+     height: 100%;
+     display:block;
+     padding:62px;
      
+     justify-content: center;
+     align-items: center;   
 }
 #app_land_stack_2_dat_cont{
-     display: inline-flex;
+     
      width:100%;
      height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;         
+     display: block;
+           
 }
-#app_land_stack_2_dat_1{
 
+
+#app_land_stack_2_dat_1{
+     padding:50px;
 }
 #app_land_stack_2_dat_2{
      padding-left:10%;
@@ -332,9 +359,18 @@ align-items: center;
      padding-bottom:12px;
      background-color: #f8f8f8;
      border-radius: 320px;
+     display: flex;
+     justify-content: center;
+     align-items: center;        
      font-family: quicksand;
      font-size: 27px;
      font-weight: 600;
+     width: 100%;
+
+}
+
+.app_land_stack_2_dat_1_ico{
+     width: 100%;
 
 }
 
@@ -551,8 +587,8 @@ display: flex;
 }
 
 .app_land_stack_4_data_cont_ico_class{
-     width: 120%;     
-     height: 120%;
+     width: 130%;     
+     height: 130%;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -567,7 +603,7 @@ display: flex;
 #app_land_stack_5{
      width: 100%;
      height: 100%;
-     background-color: #14348E;
+     background-color: #fefefe;
      display: block;
 }
 
@@ -576,6 +612,8 @@ width: 100%;
 height: 100%;
 background-color: #14348E;
 padding:22px;
+padding-top:62px;
+padding-bottom: 62px;
 }
 #app_land_stack_5_lft_cont_tit{
      color:#FEFEFE;
@@ -588,16 +626,18 @@ padding:22px;
      padding-left: 22px;
      padding-right: 22px;
      border-top: 2px solid #fefefe;
-     background-color: #2549AF;
+     
 }
 
 #app_land_stack_5_rgt_cont{
      width: 100%;
      height: 100%;
-     padding:16px;
+     padding: 0px;
+     margin: 0px;
      display: flex;
   justify-content: center;
-  align-items: center;     
+  align-items: center;    
+   
 }
 
 #app_land_stack_5_rgt_cont_form_cont{
@@ -605,9 +645,8 @@ padding:22px;
      float: right;
      height: 100%;
      background-color: #fefefe;
-     box-shadow: 0px 6px 6px rgb(1,1,1,0.3);
-     padding:32px;
-     border-radius: 8px;
+     box-shadow: 0px 0px 0px rgb(1,1,1,0.3);
+     border-radius: 0px;
 }
 
 #app_land_stack_5_lft_cont_sub_tit{
@@ -616,6 +655,7 @@ padding:22px;
      font-family: inter;
      margin-top:22px;
      width: 100%;
+     
     
 }
 .app_land_stack_5_lft_cont_sub_data_tit{
@@ -654,7 +694,9 @@ padding:10px;
 /*////////////////////////////////////////////////////////*/
 #app_land_stack_6{
      width: 100%;
-     height: 200px;
+     height: auto;
+     padding-top:62px;
+     padding-bottom: 62px;;
      background-color: #212121;
      display: inline-flex;
 }
@@ -712,6 +754,7 @@ padding:32px;
 display: flex;
      justify-content: center;
      align-items: center;
+     border-bottom: 1px solid #000000;
 }
 #app_land_stack_8_rgt_tit{
 font-family: inter;
