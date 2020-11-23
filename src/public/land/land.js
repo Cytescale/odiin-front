@@ -96,7 +96,9 @@ export default class LandClass extends React.Component{
 
 
           {this.state.theposition>0.02?
-               <div id='app_land_fix_header'>
+               <div id='app_land_fix_header'><div id='app_prog_cont' style={{width:setWid}}></div>                          
+                                  
+                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
                                    {this.state.windowWidth<850?
                                                        <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img src={menu_ico}/> } >                                                       
                                                        <a id="home" className="menu-item" href="/">Home</a>
@@ -104,8 +106,6 @@ export default class LandClass extends React.Component{
                                                        <a id="contact" className="menu-item" href="/contact">Contact</a>
                                                        </Menu>:<span></span>
                                                        }
-                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
-                                   
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
@@ -119,7 +119,7 @@ export default class LandClass extends React.Component{
                                                        
                                                   </div>
                                    </div> 
-                         <div id='app_prog_cont' style={{width:setWid}}></div>                          
+                         
                </div>:<span></span>}
                <div id='app_land_stack_1'>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
@@ -216,7 +216,7 @@ export default class LandClass extends React.Component{
                </div>
                     <div id='app_land_stack_12_lft'>
                          
-                              We Make Your Life Easiser!
+                              We Make Your <br></br>Life Easiser!
                     </div>
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
