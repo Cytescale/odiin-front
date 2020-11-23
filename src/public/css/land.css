@@ -135,8 +135,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 62px;
      width: 100%;
-     background: rgba(255, 255, 255, 0.8);
-backdrop-filter: blur(10px);
+     background-color: #fefefe;   
      display: inline-flex;
      
 }
@@ -317,7 +316,8 @@ align-items: center;
 /*///////////////////////////////////////////////////////////////////////*/
 #app_land_stack_2{
      width: 100%;
-     height: 80vh;
+     height: 100%;
+     padding: 82px;
      
 }
 #app_land_stack_2_dat_cont{
@@ -572,7 +572,7 @@ display: flex;
 #app_land_stack_5{
      width: 100%;
      height: 100vh;
-     background-color: #14348E;
+     background-color: #2549AF;
      display: inline-flex;
 }
 
@@ -593,8 +593,7 @@ display: flex;
      padding-bottom: 10px;
      padding-left: 32px;
      padding-right: 32px;
-     border-top: 2px solid #fefefe;
-     background-color: #2549AF;
+     
 }
 
 #app_land_stack_5_rgt_cont{
@@ -900,11 +899,12 @@ background-color: #6FCF97;
 /*////////////////////////////////////////////////////////////////////*/
 #app_land_stack_12{
    width:100%;
-   height:100vh;
+   height:100%;
    background-color: #fefefe;
      display:flex;
     justify-content: center;
     align-items: center;
+    padding-bottom:82px;
 }
 #app_land_stack_12_lft_sub{
      width: 100%;

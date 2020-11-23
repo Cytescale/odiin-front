@@ -10,12 +10,10 @@
 #app_prog_cont{
      width:50%;
      height: 12px;
-   
-
-
      background: linear-gradient(90deg, #A8D9FF 0%, #6EBFFC 100%);
      border-top-right-radius: 32px;
      border-bottom-right-radius: 32px;
+     
      z-index:22;     
      
 }
@@ -76,9 +74,9 @@ height: 42px;
 #app_land_fix_header{
      position: fixed;
      width: 100%;
+     height: 100%;
      z-index: 10;
-background: rgba(255, 255, 255,1);
-backdrop-filter: blur(6px);
+     background: rgba(255, 255, 255,0);
      box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
 
@@ -168,8 +166,8 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 62px;
      width: 100%;
-     background-color: rgb(0,0,0,0);
-     
+     background-color: #fefefe;
+     box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
 
 #app_land_stack_1_lay_2_dat_head_cont_wind{
@@ -368,7 +366,6 @@ align-items: center;
      height: 100%;
      display:block;
      padding:62px;
-     
      justify-content: center;
      align-items: center;   
 }
@@ -644,7 +641,7 @@ display: flex;
 #app_land_stack_5_lft_cont{
 width: 100%;
 height: 100%;
-background-color: #14348E;
+background-color: #2549AF;
 padding:22px;
 padding-top:62px;
 padding-bottom: 62px;
@@ -659,7 +656,6 @@ padding-bottom: 62px;
      padding-bottom: 10px;
      padding-left: 22px;
      padding-right: 22px;
-     border-top: 2px solid #fefefe;
      
 }
 
@@ -952,15 +948,17 @@ background-color: #6FCF97;
 #app_land_stack_11_rgt{
      width:100%;
      background-color:#fefefe;     
-     height:100vh;
+     height:100%;
      color:#000000;
      font-family:inter;
      padding:42px;
      font-size:18px;
      
 }
-
-
+.menu_ico_butt{
+     width:22px;
+     height:22px;
+}
 .bm-burger-button {
      position: fixed;
      width: 32px;
@@ -1007,10 +1005,11 @@ background-color: #6FCF97;
    
    /* General sidebar styles */
    .bm-menu {
-     background: rgba(255, 255, 255,1);
+     background-color: #fefefe;
      padding-top:72px;
      font-size: 1.15em;
      z-index:1000;
+     height: 100vh;
    }
    
    /* Morph shape necessary with bubble or elastic */
@@ -1057,12 +1056,13 @@ background-color: #6FCF97;
 /*////////////////////////////////////////////////////////////////////*/
 #app_land_stack_12{
      width:100%;
-     height:100vh;
+     height:100%;
      background-color: #fefefe;
        display:flex;
       justify-content: center;
       align-items: center;
      padding:16px;   
+     padding-bottom:52px;
   }
 
 

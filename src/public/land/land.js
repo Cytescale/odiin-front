@@ -96,16 +96,16 @@ export default class LandClass extends React.Component{
 
 
           {this.state.theposition>0.02?
-               <div id='app_land_fix_header'><div id='app_prog_cont' style={{width:setWid}}></div>                          
-                                  
-                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
+               <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
-                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img src={menu_ico}/> } >                                                       
+                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
                                                        <a id="home" className="menu-item" href="/">Home</a>
                                                        <a id="about" className="menu-item" href="/about">About</a>
                                                        <a id="contact" className="menu-item" href="/contact">Contact</a>
                                                        </Menu>:<span></span>
                                                        }
+                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                   
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
@@ -119,7 +119,7 @@ export default class LandClass extends React.Component{
                                                        
                                                   </div>
                                    </div> 
-                         
+                                   <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
                <div id='app_land_stack_1'>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
@@ -190,7 +190,7 @@ export default class LandClass extends React.Component{
                          </div>
                </div>
               
-               {/* <div id='app_land_stack_2'>
+               <div id='app_land_stack_2'>
                          
                          <div id='app_land_stack_2_dat_cont'>
                          
@@ -207,7 +207,7 @@ export default class LandClass extends React.Component{
                          </div>
                          
 
-               </div> */}
+               </div>
  <Fade bottom>
                <div id='app_land_stack_12'>
                     <div id='app_land_stack_12_dat'>
@@ -216,7 +216,7 @@ export default class LandClass extends React.Component{
                </div>
                     <div id='app_land_stack_12_lft'>
                          
-                              We Make Your <br></br>Life Easiser!
+                                                       We Make Your{this.state.windowWidth<850?<br></br>:<span></span>}Life Easiser!
                     </div>
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
@@ -241,6 +241,7 @@ export default class LandClass extends React.Component{
                                    Get In Touch
                          </div>
                          <div id='app_land_stack_11_rgt'>
+                              
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 
                                    <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
