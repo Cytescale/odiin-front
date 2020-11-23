@@ -98,7 +98,8 @@ export default class LandClass extends React.Component{
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
-                                                       <Menu width={ '50%' }  customBurgerIcon={ <img src={menu_ico}/> } >
+                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img src={menu_ico}/> } >
+                                                       <div id='app_land_stack_1_lay_2_dat_head_side_logo'>Cytescale</div>
                                                        <a id="home" className="menu-item" href="/">Home</a>
                                                        <a id="about" className="menu-item" href="/about">About</a>
                                                        <a id="contact" className="menu-item" href="/contact">Contact</a>

@@ -16,7 +16,7 @@ height: 52px;
 border-radius: 320px;
 vertical-align: middle;
 border: 2px solid #000000;
-z-index: 999999999;
+z-index: 30;
 background-color: #fefefe;
 display: flex;
 justify-content: center;
@@ -923,7 +923,7 @@ background-color: #035946;
      font-family:inter;
      padding:62px;
      font-size:18px;
-
+     
 }
 .app_land_stack_11_rgt_high{
      font-weight: 800;
@@ -938,6 +938,9 @@ background-color: #035946;
      height: 32px;
      margin:16px;
      
+   }
+   #menu{
+     z-index:9999999;
    }
    
    /* Color/shape of burger icon bars */
@@ -968,6 +971,7 @@ background-color: #035946;
    .bm-menu-wrap {
      position: fixed;
      height: 100%;
+     z-index:9999999;
    }
    
    /* General sidebar styles */
@@ -975,7 +979,7 @@ background-color: #035946;
      background: #fefefe;
      padding-top:72px;
      font-size: 1.15em;
-     z-index: 1000000000;
+     z-index:9999999;
    }
    
    /* Morph shape necessary with bubble or elastic */
@@ -983,6 +987,12 @@ background-color: #035946;
      fill: #373a47;
    }
    
+#app_land_stack_1_lay_2_dat_head_side_logo{
+     font-size: 28px;
+     font-family: quicksand;
+     font-weight: 600;
+}
+
    /* Wrapper for item list */
    .bm-item-list {
      color: #b8b7ad;
@@ -991,11 +1001,20 @@ background-color: #035946;
    
    /* Individual item */
    .bm-item {
+        
      display: inline-block;
-     font-family: quicksand;
+     font-family: inter;
      margin-top:12px;
+     margin-left:22px;
+     font-size: 28px;
+     color:#000000;
    }
-   
+
+   .bm-item:hover{
+        color:#000000;
+        text-decoration: none;
+   }
+
    /* Styling of overlay */
    .bm-overlay {
      background: rgba(0, 0, 0, 0.3);
