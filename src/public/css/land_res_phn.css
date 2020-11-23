@@ -15,7 +15,7 @@ margin-bottom: 72px;
 height: 52px;
 border-radius: 320px;
 vertical-align: middle;
-border: 2px solid #14348E;
+border: 2px solid #000000;
 z-index: 999999999;
 background-color: #fefefe;
 display: flex;
@@ -79,14 +79,11 @@ height: 42px;
 }
 #app_land_stack_1_lay_1_eclp_cont{
      width:400px;
-     height: 400px;
-     display: none;
-  justify-content: center;
-  align-items: center;     
+     height: 400px; 
      position: absolute;
      bottom:0;
-     margin:32px;
-     margin-left:0%;
+     left:0;
+     
 }
 
 #tt{
@@ -552,14 +549,16 @@ display: flex;
 .carousel-control-next-icon:after
 {
   content: '>';
+  font-family: 'quicksand';
   font-size: 55px;
-  color: red;
+  color: #000000;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
+  font-family: 'quicksand';
   font-size: 55px;
-  color: red;
+  color: #000000;
 }
 
 .carousel-indicators li {
