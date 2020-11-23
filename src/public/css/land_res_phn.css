@@ -59,6 +59,7 @@ height: 42px;
      position: fixed;
      width: 100%;
      z-index: 10;
+     
      box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
 
@@ -154,7 +155,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_head_logo_cont{
      height: 100%;
      width: fit-content;
-     padding-left: 16px;
+     padding-left: 57px;
 padding-right: 3px;
 display: flex;
   justify-content: center;
@@ -929,5 +930,75 @@ background-color: #035946;
      font-family:quicksand;
      color:#14348E;
 }
+
+
+.bm-burger-button {
+     position: fixed;
+     width: 32px;
+     height: 32px;
+     margin:16px;
+     
+   }
+   
+   /* Color/shape of burger icon bars */
+   .bm-burger-bars {
+     background: #000000;
+   }
+   
+   /* Color/shape of burger icon bars on hover*/
+   .bm-burger-bars-hover {
+     background: #a90000;
+   }
+   
+   /* Position and sizing of clickable cross button */
+   .bm-cross-button {
+     height: 24px;
+     width: 24px;
+   }
+   
+   /* Color/shape of close button cross */
+   .bm-cross {
+     background: #bdc3c7;
+   }
+   
+   /*
+   Sidebar wrapper styles
+   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+   */
+   .bm-menu-wrap {
+     position: fixed;
+     height: 100%;
+   }
+   
+   /* General sidebar styles */
+   .bm-menu {
+     background: #fefefe;
+     padding-top:72px;
+     font-size: 1.15em;
+     z-index: 1000000000;
+   }
+   
+   /* Morph shape necessary with bubble or elastic */
+   .bm-morph-shape {
+     fill: #373a47;
+   }
+   
+   /* Wrapper for item list */
+   .bm-item-list {
+     color: #b8b7ad;
+     padding: 0.8em;
+   }
+   
+   /* Individual item */
+   .bm-item {
+     display: inline-block;
+     font-family: quicksand;
+     margin-top:12px;
+   }
+   
+   /* Styling of overlay */
+   .bm-overlay {
+     background: rgba(0, 0, 0, 0.3);
+   }
 
 }

@@ -21,6 +21,9 @@ import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_google.svg';
 import int_log from '../../assets/logo_inst.svg';
 import up_arrow from '../../assets/svg/up_arrow.svg';
+import menu_ico from '../../assets/svg/menu.svg';
+import { slide as Menu } from 'react-burger-menu'
+
 
 import axios from 'axios';
 export default class LandClass extends React.Component{
@@ -80,6 +83,7 @@ export default class LandClass extends React.Component{
      document.documentElement.scrollHeight -
      document.documentElement.clientHeight;
 
+
          var setWid = (this.state.theposition*100)+"%";
         return(
 
@@ -94,6 +98,12 @@ export default class LandClass extends React.Component{
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                                       <Menu width={ '50%' }  customBurgerIcon={ <img src={menu_ico}/> } >
+                                                       <a id="home" className="menu-item" href="/">Home</a>
+                                                       <a id="about" className="menu-item" href="/about">About</a>
+                                                       <a id="contact" className="menu-item" href="/contact">Contact</a>
+                                                       <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+                                                       </Menu>
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
