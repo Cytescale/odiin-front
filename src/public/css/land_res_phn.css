@@ -17,7 +17,10 @@ border-radius: 320px;
 vertical-align: middle;
 border: 2px solid #000000;
 z-index: 30;
-background-color: #fefefe;
+
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
 display: flex;
 justify-content: center;
 align-items: center;    
@@ -59,8 +62,9 @@ height: 42px;
      position: fixed;
      width: 100%;
      z-index: 10;
-     
-     box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
+background: rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(6px);
+     box-shadow: 0px 0px 0px rgb(0,0,0,0.09);
 }
 
 
@@ -120,7 +124,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_1_grid_cont{
      width:fit-content;
      height: fit-content;
-     display: flex;
+     display: none;
   justify-content: center;
   align-items: center;     
      position: absolute;
@@ -149,13 +153,29 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 62px;
      width: 100%;
-     background-color: #FEFEFE;
+     background-color: rgb(0,0,0,0);
      
 }
+
+#app_land_stack_1_lay_2_dat_head_cont_wind{
+     height: 62px;
+     width: 100%;
+     background-color: #fefefe;
+}
+
+
 #app_land_stack_1_lay_2_dat_head_logo_cont{
      height: 100%;
-     width: fit-content;
-     padding-left: 57px;
+     width: 100%;
+padding-right: 3px;
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+}    
+#app_land_stack_1_lay_2_dat_head_logo_cont_phn{
+     height: 100%;
+     width: 100%;
 padding-right: 3px;
 display: flex;
   justify-content: center;
@@ -736,7 +756,7 @@ padding:10px;
 #app_land_stack_8{
      width: 100%;
      height: 100vh;
-     background-color: #f7f7f7;
+     background-color: #fefefe;
      display: inline;
      margin:0;
 }
@@ -906,29 +926,24 @@ overflow-x:hidden;
 }
 #app_land_stack_11_lft{
 width:100%;
-padding:62px;
+padding:42px;
 color:#fefefe;
 font-size:32px;
 font-family:inter;
 font-weight: 600;
 height:100%;
-background-color: #035946;
+background-color: #6FCF97;
 
 }
 #app_land_stack_11_rgt{
      width:100%;
-     background-color:#f6f6f6;     
+     background-color:#fefefe;     
      height:100%;
      color:#000000;
      font-family:inter;
-     padding:62px;
+     padding:42px;
      font-size:18px;
      
-}
-.app_land_stack_11_rgt_high{
-     font-weight: 800;
-     font-family:quicksand;
-     color:#14348E;
 }
 
 
@@ -940,7 +955,8 @@ background-color: #035946;
      
    }
    #menu{
-     z-index:9999999;
+        position: fixed;
+     z-index:30;
    }
    
    /* Color/shape of burger icon bars */
@@ -976,10 +992,10 @@ background-color: #035946;
    
    /* General sidebar styles */
    .bm-menu {
-     background: #fefefe;
+     background: rgba(255, 255, 255,1);
      padding-top:72px;
      font-size: 1.15em;
-     z-index:9999999;
+     z-index:1000;
    }
    
    /* Morph shape necessary with bubble or elastic */
@@ -1021,3 +1037,53 @@ background-color: #035946;
    }
 
 }
+
+
+/*////////////////////////////////////////////////////////////////////*/
+#app_land_stack_12{
+     width:100%;
+     height:100vh;
+     background-color: #fefefe;
+       display:flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+
+  #app_land_stack_12_lft_sub{
+       width: 100%;
+       padding-bottom:22px;
+   
+       text-align: center;
+       font-family: quicksand;
+       font-size:27px;
+  
+       color:#929292;
+       font-weight: 600;     
+  }
+  
+  #app_land_stack_12_lft{
+       width: 100%;
+       
+       text-align: center;
+       font-family: roboto;
+       font-size:32px;
+       color:#212121;
+       font-weight: 700;
+  }
+  #app_land_stack_12_rgt{
+       width: 100%;
+       
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #app_land_stack_12_rgt_dat{
+       width:80%;
+       font-family: inter;
+       color:#000000;
+       font-size: 15px;
+       padding-top:42px;
+       text-align: center;
+  }

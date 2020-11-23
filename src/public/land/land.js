@@ -97,14 +97,15 @@ export default class LandClass extends React.Component{
 
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
-                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
-                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img src={menu_ico}/> } >
-                                                       <div id='app_land_stack_1_lay_2_dat_head_side_logo'>Cytescale</div>
+                                   {this.state.windowWidth<850?
+                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img src={menu_ico}/> } >                                                       
                                                        <a id="home" className="menu-item" href="/">Home</a>
                                                        <a id="about" className="menu-item" href="/about">About</a>
                                                        <a id="contact" className="menu-item" href="/contact">Contact</a>
-                                                       <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-                                                       </Menu>
+                                                       </Menu>:<span></span>
+                                                       }
+                                   <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                   
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
@@ -154,7 +155,12 @@ export default class LandClass extends React.Component{
                                                             <div id='app_land_stack_1_lay_2_dat_head_ext_data_ecl_2'></div>
                                                        </div>
                                                   </div>
-                                        </div>:<span></span>}
+                                        </div>:<span>
+                                        <div id='app_land_stack_1_lay_2_dat_head_cont_wind'>
+                                                  <div id='app_land_stack_1_lay_2_dat_head_logo_cont_phn'>
+                                                       <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
+                                                  </div>
+                                        </div></span>}
      
                                         <div id='app_land_stack_1_lay_2_dat_bdy_cont'>
                                              <div id='app_land_stack_1_lay_2_dat_bdy_cont_sub'>
@@ -184,7 +190,7 @@ export default class LandClass extends React.Component{
                          </div>
                </div>
               
-               <div id='app_land_stack_2'>
+               {/* <div id='app_land_stack_2'>
                          
                          <div id='app_land_stack_2_dat_cont'>
                          
@@ -201,8 +207,31 @@ export default class LandClass extends React.Component{
                          </div>
                          
 
+               </div> */}
+ <Fade bottom>
+               <div id='app_land_stack_12'>
+                    <div id='app_land_stack_12_dat'>
+               <div id='app_land_stack_12_lft_sub'>
+                         What we do?
                </div>
-               
+                    <div id='app_land_stack_12_lft'>
+                         
+                              We Make Your Life Easiser!
+                    </div>
+                    <div id='app_land_stack_12_rgt'>
+                         <div id='app_land_stack_12_rgt_dat'>
+                         We do this  We do this  We do this  We do this  We do this  We do this v We do this 
+                         We do this   We do this  We do this  We do this  We do this  We do this  We do this 
+                         We do this  We do this  We do this  We do this  We do this  We do this v
+                         We do this  We do this  We do this  We do this  We do this  We do this v
+                         We do this  We do this  We do this  We do this  We do this  We do this v
+                         We do this  We do this  We do this  We do this  We do this  We do this v
+                         </div>
+
+                    </div>
+                    </div>
+               </div>
+               </Fade>      
                <div id='app_land_stack_11'>
                          <div id='app_land_stack_11_lft'>
                                    You <br></br>
@@ -218,7 +247,7 @@ export default class LandClass extends React.Component{
 
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
-                                   <br></br><span className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</span>
+                                   <br></br><div className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</div>
                          </div>
                </div>
 
