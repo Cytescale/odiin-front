@@ -19,10 +19,14 @@ import homecontact from '../../assets/landcontact.png';
 import homeiphone from  '../../assets/svg/iphone.svg';
 import Fade from 'react-reveal/Fade';
 import face_log from '../../assets/logo_facebook.svg';
-import gog_log from '../../assets/logo_google.svg';
+import gog_log from '../../assets/logo_twitter.svg';
+import link_log from '../../assets/logo_link.svg';
+
+import git_log from '../../assets/logo_github.svg';
 import int_log from '../../assets/logo_inst.svg';
 import up_arrow from '../../assets/svg/up_arrow.svg';
 import menu_ico from '../../assets/svg/menu.svg';
+import mail_ico from '../../assets/svg/mail_outline.svg';
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -103,6 +107,8 @@ export default class LandClass extends React.Component{
                                                        <a id="home" className="menu-item" href="/">Home</a>
                                                        <a id="about" className="menu-item" href="/about">About</a>
                                                        <a id="contact" className="menu-item" href="/contact">Contact</a>
+                                                       <a id="contact" className="menu-item" href="/contact">What We Do?</a>
+                                                       <a id="contact" className="menu-item" href="/contact">Query</a>
                                                        </Menu>:<span></span>
                                                        }
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
@@ -111,14 +117,14 @@ export default class LandClass extends React.Component{
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
-                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_2' >Contact</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_3' >Pricing</a></div>
+                                                       <div id='app_land_stack_1_lay_2_dat_head_lnk_cont_dat'>
+                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Contact</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >What we do?</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_4_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Query</a></div>
+                                                       </div>
                                                   </div>
-                                                  <div id='app_fill'></div>
-                                                  <div id='app_land_stack_1_lay_2_dat_head_ext'>
-                                                       
-                                                  </div>
+                                        
                                    </div> 
                                    <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
@@ -148,6 +154,7 @@ export default class LandClass extends React.Component{
                                                        <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
                                                        <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_2' >Contact</a></div>
                                                        <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_3' >Pricing</a></div>
+                                                       
                                                   </div>
                                                   <div id='app_fill'></div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_ext'>
@@ -177,7 +184,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >
-                                                            We bring your design vision to reality with robust and fast programming in Java Native or React Native as your prefer.
+                                                            We bring your Design Vision to Reality with Robust and Fast Programming in Java Native, React Native or as your prefer
                                                             </div>
                                                             
                                                        </div>
@@ -217,8 +224,9 @@ export default class LandClass extends React.Component{
                     <div id='app_land_stack_12_dat'>
                
                     <div id='app_land_stack_12_lft'>
-                         
+                                                       <div id='app_land_stack_12_lft_dat'>
                                                        We Make Your<br></br>Life Easiser!
+                                                       </div>
                     </div>
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
@@ -342,14 +350,15 @@ Discuss any last minute changes, we will sort it out.
 
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
-                                   <br></br><div className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</div>
+                                   <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch contact@cytescale.com</div>
                          </div>
                </div>
 
                <Fade bottom>
                <div id='app_land_stack_4'>
+                    
                          <div id='app_land_stack_4_head_main_cont'>
-                              The Real-time order tracking
+                         The Real-time order tracking
                               you need to track every step
                               made in building your product !
                          </div>
@@ -535,6 +544,8 @@ Discuss any last minute changes, we will sort it out.
                          <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={link_log}></img></a>
                          </div>
                     </div>
                </div>

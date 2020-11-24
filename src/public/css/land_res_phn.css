@@ -319,7 +319,7 @@ align-items: center;
 }
 #app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont{
      margin-top: 22px;
-     width: 90%;;
+     width: 80%;;
 }
 #app_land_stack_1_lay_2_ext_1_cont{
      position: absolute;
@@ -374,7 +374,10 @@ align-items: center;
      width:100%;
      height: 100%;
      display: block;
-     padding:52px;
+     padding-left:52px;
+     padding-right: 52px;
+     padding-top:10px;
+     padding-bottom: 10px;
 }
 
 
@@ -437,7 +440,6 @@ align-items: center;
 #app_land_stack_3{
      width: 100%;
      height: auto;
-     margin-top:-10px;
      
 }
 #app_land_stack_3_head_main_cont{
@@ -447,12 +449,12 @@ align-items: center;
      font-style: normal;
      font-weight: bold;
      line-height: 121.5%;
-     color: #000000;
+     color: #212121;
      display: flex;
      justify-content: center;
      align-items: center;         
      padding:42px;
-     border-bottom: 7px dashed #000000;
+
 }
 #app_land_stack_3_head_bdy_cont{
      height: 100%;
@@ -1156,19 +1158,31 @@ background-color: #035946;
        font-family:roboto;
        font-size:32px;
        color:#000000;
+     
        padding:42px;
        font-weight: 600;     
   }
   
   #app_land_stack_12_lft{
        width: 100%;
-       
+          display: flex;
+          justify-content: center;
+          align-items: center;
        text-align: center;
        font-family: roboto;
        font-size:32px;
        color:#212121;
        font-weight: 700;
+     
   }
+#app_land_stack_12_lft_dat{
+     width: fit-content;
+     padding:10px;
+     padding-left:20px;
+     padding-right:20px;
+
+}
+
   #app_land_stack_12_rgt{
        width: 100%;
        padding:10px;
