@@ -15,6 +15,7 @@ import fea3 from  '../../assets/svg/fea3.svg';
 import fea4 from  '../../assets/svg/fea4.svg';
 import homegit from '../../assets/svg/homegit.svg';
 import homesupportico from '../../assets/landsupport.png';
+import homecontact from '../../assets/landcontact.png';
 import homeiphone from  '../../assets/svg/iphone.svg';
 import Fade from 'react-reveal/Fade';
 import face_log from '../../assets/logo_facebook.svg';
@@ -191,9 +192,9 @@ export default class LandClass extends React.Component{
                </div>
               
                <div id='app_land_stack_2'>
-                         
+                         {this.state.windowWidth<850?<div id='app_land_stack_12_lft_sub'>What we do?</div>:<span></span>}
                          <div id='app_land_stack_2_dat_cont'>
-                         
+                                                            
                                    <div id='app_land_stack_2_dat_1'>
                                         <img className='app_land_stack_2_dat_1_ico'src={homedesign}></img>  
                                      </div>   
@@ -208,40 +209,39 @@ export default class LandClass extends React.Component{
                          
 
                </div>
- <Fade bottom>
+               {this.state.windowWidth<850?
+     <Fade bottom> 
                <div id='app_land_stack_12'>
                     <div id='app_land_stack_12_dat'>
-               <div id='app_land_stack_12_lft_sub'>
-                         What we do?
-               </div>
+               
                     <div id='app_land_stack_12_lft'>
                          
-                                                       We Make Your{this.state.windowWidth<850?<br></br>:<span></span>}Life Easiser!
+                                                       We Make Your<br></br>Life Easiser!
                     </div>
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
-                         We do this  We do this  We do this  We do this  We do this  We do this v We do this 
-                         We do this   We do this  We do this  We do this  We do this  We do this  We do this 
-                         We do this  We do this  We do this  We do this  We do this  We do this v
-                         We do this  We do this  We do this  We do this  We do this  We do this v
-                         We do this  We do this  We do this  We do this  We do this  We do this v
-                         We do this  We do this  We do this  We do this  We do this  We do this v
+                              <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful desings into lines of code, offering you </div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Best-in-class Technology.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Maximum Security.</div>
                          </div>
 
                     </div>
                     </div>
                </div>
-               </Fade>      
+               </Fade>:<span></span> }
                <div id='app_land_stack_11'>
                          <div id='app_land_stack_11_lft'>
                                    You <br></br>
                                    seem<br></br>
                                    Interested<br></br>
                                    already<br></br>
-                                   Get In Touch
+                                   
                          </div>
-                         <div id='app_land_stack_11_rgt'>
-                              
+                         <div id='app_land_stack_11_rgt'>   
+                                   
+                                   {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>}
+                                   
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 
                                    <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
@@ -381,7 +381,7 @@ uploaded on GitHub repositories for you to see</p>
                          <div id='app_land_stack_5_lft_cont'>
                               <div id='app_land_stack_5_lft_sub_cont'>
                               <div id='app_land_stack_5_lft_cont_tit'>Got any questions for us?</div>
-                              <div id='app_land_stack_5_lft_cont_sub_tit'>Contact Us at Support@devz.com
+                              <div id='app_land_stack_5_lft_cont_sub_tit'>Contact Us at support@cytescale.com
                               or Submit a query here </div>
 
                               <div className='app_land_stack_5_lft_cont_sub_data_tit'>Talk to our great sales guys</div>
@@ -414,6 +414,7 @@ uploaded on GitHub repositories for you to see</p>
                </div>
                </Fade>
                <div id='app_land_stack_8'>   
+                         {this.state.windowWidth<850?<div id='app_land_stack_8_rgt_tit_phn'>We Never Leave You  </div>:<span></span>}
                          <div className='app_land_stack_8_lft'>
                                    <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
                                    
@@ -421,6 +422,9 @@ uploaded on GitHub repositories for you to see</p>
                          <div className='app_land_stack_8_rgt'>
                               <div>
                               <div id='app_land_stack_8_rgt_tit'>We Never Leave You  </div>
+                              <div id='app_land_stack_8_rgt_tit_sub'>
+                                   Best in class customer suppport
+                              </div>
                               <div id='app_land_stack_8_rgt_dat'>
                                    At every moment before order completion and after
                                    order completion we never leave you , Our tech team
@@ -469,7 +473,7 @@ uploaded on GitHub repositories for you to see</p>
                                                        work right way. No hastle no complications.
                                                   </div>
                                              </div>    
-                                             <div id='app_land_stack_9_dat_ques_cont'>
+                                             <div id='app_land_stack_9_dat_ques_last_cont'>
                                                   <div id='app_land_stack_9_dat_ques_tit'>4. What kind of frontend solutions we offer?</div>
                                                   <div id='app_land_stack_9_dat_ques_ans'>We provide frontend solutions for websites , webpages and andriod application in native code or in frameworks such as
                                                   React, React Native , Java Native
@@ -480,9 +484,22 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                </div>
 
+
                <div id='app_land_stack_10'>
                     We handcrafted this website with proud and love 
                </div>
+
+
+               <div id='app_land_stack_13'>
+                         <div id='app_land_stack_13_lft'>
+                              We knew you were interested
+                         </div>
+                         <div id='app_land_stack_13_rgt'>
+                              Reach Us Now at Contact@cytescale.com
+                         </div>
+               </div>
+{/* 
+
 
                <div id='app_land_stack_6'>
                     <div id='app_land_stack_6_left_cont'>
@@ -495,7 +512,7 @@ uploaded on GitHub repositories for you to see</p>
                     </div>
 
 
-               </div>
+               </div> */}
                <div id='app_land_stack_7'>
                     {/* <div id='app_land_stack_7_lft'>
                     <a className='app_land_stack_7_lnk_logo' href='#'>Cytescale</a>
