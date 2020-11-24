@@ -571,8 +571,8 @@ Discuss any last minute changes, we will sort it out.
                     <div id='app_land_stack_7_rgt'>
                          <div id='app_land_stack_7_rgt_dat'>
                          <a className='app_land_stack_7_lnk_class'></a>
-                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
-                         <a className='app_land_stack_7_lnk_class' href='#'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='////www.facebook.com/Cytescale-104775144804086'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='////www.twitter.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.instagram.com/cytescale?igshid=6dl3co5b77wz'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.github.com/Cytescale'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.linkedin.com/in/cytescale-team-71208b1ab'><img className='app_land_stack_7_lnk_ico'src={link_log}></img></a>
