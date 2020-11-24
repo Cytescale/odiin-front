@@ -141,7 +141,8 @@ export default class LandClass extends React.Component{
                               {this.state.windowWidth>850?
                                         <div id='app_land_stack_1_lay_2_dat_head_cont'>
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
-                                                       <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
+                                                       <div id='app_land_stack_1_lay_2_dat_head_logo'>
+                                                            Cytescale</div>
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
                                                        <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
@@ -194,12 +195,13 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2'>
                          
                          <div id='app_land_stack_2_dat_cont'>
-                                                            
+                         
                                    <div id='app_land_stack_2_dat_1'>
                                         <img className='app_land_stack_2_dat_1_ico'src={homedesign}></img>  
                                      </div>   
                                      <div id='app_land_stack_2_dat_2'>
-                                        Cytescale
+                                        <div id='app_land_stack_2_dat_2_anim'></div>
+                                        
                                      </div>   
                                      <div id='app_land_stack_2_dat_1'>
                                         <img className='app_land_stack_2_dat_1_ico' src={homefront}></img>  
@@ -221,9 +223,9 @@ export default class LandClass extends React.Component{
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
                               <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful desings into lines of code, offering you </div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Best-in-class Technology.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Maximum Security.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Best-in-class Technology.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Maximum Security.</div>
                          </div>
 
                     </div>
@@ -250,8 +252,8 @@ export default class LandClass extends React.Component{
                                              We Accept Everything!    
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
-                                             Designs in any and every format are accepted.
-                                             Photoshop , Figma , Adobe XD you name it!
+                                        Designs in every format are accepted. Photoshop, Figma, Adobe XD you name it!
+                                        Submit the design and sit back to see it in action.
                                              </div>
                                         </div>
                                    </div>
@@ -269,8 +271,8 @@ export default class LandClass extends React.Component{
                                              Trackable Orders    
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
-                                             Track your order at every step. Every 
-                                             update can be monitored!
+                                             Updates of your order will be uploaded on GitHub repositories.
+Easy development tracking, right?
                                              </div>
                                         </div>
                                    </div>
@@ -293,7 +295,8 @@ export default class LandClass extends React.Component{
                                              24/7 Chat Support   
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
-                                             Chat with our supportive development team. Discuss any last mintue changes
+                                             Chat with our supportive development team. 
+Discuss any last minute changes, we will sort it out.
                                              </div>
                                         </div>
                                    </div>
@@ -312,7 +315,9 @@ export default class LandClass extends React.Component{
                                              Fast and Reliable Delivery
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
-                                             Orders will be complete before or till the projected estimated time of completion.
+                                             Orders will be completed till the estimated time of completion.
+                                             Our deadlines are short, strict and well thought of. No misses!
+
                                              </div>
                                         </div>
                                    </div>
@@ -325,11 +330,7 @@ export default class LandClass extends React.Component{
                
                <div id='app_land_stack_11'>
                          <div id='app_land_stack_11_lft'>
-                                   You
-                                   seem<br></br>
-                                   Interested
-                                   already
-                                   
+                         You seem <br></br>interested already <br></br>Get in touch!                                   
                          </div>
                          <div id='app_land_stack_11_rgt'>   
                                    
@@ -361,8 +362,7 @@ export default class LandClass extends React.Component{
                               />
                               <Carousel.Caption id='carcap' >
                                    <h3>Git Hub Updates</h3>
-                                   <p id='capcap'>Updates of your order will be 
-uploaded on GitHub repositories for you to see</p>
+                                   <p id='capcap'>Also, we offer you real-time order tracking that lets you keep us in check! ;)</p>
                               </Carousel.Caption>
                               </Carousel.Item>
                               {/* <Carousel.Item id='carIte'>
@@ -379,7 +379,7 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                </div>
                </Fade>
-
+{/* 
                <div id='app_land_stack_8'>   
                     
                     <div className='app_land_stack_8_lft'>
@@ -404,7 +404,7 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                          </div>    
                     </div>
-          </div>
+          </div> */}
 
                <Fade bottom>
                <div id='app_land_stack_5'>
