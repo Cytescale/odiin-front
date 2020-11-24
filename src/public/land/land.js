@@ -230,27 +230,8 @@ export default class LandClass extends React.Component{
                     </div>
                </div>
                </Fade>:<span></span> }
-               <div id='app_land_stack_11'>
-                         <div id='app_land_stack_11_lft'>
-                                   You
-                                   seem<br></br>
-                                   Interested
-                                   already
-                                   
-                         </div>
-                         <div id='app_land_stack_11_rgt'>   
-                                   
-                                   {/* {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>} */}
-                                   
-                                   Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
-
-                                   <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
-
-                                   <br></br><br></br>Drop us a mail, and we will carry it further from there.
-
-                                   <br></br><div className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</div>
-                         </div>
-               </div>
+               
+               
 
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_head_main_cont'>
@@ -342,6 +323,28 @@ export default class LandClass extends React.Component{
                     </div>
                </div>
                
+               <div id='app_land_stack_11'>
+                         <div id='app_land_stack_11_lft'>
+                                   You
+                                   seem<br></br>
+                                   Interested
+                                   already
+                                   
+                         </div>
+                         <div id='app_land_stack_11_rgt'>   
+                                   
+                                   {/* {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>} */}
+                                   
+                                   Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
+
+                                   <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
+
+                                   <br></br><br></br>Drop us a mail, and we will carry it further from there.
+
+                                   <br></br><div className='app_land_stack_11_rgt_high'>Get in touch at contact@cytescale.com</div>
+                         </div>
+               </div>
+
                <Fade bottom>
                <div id='app_land_stack_4'>
                          <div id='app_land_stack_4_head_main_cont'>
@@ -376,6 +379,33 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                </div>
                </Fade>
+
+               <div id='app_land_stack_8'>   
+                    
+                    <div className='app_land_stack_8_lft'>
+                              <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
+                              
+                    </div>
+                    <div className='app_land_stack_8_rgt'>
+                         <div>
+                         <div id='app_land_stack_8_rgt_tit'>We Never Leave You  </div>
+                         <div id='app_land_stack_8_rgt_tit_sub'>
+                              Best in class customer suppport
+                         </div>
+                         <div id='app_land_stack_8_rgt_dat'>
+                              At every moment before order completion and after
+                              order completion we never leave you , Our tech team
+                              and sales team are very happy to solve very queries.
+                              At every moment before order completion and after
+                              order completion we never leave you , Our tech team
+                              and sales team are very happy to solve very queries.
+                              
+
+                         </div>
+                         </div>    
+                    </div>
+          </div>
+
                <Fade bottom>
                <div id='app_land_stack_5'>
                          <div id='app_land_stack_5_lft_cont'>
@@ -413,31 +443,7 @@ uploaded on GitHub repositories for you to see</p>
                          </div>
                </div>
                </Fade>
-               <div id='app_land_stack_8'>   
-                         {this.state.windowWidth<850?<div id='app_land_stack_8_rgt_tit_phn'>We Never Leave You  </div>:<span></span>}
-                         <div className='app_land_stack_8_lft'>
-                                   <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
-                                   
-                         </div>
-                         <div className='app_land_stack_8_rgt'>
-                              <div>
-                              <div id='app_land_stack_8_rgt_tit'>We Never Leave You  </div>
-                              <div id='app_land_stack_8_rgt_tit_sub'>
-                                   Best in class customer suppport
-                              </div>
-                              <div id='app_land_stack_8_rgt_dat'>
-                                   At every moment before order completion and after
-                                   order completion we never leave you , Our tech team
-                                   and sales team are very happy to solve very queries.
-                                   At every moment before order completion and after
-                                   order completion we never leave you , Our tech team
-                                   and sales team are very happy to solve very queries.
-                                   
-
-                              </div>
-                              </div>    
-                         </div>
-               </div>
+               
 
                <div id='app_land_stack_9'>
                          <div id='app_land_stack_9_tit'>FAQ</div>          

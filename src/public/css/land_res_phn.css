@@ -432,6 +432,7 @@ align-items: center;
      justify-content: center;
      align-items: center;         
      padding:42px;
+     border-bottom: 7px dashed #000000;
 }
 #app_land_stack_3_head_bdy_cont{
      height: 100%;
@@ -820,11 +821,10 @@ display: flex;
 font-family: inter;
 color:#000000;
 font-size:28px;
-display: none;
-visibility: hidden;
 font-weight:800;
 width: fit-content;
-border-bottom: 5px solid #000000;
+border-bottom: 0px solid #000000;
+border-style: none;
 }
 
 #app_land_stack_8_rgt_dat{
