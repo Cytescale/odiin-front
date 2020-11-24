@@ -192,7 +192,7 @@ export default class LandClass extends React.Component{
                </div>
               
                <div id='app_land_stack_2'>
-                         {this.state.windowWidth<850?<div id='app_land_stack_12_lft_sub'>What we do?</div>:<span></span>}
+                         
                          <div id='app_land_stack_2_dat_cont'>
                                                             
                                    <div id='app_land_stack_2_dat_1'>
@@ -232,15 +232,15 @@ export default class LandClass extends React.Component{
                </Fade>:<span></span> }
                <div id='app_land_stack_11'>
                          <div id='app_land_stack_11_lft'>
-                                   You <br></br>
+                                   You
                                    seem<br></br>
-                                   Interested<br></br>
-                                   already<br></br>
+                                   Interested
+                                   already
                                    
                          </div>
                          <div id='app_land_stack_11_rgt'>   
                                    
-                                   {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>}
+                                   {/* {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>} */}
                                    
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 

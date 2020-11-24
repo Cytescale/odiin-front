@@ -979,12 +979,13 @@ overflow-x:hidden;
 #app_land_stack_11_lft{
 width:100%;
 padding:42px;
-color:#000000;
+color:#fefefe;
 font-size:32px;
 font-family:inter;
+text-align: center  ;
 font-weight: 600;
 height:100%;
-background-color: #6FCF97;
+background-color: #035946;
 
 }
 #app_land_stack_11_rgt{
@@ -1131,10 +1132,9 @@ background-color: #6FCF97;
        width: 100%;
        padding-bottom:0px;
        text-align: center;
-       font-family: quicksand;
+       font-family:roboto;
        font-size:32px;
-       background-color: #000000;
-       color:#fefefe;
+       color:#000000;
        padding:42px;
        font-weight: 600;     
   }
