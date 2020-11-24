@@ -148,7 +148,7 @@ export default class LandClass extends React.Component{
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
                                    
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
-                                                       <div id='app_land_stack_1_lay_2_dat_head_logo'>Cytescale</div>
+                                                       <div id='app_land_stack_1_lay_2_dat_head_logo_phn'>Cytescale</div>
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_lnk_cont_dat'>
@@ -257,7 +257,7 @@ export default class LandClass extends React.Component{
                
                     <div id='app_land_stack_12_lft'>
                                                        <div id='app_land_stack_12_lft_dat'>
-                                                       We Make Your<br></br>Life Easiser!
+                                                       We Make Your<br></br>Life Easier!
                                                        </div>
                     </div>
                     <div id='app_land_stack_12_rgt'>
@@ -370,7 +370,7 @@ Discuss any last minute changes, we will sort it out.
                
                <div id='app_land_stack_11' ref={contact_ref}>
                          <div id='app_land_stack_11_lft'>
-                         You seem <br></br>interested already <br></br>Get in touch!                                   
+                         You seem <br></br>interested already, <br></br>Get in touch!                                   
                          </div>
                          <div id='app_land_stack_11_rgt'>   
                                    
@@ -390,9 +390,7 @@ Discuss any last minute changes, we will sort it out.
                <div id='app_land_stack_4'>
                     
                          <div id='app_land_stack_4_head_main_cont'>
-                         The Real-time order tracking
-                              you need to track every step
-                              made in building your product !
+                         Also, we offer you real-time order tracking that lets you keep us in check!
                          </div>
                          <div id='app_land_stack_4_data_cont'> 
                          <Carousel id='car'>
@@ -403,7 +401,7 @@ Discuss any last minute changes, we will sort it out.
                               />
                               <Carousel.Caption id='carcap' >
                                    <h3>Git Hub Updates</h3>
-                                   <p id='capcap'>Also, we offer you real-time order tracking that lets you keep us in check! ;)</p>
+                                   <p id='capcap'>GitHub repositories are updated constantly to let you access of the development process.</p>
                               </Carousel.Caption>
                               </Carousel.Item>
                               {/* <Carousel.Item id='carIte'>
@@ -472,7 +470,7 @@ Discuss any last minute changes, we will sort it out.
                                         </div>
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Company Name</div>
-                                   <input type='text' placeholder='Enter full name' className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                   <input type='text' placeholder='Enter company name' className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
                                         </div>
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query</div>
