@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,9 +30,11 @@ import mail_ico from '../../assets/svg/mail_outline.svg';
 import { slide as Menu } from 'react-burger-menu'
 
 
+
 import axios from 'axios';
 export default class LandClass extends React.Component{
-    constructor(props){
+
+     constructor(props){
         super(props);    
         this.state = {
             isLogged:true,
@@ -42,6 +44,10 @@ export default class LandClass extends React.Component{
             theposition: window.pageYOffset,
             windowWidth: window.innerWidth
           }
+
+          
+
+
           this.listenToScroll = this.listenToScroll.bind(this);
           
           this.listenToScroll();
@@ -84,10 +90,39 @@ export default class LandClass extends React.Component{
    }
 
     render(){
+     const home_ref = React.createRef();
+     const contact_ref = React.createRef();
+     const what_ref = React.createRef();
+     const query_ref = React.createRef();
+
      const height =
      document.documentElement.scrollHeight -
      document.documentElement.clientHeight;
 
+     function scrollContact(){
+          contact_ref.current.scrollIntoView({
+               behavior: 'smooth',
+               block: 'start',
+             });
+           }
+           function scrollHome(){
+               home_ref.current.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+                }
+                function scrollWhat(){
+                    what_ref.current.scrollIntoView({
+                         behavior: 'smooth',
+                         block: 'start',
+                       });
+                     }
+                     function scrollQuery(){
+                         query_ref.current.scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start',
+                            });
+                          }
 
          var setWid = (this.state.theposition*100)+"%";
         return(
@@ -95,20 +130,19 @@ export default class LandClass extends React.Component{
         <div className='app_bdy_land_main_bdy'>
           {this.state.theposition>0.02?
           <div className='app_float_butt'>
-                    <a className='app_float_butt_lnk' href='#'>Contact Us</a>
+                    <a className='app_float_butt_lnk' onClick={scrollContact}>Contact Us</a>
           </div>:<span></span>}
-          {this.state.windowWidth<850?this.state.theposition>0.02?<div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div>:<span></span>:<span></span>}
+          {this.state.windowWidth<850?this.state.theposition>0.02?<a onClick={scrollHome}><div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div></a>:<span></span>:<span></span>}
 
 
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
-                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
-                                                       <a id="home" className="menu-item" href="/">Home</a>
-                                                       <a id="about" className="menu-item" href="/about">About</a>
-                                                       <a id="contact" className="menu-item" href="/contact">Contact</a>
-                                                       <a id="contact" className="menu-item" href="/contact">What We Do?</a>
-                                                       <a id="contact" className="menu-item" href="/contact">Query</a>
+                                                       <Menu id='menu' width={ '70%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
+                                                       <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
+                                                       <a id="contact" className="menu-item"  onClick={scrollContact}>Contact</a>
+                                                       <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
+                                                       <a id="contact" className="menu-item"onClick={scrollQuery} >Query</a>
                                                        </Menu>:<span></span>
                                                        }
                                    <div id='app_land_stack_1_lay_2_dat_head_cont'>
@@ -118,17 +152,17 @@ export default class LandClass extends React.Component{
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_lnk_cont_dat'>
-                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Contact</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >What we do?</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_4_cont'><a href='#' className='app_land_stack_1_lay_2_dat_head_lnk_1' >Query</a></div>
+                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a onClick={scrollHome} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a onClick={scrollContact} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Contact</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a onClick={scrollWhat} className='app_land_stack_1_lay_2_dat_head_lnk_1' >What we do?</a></div>
+                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_4_cont'><a onClick={scrollQuery} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Query</a></div>
                                                        </div>
                                                   </div>
                                         
                                    </div> 
                                    <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
-               <div id='app_land_stack_1'>
+               <div id='app_land_stack_1' ref={home_ref}>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
                               <div id='app_land_stack_1_lay_1_eclp_cont'> 
                                         <div id='app_land_stack_1_lay_1_eclp_1'></div>
@@ -151,10 +185,8 @@ export default class LandClass extends React.Component{
                                                             Cytescale</div>
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
-                                                       <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_2' >Contact</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a href='#' id='app_land_stack_1_lay_2_dat_head_lnk_3' >Pricing</a></div>
-                                                       
+                                                            <div id='bow_cont'>
+                                                                 </div>
                                                   </div>
                                                   <div id='app_fill'></div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_ext'>
@@ -199,7 +231,7 @@ export default class LandClass extends React.Component{
                          </div>
                </div>
               
-               <div id='app_land_stack_2'>
+               <div id='app_land_stack_2' ref={what_ref}>
                          
                          <div id='app_land_stack_2_dat_cont'>
                          
@@ -336,7 +368,7 @@ Discuss any last minute changes, we will sort it out.
                     </div>
                </div>
                
-               <div id='app_land_stack_11'>
+               <div id='app_land_stack_11' ref={contact_ref}>
                          <div id='app_land_stack_11_lft'>
                          You seem <br></br>interested already <br></br>Get in touch!                                   
                          </div>
@@ -414,9 +446,9 @@ Discuss any last minute changes, we will sort it out.
                          </div>    
                     </div>
           </div> */}
-
-               <Fade bottom>
-               <div id='app_land_stack_5'>
+     <div ref={query_ref}>
+               <Fade bottom >
+               <div id='app_land_stack_5' >
                          <div id='app_land_stack_5_lft_cont'>
                               <div id='app_land_stack_5_lft_sub_cont'>
                               <div id='app_land_stack_5_lft_cont_tit'>Got any questions for us?</div>
@@ -453,8 +485,8 @@ Discuss any last minute changes, we will sort it out.
                </div>
                </Fade>
                
-
-               <div id='app_land_stack_9'>
+               </div>
+               <div id='app_land_stack_9' >
                          <div id='app_land_stack_9_tit'>FAQ</div>          
                          <div id='app_land_stack_9_dat'>
                                    <div id='app_land_stack_9_dat_col_1'>

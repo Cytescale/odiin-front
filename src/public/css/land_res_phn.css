@@ -180,7 +180,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_head_logo_cont{
      height: 100%;
      width: 100%;
-padding-right: 3px;
+padding-right: 0px;
 display: flex;
   justify-content: center;
   align-items: center;
@@ -196,6 +196,7 @@ display: flex;
 #app_land_stack_1_lay_2_dat_head_logo{
 font-size: 21px;
 font-weight: 600;
+margin-left: -32px;
 font-family: quicksand;
 color:#000000;
 }
