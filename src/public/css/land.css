@@ -373,7 +373,7 @@ align-items: center;
      font-size: 27px;
      padding:0px;
      font-weight: 600;
-     background: #FFFFFF;
+     background: #fefefe;
      box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.15);
 
 }
@@ -920,6 +920,7 @@ border-bottom: 1px solid #000000;
      border-bottom: 1px solid #bdbdbd;
      text-align: center;
      padding:62px;
+     color:#000000;
      font-family: inter;
      font-size: 17px;
 }
@@ -957,10 +958,10 @@ background-color: #035946;
 }
 .app_land_stack_11_rgt_high{
      font-size:26px;
-     font-family:roboto;
+     font-family:quicksand;
      color:#000000;
      font-weight: 800;
-     margin-top: 22px;
+     margin-top: 12px;
 }
 .mail_ico{
      width: 28px;

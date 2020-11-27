@@ -22,11 +22,17 @@ import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_twitter.svg';
 import link_log from '../../assets/logo_link.svg';
 
+import icon2  from '../../assets/svg/icon2.svg';
+import icon3  from '../../assets/svg/icon3.svg';
+import icon4  from '../../assets/svg/icon4.svg';
+
 import git_log from '../../assets/logo_github.svg';
+import and1 from '../../assets/and1.png';
 import int_log from '../../assets/logo_inst.svg';
 import up_arrow from '../../assets/svg/up_arrow.svg';
 import menu_ico from '../../assets/svg/menu.svg';
 import mail_ico from '../../assets/svg/mail_outline.svg';
+import call_ico from '../../assets/svg/call.svg';
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -159,7 +165,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                   </div>
                                         
-                                   </div> 
+                                   </div>
                                    <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
                <div id='app_land_stack_1' ref={home_ref}>
@@ -262,7 +268,7 @@ export default class LandClass extends React.Component{
                     </div>
                     <div id='app_land_stack_12_rgt'>
                          <div id='app_land_stack_12_rgt_dat'>
-                              <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful desings into lines of code, offering you </div>
+                              <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful designs into lines of code, offering you </div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Best-in-class Technology.</div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Maximum Security.</div>
@@ -271,11 +277,13 @@ export default class LandClass extends React.Component{
                     </div>
                     </div>
                </div>
+               
                </Fade>:<span></span> }
                
                
 
                <div id='app_land_stack_3'>
+                    <div id='app_land_stack_3_bdy'>
                     <div id='app_land_stack_3_head_main_cont'>
                          What we provide?
                     </div>
@@ -363,9 +371,12 @@ Discuss any last minute changes, we will sort it out.
                                    </div>
 
                               </div>
+                              
                               </Fade>
                               </div>
                     </div>
+                    </div>
+                    
                </div>
                
                <div id='app_land_stack_11' ref={contact_ref}>
@@ -382,7 +393,9 @@ Discuss any last minute changes, we will sort it out.
 
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
-                                   <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch contact@cytescale.com</div>
+                                   <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
+                                   <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on <a id='app_land_stack_11_rgt_high_lnk'>+918668752239</a></div>
+                                   
                          </div>
                </div>
 
@@ -390,7 +403,7 @@ Discuss any last minute changes, we will sort it out.
                <div id='app_land_stack_4'>
                     
                          <div id='app_land_stack_4_head_main_cont'>
-                         Also, we offer you real-time order tracking that lets you keep us in check!
+                                   <div id='app_land_stack_4_head_main_cont_tit'>Also, we offer you real-time order tracking that lets you keep us in check!</div>
                          </div>
                          <div id='app_land_stack_4_data_cont'> 
                          <Carousel id='car'>
@@ -444,6 +457,43 @@ Discuss any last minute changes, we will sort it out.
                          </div>    
                     </div>
           </div> */}
+
+          <div id='app_land_stack_14'>
+               <div id='app_land_stack_14_lft'>
+                    <div id='app_land_stack_14_lft_tit' >
+                         Android Frontend
+                    </div>
+                    <div id='app_land_stack_14_lft_tit_sub' >
+                         We provide android front end solution with scaleable architecture,
+                         in various frameworks like Java native, React native and flutter.
+
+                    </div>
+               </div>
+               <div id='app_land_stack_14_rgt'>
+                         <div id='app_land_stack_14_rgt_phn_bdy'>
+                              <img src={and1} id='app_land_stack_14_rgt_phn_bdy_ico'></img> 
+                         </div>
+               </div>
+          </div>
+          <div id='app_land_stack_15'>
+          <div id='app_land_stack_15_lft'>
+                    <div id='app_land_stack_15_lft_tit' >
+                         Low Pricing
+                    </div>
+                    <div id='app_land_stack_15_lft_tit_sub' >
+                         Reducing your work by 50% and giving you a head start
+                         for as low as
+                    </div>
+                    <div id='app_land_stack_15_lft_tit_data'>
+                         $97
+                    </div>
+               </div>
+               <div id='app_land_stack_15_rgt'>
+                         
+               </div>
+          </div>
+
+
      <div ref={query_ref}>
                <Fade bottom >
                <div id='app_land_stack_5' >
@@ -513,9 +563,11 @@ Discuss any last minute changes, we will sort it out.
                                              <div id='app_land_stack_9_dat_ques_cont'>
                                                   <div id='app_land_stack_9_dat_ques_tit'>3. How to make a order?</div>
                                                   <div id='app_land_stack_9_dat_ques_ans'>
-                                                       You just have to contact us with the provided information or
-                                                       send us an email with designs attached and we will start our 
-                                                       work right way. No hastle no complications.
+                                                                                a) Send us an email which you'll find here.
+                                                                                Let's get talking! <br></br>
+                                                                                b) Submit your designs by attaching them to the mail. <br></br>
+                                                                                c) Make the Payment. <br></br>
+                                                                                d) Done! <br></br>
                                                   </div>
                                              </div>    
                                              <div id='app_land_stack_9_dat_ques_last_cont'>
@@ -535,14 +587,31 @@ Discuss any last minute changes, we will sort it out.
                </div>
 
 
-               <div id='app_land_stack_13'>
+               {/* <div id='app_land_stack_13'>
                          <div id='app_land_stack_13_lft'>
                               We knew you were interested
                          </div>
                          <div id='app_land_stack_13_rgt'>
                               Reach Us Now at Contact@cytescale.com
                          </div>
+               </div> */}
+
+               <div id='app_land_stack_16'>
+                         <div id='app_land_stack_16_pro'>
+
+                         </div>
+                         <div id='app_land_stack_16_data'>
+                              "I assure you best-in-class services
+                              from our end. No compromises."
+                         </div>
+                         <div id='app_land_stack_16_name'>
+                              Nishant Shete
+                         </div>
+                         <div id='app_land_stack_16_tit'>
+                              Co-founder
+                         </div>
                </div>
+
 {/* 
 
 
@@ -574,7 +643,7 @@ Discuss any last minute changes, we will sort it out.
                          <a className='app_land_stack_7_lnk_class' href='////www.facebook.com/Cytescale-104775144804086'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.twitter.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.instagram.com/cytescale?igshid=6dl3co5b77wz'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
-                         <a className='app_land_stack_7_lnk_class' href='////www.github.com/Cytescale'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a>
+                         {/* <a className='app_land_stack_7_lnk_class' href='////www.github.com/Cytescale'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a> */}
                          <a className='app_land_stack_7_lnk_class' href='////www.linkedin.com/in/cytescale-team-71208b1ab'><img className='app_land_stack_7_lnk_ico'src={link_log}></img></a>
                          </div>
                     </div>
