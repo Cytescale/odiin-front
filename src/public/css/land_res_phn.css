@@ -1463,7 +1463,7 @@ height: 100%;
 #app_land_stack_15_lft_tit{
      font-size: 28px;
      font-family: quicksand;
-     color: #37364D;
+     
      display: flex;
      justify-content: center;
      align-items: center;
@@ -1486,7 +1486,7 @@ height: 100%;
 
 
 #app_land_stack_15_lft_tit_data{
-     color:#3EDC80;
+     
      background: -webkit-linear-gradient( #3EDC80 , #51CBB0 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
