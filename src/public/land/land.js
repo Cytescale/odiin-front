@@ -519,7 +519,6 @@ Discuss any last minute changes, we will sort it out.
                </div>
           </div>:<span></span>}
 
-
           {this.state.windowWidth<850?
           <div id='app_land_stack_17'>
                <div id='app_land_stack_17_lft'>

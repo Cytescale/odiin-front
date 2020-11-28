@@ -654,7 +654,7 @@ display: flex;
 }
 #app_land_stack_4_head_main_cont{
      width: 100%;
-     background-color:#6363FF;
+     background: linear-gradient(131.81deg, #6363FF 0%, #9D9DFF 0.01%, #6363FF 102.58%);
      font-family: quicksand;
      font-style: normal;
      font-weight: bold;
@@ -786,7 +786,7 @@ padding:42px;
      width: 100%;
      height: 100%;
      padding: 0px;
-     padding-left: 22px;
+     padding-left: 42px;
      padding-bottom: 52px;
      margin: 0px;
      display: flex;
@@ -809,10 +809,10 @@ padding:42px;
      transform: skewY(4.5deg);
      transform-origin: 100%;
      background-color: #fefefe;
-     box-shadow: 0px 0px 5px rgb(1,1,1,0.3);
+     box-shadow: 0px 5px 10px rgb(1,1,1,0.2);
      border-radius: 0px;
      border-top-left-radius: 8px;
-     padding: 10px;
+     padding: 20px;
      border-bottom-left-radius: 8px;
 }
 
@@ -1415,6 +1415,10 @@ padding-top: 72px;
      line-height: 100%;
      padding:22px;
      color:#e0e0e0;
+     
+     background: -webkit-linear-gradient( #37C5F1 , #69EDA0);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
      font-family: Bebas Neue;
 }
 
@@ -1464,6 +1468,10 @@ height: 100%;
      justify-content: center;
      align-items: center;
      padding-bottom:10px;
+
+     background: -webkit-linear-gradient( #37C5F1 , #69EDA0 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 #app_land_stack_15_lft_tit_sub{
      font-family: quicksand;
@@ -1479,7 +1487,7 @@ height: 100%;
 
 
 #app_land_stack_15_lft_tit_data{
-     color:#6CFFA9;
+     color:#3EDC80;
      display: flex;
      justify-content: center;
      align-items: center;
