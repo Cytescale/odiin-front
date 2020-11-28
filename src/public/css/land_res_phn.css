@@ -81,8 +81,7 @@ height: 32px;
 #app_land_stack_1{
      height: 100vh;
      width: 100%;
-     background: linear-gradient(107.54deg, #74C3FF 0%, #1C9CFC 100%);
-     
+     background: linear-gradient(130.87deg, #4BC2F2 0%, #44B0FF 45.35%, #6363FF 98.94%);
      z-index: 20px;
 }
 .app_land_stack_1_lay_class{
@@ -99,7 +98,7 @@ height: 32px;
      position: absolute;
      bottom:0;
      left:0;
-     
+     display: none;
 }
 
 #tt{
@@ -135,7 +134,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_1_grid_cont{
      width:fit-content;
      height: fit-content;
-     display: none;
+     
   justify-content: center;
   align-items: center;     
      position: absolute;
@@ -150,7 +149,7 @@ background: #44AFFF;
 
 #app_land_stack_1_lay_2{
      width: 100%;
-     padding: 16px;
+     padding: 0px;
      height: 100%;
      
 }
@@ -159,7 +158,8 @@ background: #44AFFF;
      height: 100%;
      border-radius: 6px;
      border: 1px solid #fefefe;
-     box-shadow: 0px 0px 12px rgb(0,0,0,0.25);
+     border-style: none;
+     box-shadow: 0px 0px 0px rgb(0,0,0,0.25);
 }
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 62px;
@@ -253,7 +253,7 @@ color:#000000;
 #app_land_stack_1_lay_2_dat_head_ext_data{
      width: 100px;
      height: 100%;
-     display: flex;
+     
      justify-content: center;
      align-items: center;
      float: right;
@@ -284,9 +284,7 @@ color:#000000;
 #app_land_stack_1_lay_2_dat_bdy_cont{
 width: 100%;
 height:100%;
-display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 #the_x{
      
@@ -297,8 +295,15 @@ font-size: 62px;
 line-height: 121.5%;
 color: #145789;
 font-weight: 800;
-padding-left:16px;
+padding-left:0px;
 padding-right:16px;
+}
+
+#app_land_stack_1_lay_2_dat_bdy_cont_sub{
+     position: absolute;
+     left: 0;
+     bottom: 0; 
+     padding-bottom: 92px;     
 }
 
 #app_land_stack_1_lay_2_dat_bdy_main_moto_cont{
@@ -308,10 +313,11 @@ padding-right:16px;
 color:#FEFEFE;
 font-style: normal;
 font-weight: 800;
+padding:22px;
 font-size: 48px;
 display: block;
 align-items: center;
-text-align: center;
+text-align: left;
 justify-content: center;
 }
 #app_land_stack_1_lay_2_dat_bdy_sub_moto_cont{
@@ -322,25 +328,48 @@ color:#FEFEFE;
 font-weight: 500;
 font-size: 15px;
 line-height: 121.5%;
-text-align: center;
+text-align: left;
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
 #app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont{
-     margin-top: 22px;
-     width: 80%;
-     
+     margin-top: 0px;
+     width: 100%;
+     padding-left:22px;
+     padding-right:22px;
      font-family: quicksand;
-     font-weight: 400;
-     font-size: 17px;
+     font-weight: 500;
+     font-size: 20px;
      letter-spacing: 0.5;
      line-height: 150%;
 }
+
+@keyframes lmt_blink_anim {
+     from {
+          background-color: rgb(255,255,255,1);
+     }
+     to {
+          background-color: rgb(255,255,255,0);    
+     }
+   }
+
+#lmt_anim{
+     height: 45px;
+     width: 7px;
+     margin-bottom: -5px;
+     margin-left: 15px;
+     border-radius: 32px;
+     display: inline-flex;
+     animation-name: lmt_blink_anim;
+     animation-duration: 0.5s;
+     animation-iteration-count: infinite;
+}
+
 #app_land_stack_1_lay_2_ext_1_cont{
      position: absolute;
-
+     display: none;
      width: 300px;
      height: 300px;
      bottom:0;
