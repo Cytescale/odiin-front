@@ -82,6 +82,7 @@ height: 32px;
      height: 100vh;
      width: 100%;
      background: linear-gradient(107.54deg, #74C3FF 0%, #1C9CFC 100%);
+     
      z-index: 20px;
 }
 .app_land_stack_1_lay_class{
@@ -219,7 +220,7 @@ color:#000000;
      padding:72px;
 }
 .app_land_stack_1_lay_1_iph_cont_ico{
-     width: 70%;
+     width: 60%;
 }
 
 #app_land_stack_1_lay_2_dat_head_lnk_cont{
@@ -307,7 +308,7 @@ padding-right:16px;
 color:#FEFEFE;
 font-style: normal;
 font-weight: 800;
-font-size: 56px;
+font-size: 48px;
 display: block;
 align-items: center;
 text-align: center;
@@ -339,7 +340,7 @@ align-items: center;
 }
 #app_land_stack_1_lay_2_ext_1_cont{
      position: absolute;
-     display: none;
+
      width: 300px;
      height: 300px;
      bottom:0;
@@ -473,6 +474,7 @@ align-items: center;
 #app_land_stack_3_bdy{
      transform: skewY(-7.5deg);
      transform-origin: 100%;    
+     
 }
 
 #app_land_stack_3_head_main_cont{
@@ -486,10 +488,15 @@ align-items: center;
      display: flex;
      justify-content: center;
      align-items: center;         
-     padding:0;
+     padding: 0px;
      margin:0;
      background-color:  rgb(0,0,0,0.0);
 }
+#app_land_stack_3_head_main_cont_tit{
+     padding-bottom: 10px;
+     border-bottom: 2px solid #bdbdbd;
+}
+
 #app_land_stack_3_head_bdy_cont{
      height: 100%;
      width: 100%;
@@ -776,6 +783,7 @@ padding:42px;
      box-shadow: 0px 0px 5px rgb(1,1,1,0.3);
      border-radius: 0px;
      border-top-left-radius: 8px;
+     padding: 10px;
      border-bottom-left-radius: 8px;
 }
 
@@ -1409,8 +1417,8 @@ border-bottom-left-radius: 8px;
      height: auto;
      font-size:22px;
      font-weight: 700;
-     margin-bottom: 32px;
-     
+     padding-top: 52px;
+     padding-bottom: 52px;
      box-shadow: 0px -10px 22px rgb(0,0,0,0.09);
 }
 #app_land_stack_15_lft{
@@ -1470,6 +1478,17 @@ padding-bottom: 42px;
      padding:32px;
 
 }
+#app_land_stack_16_bg{
+    
+background: linear-gradient(134.27deg, rgba(196, 196, 196, 0) 13.63%, rgba(255, 255, 255, 0.29) 100%);
+     position: absolute;
+     width: 150px;
+     height: 150px;
+     border-radius: 320px;
+     margin:50px;
+     
+}
+
 #app_land_stack_16_pro{
      width: 52px;
      height: 52px;
@@ -1508,7 +1527,8 @@ padding-bottom: 42px;
      font-size:22px;
      font-weight: 700;
      padding-bottom:72px;
-     background: linear-gradient(130.87deg, #6AFFD2 0%, #4AB3FF 68.55%, #6363FF 98.94%);
+     
+background: linear-gradient(130.87deg, #4BC2F2 0%, #44B0FF 45.35%, #6363FF 98.94%);
 }
 #app_land_stack_17_lft{
 width:100%;
@@ -1542,6 +1562,14 @@ font-size:22px;
 padding-top: 42px;
 padding-bottom: 42px;
 }
+#app_land_stack_17_rgt_bg{
+position: absolute;
+padding:22px;
+}
+#app_land_stack_17_rgt_bg_ico{
+width: 90%;
+}
+
 #app_land_stack_17_rgt_bdy{
      width: 80%;
      height: 350px;

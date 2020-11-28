@@ -26,7 +26,7 @@ import * as emailjs from 'emailjs-com'
 import icon2  from '../../assets/svg/icon2.svg';
 import icon3  from '../../assets/svg/icon3.svg';
 import icon4  from '../../assets/svg/icon4.svg';
-
+import support_ico from '../../assets/svg/support.svg';
 import git_log from '../../assets/logo_github.svg';
 import and1 from '../../assets/and1.png';
 import int_log from '../../assets/logo_inst.svg';
@@ -36,6 +36,7 @@ import mail_ico from '../../assets/svg/mail_outline.svg';
 import call_ico from '../../assets/svg/call.svg';
 import test_co from '../../assets/test_co.png'
 import Rotate from 'react-reveal/Rotate';
+import Figma_trans_logo from '../../assets/figma_trans_logo.png';
 
 import { slide as Menu } from 'react-burger-menu'
 
@@ -278,7 +279,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >
-                                                            We bring your Design Vision to Reality with Robust and Fast Programming in Java Native, React Native or as your prefer
+                                                            We bring your Design Vision to Reality in Java Native, React Native or as your prefer
                                                             </div>
                                                             
                                                        </div>
@@ -341,7 +342,9 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_bdy'>
                     <div id='app_land_stack_3_head_main_cont'>
+                         <span id='app_land_stack_3_head_main_cont_tit'>
                          What we provide?
+                         </span>
                     </div>
                     <div id='app_land_stack_3_head_bdy_cont'> 
                               <div id='land_col_1'>
@@ -525,9 +528,12 @@ Discuss any last minute changes, we will sort it out.
                          Industry leading customer support before and 
                          even after the completion of orders.
                     </div>
-               </div>
+               </div><div id='app_land_stack_17_rgt_bg'>
+                         <img src={support_ico} id='app_land_stack_17_rgt_bg_ico'></img>
+                    </div>
                <Rotate top right>
                <div id='app_land_stack_17_rgt'>
+                    
                     <div id='app_land_stack_17_rgt_bdy'>
                          Contact us by any means, we are happy
                          to answer your any questions 
@@ -655,7 +661,7 @@ Discuss any last minute changes, we will sort it out.
 
 
                <div id='app_land_stack_10'>
-                    We handcrafted this website with proud and love 
+                    We handcrafted this website with pride and love 
                </div>
 
 
@@ -669,6 +675,9 @@ Discuss any last minute changes, we will sort it out.
                </div> */}
                {this.state.windowWidth<850?
                <div id='app_land_stack_16'>
+                    <div id='app_land_stack_16_bg'>
+
+                    </div>
                          <div id='app_land_stack_16_pro'>
                               <img src={test_co} id='app_land_stack_16_pro_ico'></img>
                          </div>
