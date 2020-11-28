@@ -275,9 +275,8 @@ export default class LandClass extends React.Component{
                                                             this.state.windowWidth<850?
                                                             <br></br>:<span></span>
                                                             }
-                                                            {
-                                                            this.state.windowWidth>850?
-                                                            <div id='the_x'>X</div>:<span></span>}  
+                                                          
+                                                            <div id='the_x'>X</div>
                                                             We Code<div id='lmt_anim'></div>
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
