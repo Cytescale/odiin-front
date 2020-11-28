@@ -660,6 +660,13 @@ display: flex;
      padding:32px;
      border-radius: 8px;
 }
+.app_setting_main_bdy_tit_main_sub_opt_cont_data{
+     width: 100%;
+     height: 100%;
+     color:#000000;
+     
+}
+
 
 #app_land_stack_5_lft_cont_sub_tit{
      color:#FEFEEF;
@@ -954,8 +961,11 @@ background-color: #035946;
      font-family:inter;
      padding:82px;
      font-size:20px;
-
 }
+
+
+
+
 .app_land_stack_11_rgt_high{
      font-size:22px;
      font-family:quicksand;

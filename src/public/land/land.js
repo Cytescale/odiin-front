@@ -34,6 +34,9 @@ import up_arrow from '../../assets/svg/up_arrow.svg';
 import menu_ico from '../../assets/svg/menu.svg';
 import mail_ico from '../../assets/svg/mail_outline.svg';
 import call_ico from '../../assets/svg/call.svg';
+import test_co from '../../assets/test_co.png'
+import Rotate from 'react-reveal/Rotate';
+
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -499,7 +502,7 @@ Discuss any last minute changes, we will sort it out.
                <div id='app_land_stack_14_rgt'>
                <Fade left>
                     <div id='app_land_stack_14_rgt_bg'>
-                        Designs <br></br>to<br></br>Reality<br></br>beautiful<br></br>Code
+                        Designs <br></br>to<br></br>Reality<br></br>in<br></br>beautiful<br></br>Code
                     </div>
                     </Fade>
                          <Fade right>
@@ -510,6 +513,29 @@ Discuss any last minute changes, we will sort it out.
                          </Fade>
                </div>
           </div>:<span></span>}
+
+
+          {this.state.windowWidth<850?
+          <div id='app_land_stack_17'>
+               <div id='app_land_stack_17_lft'>
+                    <div id='app_land_stack_17_lft_tit' >
+                         24/7 Support
+                    </div>
+                    <div id='app_land_stack_17_lft_tit_sub' >
+                         Industry leading customer support before and 
+                         even after the completion of orders.
+                    </div>
+               </div>
+               <Rotate top right>
+               <div id='app_land_stack_17_rgt'>
+                    <div id='app_land_stack_17_rgt_bdy'>
+                         Contact us by any means, we are happy
+                         to answer your any questions 
+                    </div>
+               </div>
+               </Rotate>
+          </div>:<span></span>}
+
 
           {this.state.windowWidth<850?
           <div id='app_land_stack_15'>
@@ -644,7 +670,7 @@ Discuss any last minute changes, we will sort it out.
                {this.state.windowWidth<850?
                <div id='app_land_stack_16'>
                          <div id='app_land_stack_16_pro'>
-
+                              <img src={test_co} id='app_land_stack_16_pro_ico'></img>
                          </div>
                          <div id='app_land_stack_16_data'>
                               "I assure you best-in-class services
@@ -698,3 +724,5 @@ Discuss any last minute changes, we will sort it out.
         </div>);
      }
 }
+
+// 6363FF
