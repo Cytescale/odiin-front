@@ -1463,14 +1463,11 @@ height: 100%;
 #app_land_stack_15_lft_tit{
      font-size: 28px;
      font-family: quicksand;
-     
+     color: #37364D;
      display: flex;
      justify-content: center;
      align-items: center;
      padding-bottom:10px;
-     background: -webkit-linear-gradient( #37C5F1 , #69EDA0 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
 }
 #app_land_stack_15_lft_tit_sub{
      font-family: quicksand;
@@ -1486,10 +1483,8 @@ height: 100%;
 
 
 #app_land_stack_15_lft_tit_data{
-     
-     background: -webkit-linear-gradient( #3EDC80 , #51CBB0 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+     color:#3EDC80;
+
      display: flex;
      justify-content: center;
      align-items: center;
