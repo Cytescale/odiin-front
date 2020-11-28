@@ -22,7 +22,6 @@ import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_twitter.svg';
 import link_log from '../../assets/logo_link.svg';
 import * as emailjs from 'emailjs-com'
-
 import icon2  from '../../assets/svg/icon2.svg';
 import icon3  from '../../assets/svg/icon3.svg';
 import icon4  from '../../assets/svg/icon4.svg';
@@ -37,12 +36,12 @@ import call_ico from '../../assets/svg/call.svg';
 import test_co from '../../assets/test_co.png'
 import Rotate from 'react-reveal/Rotate';
 import Figma_trans_logo from '../../assets/figma_trans_logo.png';
-
 import { slide as Menu } from 'react-burger-menu'
-
-
-
 import axios from 'axios';
+import { init } from 'ityped'
+
+
+
 export default class LandClass extends React.Component{
 
      constructor(props){
@@ -54,6 +53,7 @@ export default class LandClass extends React.Component{
             currSite:0,
             theposition: window.pageYOffset,
             windowWidth: window.innerWidth,
+            titletext:'Java',
             feedname:'',
             feedemail:'',
             feedcompany:'',
@@ -63,6 +63,8 @@ export default class LandClass extends React.Component{
           }
           this.querySubmit = this.querySubmit.bind(this);
           this.listenToScroll = this.listenToScroll.bind(this);
+          this.deleteChar = this.deleteChar.bind(this);
+          this.animText = this.animText.bind(this);
           
           this.listenToScroll();
 }
@@ -70,7 +72,7 @@ export default class LandClass extends React.Component{
   this.setState({ windowWidth: window.innerWidth });
  };
  componentDidMount() {
-    
+     
   window.addEventListener("resize", this.handleResize); 
  }
  componentWillUnmount() {
@@ -79,9 +81,20 @@ export default class LandClass extends React.Component{
      Animation = () => (
      <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
    )
-   
+
+deleteChar(d){
+         
+}
+
+animText(){
+          
+}
+
  componentDidMount() {
-     window.addEventListener('scroll', this.listenToScroll)
+     const myElement = document.querySelector('#lmt_anim_txt')
+     init(myElement, { backSpeed:50,backDelay:1500, showCursor: false, strings: ['Websites', 'Apps'] })
+     window.addEventListener('scroll', this.listenToScroll);
+     
    }
    
    componentWillUnmount() {
@@ -158,7 +171,7 @@ export default class LandClass extends React.Component{
      const contact_ref = React.createRef();
      const what_ref = React.createRef();
      const query_ref = React.createRef();
-
+    
      const height =
      document.documentElement.scrollHeight -
      document.documentElement.clientHeight;
@@ -187,7 +200,6 @@ export default class LandClass extends React.Component{
                               block: 'start',
                             });
                           }
-
          var setWid = (this.state.theposition*100)+"%";
         return(
         <div className='app_bdy_land_main_bdy'>
@@ -275,9 +287,16 @@ export default class LandClass extends React.Component{
                                                             this.state.windowWidth<850?
                                                             <br></br>:<span></span>
                                                             }
-                                                          
+                                                           
                                                             <div id='the_x'>X</div>
-                                                            We Code<div id='lmt_anim'></div>
+                                                            We Code
+                                                            {
+                                                            this.state.windowWidth<850?
+                                                            <div>
+                                                            <div id='lmt_anim_txt' >
+                                                            </div>
+                                                            <div id='lmt_anim'></div>
+                                                            </div>:<span></span>}
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >

@@ -13,6 +13,7 @@
     "emailjs": "^3.3.0",
     "emailjs-com": "^2.6.4",
     "history": "^5.0.0",
+    "ityped": "^1.0.3",
     "react": "^17.0.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.4.0",
