@@ -10,6 +10,8 @@
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "cookie-parser": "^1.4.5",
+    "emailjs": "^3.3.0",
+    "emailjs-com": "^2.6.4",
     "history": "^5.0.0",
     "react": "^17.0.1",
     "react-animate-on-scroll": "^2.1.5",
@@ -30,7 +32,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [

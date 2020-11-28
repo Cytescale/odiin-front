@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button} from 'react-bootstrap';
+import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button,Alert} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
@@ -21,6 +21,7 @@ import Fade from 'react-reveal/Fade';
 import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_twitter.svg';
 import link_log from '../../assets/logo_link.svg';
+import * as emailjs from 'emailjs-com'
 
 import icon2  from '../../assets/svg/icon2.svg';
 import icon3  from '../../assets/svg/icon3.svg';
@@ -48,12 +49,15 @@ export default class LandClass extends React.Component{
             logedUserId:null,
             currSite:0,
             theposition: window.pageYOffset,
-            windowWidth: window.innerWidth
+            windowWidth: window.innerWidth,
+            feedname:'',
+            feedemail:'',
+            feedcompany:'',
+            feedquery:'',
+            feederrcode:0,
+            feederr:'Empty Error'
           }
-
-          
-
-
+          this.querySubmit = this.querySubmit.bind(this);
           this.listenToScroll = this.listenToScroll.bind(this);
           
           this.listenToScroll();
@@ -95,7 +99,57 @@ export default class LandClass extends React.Component{
      })
    }
 
+   querySubmit(e){
+     e.preventDefault();
+     if(this.state.feedname===''||this.state.feedname===null){
+          this.setState({feederrcode:1,feederr:'Enter name'})
+          console.log("Detail EMPT");
+          return;
+     }
+     if(this.state.feedemail===''||this.state.feedemail===null){
+          this.setState({feederrcode:1,feederr:'Enter email address'})
+          console.log("Detail EMPT");
+          return;
+     }
+     if(this.state.feedquery===''||this.state.feedquery===null){
+          this.setState({feederrcode:1,feederr:'Enter your query'})
+          console.log("Detail EMPT");
+          return;
+     }
+     console.log(this.state.feedcompany+" "+this.state.feedname+" "+this.state.feedemail);
+     let templateParams = {
+          name:this.state.feedname,
+          from_name: this.state.feedemail,
+          to_name: 'support@cytescale.com',
+          subject: "Cytescale Query",
+          company: this.state.feedcompany,
+          message: this.state.feedquery,
+         }
+         emailjs.send(
+          'odin_email',
+          'template_tisfxse',
+           templateParams,
+          'user_pG1FPpxntH0JfibLEaJWt'
+         );
+      this.resetForm()
+   }
+
+   resetForm() {
+     this.setState({
+          feedname: '',
+       feedemail: '',
+       feedcompany: '',
+       feedquery: '',
+     })
+   }
+
+   handleQueryChange = (param, e) => {
+     this.setState({ [param]: e.target.value })
+   }
+ 
+
     render(){
+
      const home_ref = React.createRef();
      const contact_ref = React.createRef();
      const what_ref = React.createRef();
@@ -132,7 +186,6 @@ export default class LandClass extends React.Component{
 
          var setWid = (this.state.theposition*100)+"%";
         return(
-
         <div className='app_bdy_land_main_bdy'>
           {this.state.theposition>0.02?
           <div className='app_float_butt'>
@@ -394,7 +447,7 @@ Discuss any last minute changes, we will sort it out.
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
                                    <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
-                                   <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on <a id='app_land_stack_11_rgt_high_lnk'>+918668752239</a></div>
+                                   {/* <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on <br></br>+918668752239</div> */}
                                    
                          </div>
                </div>
@@ -431,33 +484,7 @@ Discuss any last minute changes, we will sort it out.
                          </div>
                </div>
                </Fade>
-{/* 
-               <div id='app_land_stack_8'>   
-                    
-                    <div className='app_land_stack_8_lft'>
-                              <img src={homesupportico} id='app_land_stack_8_lft_ico'></img>
-                              
-                    </div>
-                    <div className='app_land_stack_8_rgt'>
-                         <div>
-                         <div id='app_land_stack_8_rgt_tit'>We Never Leave You  </div>
-                         <div id='app_land_stack_8_rgt_tit_sub'>
-                              Best in class customer suppport
-                         </div>
-                         <div id='app_land_stack_8_rgt_dat'>
-                              At every moment before order completion and after
-                              order completion we never leave you , Our tech team
-                              and sales team are very happy to solve very queries.
-                              At every moment before order completion and after
-                              order completion we never leave you , Our tech team
-                              and sales team are very happy to solve very queries.
-                              
-
-                         </div>
-                         </div>    
-                    </div>
-          </div> */}
-
+               {this.state.windowWidth<850?
           <div id='app_land_stack_14'>
                <div id='app_land_stack_14_lft'>
                     <div id='app_land_stack_14_lft_tit' >
@@ -470,11 +497,21 @@ Discuss any last minute changes, we will sort it out.
                     </div>
                </div>
                <div id='app_land_stack_14_rgt'>
-                         <div id='app_land_stack_14_rgt_phn_bdy'>
+               <Fade left>
+                    <div id='app_land_stack_14_rgt_bg'>
+                        Designs <br></br>to<br></br>Reality<br></br>beautiful<br></br>Code
+                    </div>
+                    </Fade>
+                         <Fade right>
+                         <div id='app_land_stack_14_rgt_phn_bdy'>     
                               <img src={and1} id='app_land_stack_14_rgt_phn_bdy_ico'></img> 
-                         </div>
+                           
+                         </div>    
+                         </Fade>
                </div>
-          </div>
+          </div>:<span></span>}
+
+          {this.state.windowWidth<850?
           <div id='app_land_stack_15'>
           <div id='app_land_stack_15_lft'>
                     <div id='app_land_stack_15_lft_tit' >
@@ -491,11 +528,12 @@ Discuss any last minute changes, we will sort it out.
                <div id='app_land_stack_15_rgt'>
                          
                </div>
-          </div>
+               </div>:<span></span>
+          }
 
 
      <div ref={query_ref}>
-               <Fade bottom >
+        
                <div id='app_land_stack_5' >
                          <div id='app_land_stack_5_lft_cont'>
                               <div id='app_land_stack_5_lft_sub_cont'>
@@ -510,29 +548,37 @@ Discuss any last minute changes, we will sort it out.
                          </div>
                          <div id='app_land_stack_5_rgt_cont'>
                               <div id='app_land_stack_5_rgt_cont_form_cont'>
+                                   <form onSubmit={this.querySubmit}>  
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Full Name*</div>
-                                   <input type='text' placeholder='Enter full name' className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                   <input type='text' placeholder='Enter full name'     value={this.state.feedname}  onChange={this.handleQueryChange.bind(this, 'feedname')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
                                         </div>
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Email Address*</div>
-                                   <input type='text' placeholder='Enter email address' className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
-                                        </div>
+                                   <input type='text' placeholder='Enter email address' value={this.state.feedemail} onChange={this.handleQueryChange.bind(this, 'feedemail')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                        </div> 
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Company Name</div>
-                                   <input type='text' placeholder='Enter company name' className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                   <input type='text' placeholder='Enter company name if any' value={this.state.feedcompany} onChange={this.handleQueryChange.bind(this, 'feedcompany')}  className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
                                         </div>
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
                                    <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query</div>
-                                        <textarea id='app_land_stack_5_rgt_cont_txt'></textarea>
+                                        <textarea id='app_land_stack_5_rgt_cont_txt' value={this.state.feedquery} onChange={this.handleQueryChange.bind(this, 'feedquery')}></textarea>
                                         </div>
-                                        <Button variant='success'className='app_land_stack_5_rgt_cont_form_cont_sub_butt'>Submit</Button>
+                                        {
+                                        this.state.feederrcode===1?                                
+                                        <Alert variant='danger'>
+                                        {this.state.feederr}
+                                        </Alert>:<span></span>
+                                        }
+
+
+                                        <Button variant='success' type='submit' className='app_land_stack_5_rgt_cont_form_cont_sub_butt'>Submit</Button>
+                                        </form>
                               </div>
 
                          </div>
-               </div>
-               </Fade>
-               
+               </div>     
                </div>
                <div id='app_land_stack_9' >
                          <div id='app_land_stack_9_tit'>FAQ</div>          
@@ -595,7 +641,7 @@ Discuss any last minute changes, we will sort it out.
                               Reach Us Now at Contact@cytescale.com
                          </div>
                </div> */}
-
+               {this.state.windowWidth<850?
                <div id='app_land_stack_16'>
                          <div id='app_land_stack_16_pro'>
 
@@ -610,9 +656,9 @@ Discuss any last minute changes, we will sort it out.
                          <div id='app_land_stack_16_tit'>
                               Co-founder
                          </div>
-               </div>
+               </div>:<span></span>}
 
-{/* 
+{/*
 
 
                <div id='app_land_stack_6'>
