@@ -313,12 +313,11 @@ padding-right:16px;
 #app_land_stack_1_lay_2_dat_bdy_main_moto_cont{
 
 margin-top: 10%;
-     font-family: inter;
+     font-family: Quicksand;
   display: flex;
 justify-content: center;
 align-items: center;
 color:#FEFEFE;
-font-family: Inter;
 font-style: normal;
 font-weight: bold;
 font-size: 57px;
@@ -551,6 +550,12 @@ display: flex;
      font-weight: 600;
      margin-top:32px;
 }
+
+#app_land_stack_3_head_main_cont_tit{
+     padding-bottom: 10px;
+     border-bottom: 2px solid #bdbdbd;
+}
+
 
 .app_land_stack_3_head_bdy_dat_ico_class_ico{
      height: 150px;
