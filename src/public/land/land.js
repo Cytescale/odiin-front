@@ -344,8 +344,8 @@ animText(){
                          <div id='app_land_stack_12_rgt_dat'>
                               <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful designs into lines of code, offering you </div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Flexible Code.</div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Pixel Perfect UI.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Flexible Code.</div>
                          </div>
 
                     </div>
@@ -360,7 +360,7 @@ animText(){
                     <div id='app_land_stack_3_bdy'>
                     <div id='app_land_stack_3_head_main_cont'>
                          <span id='app_land_stack_3_head_main_cont_tit'>
-                         What we provide?
+                         What do we provide?
                          </span>
                     </div>
                     <div id='app_land_stack_3_head_bdy_cont'> 
