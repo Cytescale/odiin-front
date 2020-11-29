@@ -296,7 +296,7 @@ animText(){
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >
-                                                            We bring your Design Vision to Reality in Java Native, React Native or as your prefer
+                              We bring your Design Vision into Reality with advanced Front-end Solutions {this.state.windowWidth>850?<br></br>:<span></span>} in Java native, React native or as you prefer.
                                                             </div>
                                                             
                                                        </div>
@@ -344,8 +344,8 @@ animText(){
                          <div id='app_land_stack_12_rgt_dat'>
                               <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful designs into lines of code, offering you </div>
                          <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Best-in-class Technology.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Maximum Security.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Flexible Code.</div>
+                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Pixel Perfect UI.</div>
                          </div>
 
                     </div>
@@ -515,15 +515,15 @@ animText(){
                          Android Frontend
                     </div>
                     <div id='app_land_stack_14_lft_tit_sub' >
-                    We provide Android Front-End Solutions with Flexible Code and Scalable Architecture,
-                    in various Frameworks like Java Native, React Native and Flutter.
+                    We provide Android Front-end Solutions with Flexible Code and Scalable Architecture,
+                    in various Frameworks like Java native, React native and Flutter.
 
                     </div>
                </div>
                <div id='app_land_stack_14_rgt'>
                <Fade left>
                     <div id='app_land_stack_14_rgt_bg'>
-                        Designs <br></br>to<br></br>Reality<br></br>in<br></br>beautiful<br></br>Code
+                        Designs <br></br>to<br></br>Reality<br></br>in<br></br>Flexible<br></br>Code
                     </div>
                     </Fade>
                          <Fade right>
@@ -542,8 +542,8 @@ animText(){
                          24/7 Support
                     </div>
                     <div id='app_land_stack_17_lft_tit_sub' >
-                    We will be Constantly Connected to you during the Project.
-                    Just a Chat/Call away!
+                    We will be constantly Connected to you during the Project.
+                    Just a chat/call away!
                     </div>
                </div><div id='app_land_stack_17_rgt_bg'>
                          <img src={support_ico} id='app_land_stack_17_rgt_bg_ico'></img>
@@ -558,7 +558,7 @@ animText(){
                     Got an issue? Consider it solved, we will be just a call away!
                     You could contact us without hesitation.
                     The Responsive support from our side is what our customers like the most.
-                    Mail -- Chat -- Call
+                    <br></br>Mail -- Chat -- Call
                     </div>
                </div>
                </Rotate>
@@ -711,7 +711,7 @@ animText(){
                                              <div id='app_land_stack_9_dat_ques_cont'>
                                                   <div id='app_land_stack_9_dat_ques_tit'>3. How to make a order?</div>
                                                   <div id='app_land_stack_9_dat_ques_ans'>
-                                                                                To get on board with us, you just need to follow these steps <br></br>
+                                                                                
                                                                                 a) Send us an email which you'll find here.
                                                                                 Let's get talking! <br></br>
                                                                                 b) Submit your designs by attaching them to the mail. <br></br>
