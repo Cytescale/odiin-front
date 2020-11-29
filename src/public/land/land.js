@@ -373,7 +373,7 @@ animText(){
                                         </div>
                                         <div className='app_land_stack_3_head_bdy_dat_info_class'>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_tit'>
-                                             We Accept Everything!    
+                                             Wide range of choice    
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
                                         Designs in every format are accepted. Photoshop, Figma, Adobe XD you name it!
