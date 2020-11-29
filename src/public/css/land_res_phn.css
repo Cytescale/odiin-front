@@ -9,11 +9,10 @@
 
 #app_prog_cont{
      width:50%;
-     height: 12px;
-     background: linear-gradient(90deg, #A8D9FF 0%, #6EBFFC 100%);
+     height: 7px;
+     background: #6CFFA9;
      border-top-right-radius: 32px;
      border-bottom-right-radius: 32px;
-     
      z-index:22;     
      
 }
@@ -1537,9 +1536,9 @@ height: 100%;
  border-bottom: 1px solid #e0e0e0;
 }
 .app_land_stack_15_lft_1_class_data{
-color: #37364D;
+color: #2549AF;
 font-family: quicksand;
-font-size: 17px;
+font-size: 20px;
 font-weight: 400;
 margin-top: 12px;
 }

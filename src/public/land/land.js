@@ -337,7 +337,7 @@ animText(){
                
                     <div id='app_land_stack_12_lft'>
                                                        <div id='app_land_stack_12_lft_dat'>
-                              We Make Your{this.state.windowWidth<850?<br></br>:<span></span>}Life Easier!
+                              We Make Your {this.state.windowWidth<850?<br></br>:<span></span>}Life Easier!
                                                        </div>
                     </div>
                     <div id='app_land_stack_12_rgt'>
@@ -470,7 +470,7 @@ Discuss any last minute changes, we will sort it out.
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
                                    <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
-                                   {/* <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on <br></br>+918668752239</div> */}
+                              <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on{this.state.windowWidth<850?<br></br>:<span></span>} +918668752239</div>
                                    
                          </div>
                </div>
