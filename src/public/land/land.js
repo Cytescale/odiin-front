@@ -585,8 +585,8 @@ animText(){
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_sub'>
                               Made for single layout
-                              Android application or website with
-                              industry standard code for low as.
+                              Android application or website.
+                              <br></br>Eg porfolios, blogs, etc.
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                               27$
@@ -603,8 +603,8 @@ animText(){
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_sub'>
                               Made for multi layout
-                              Android application or website with
-                              industry standard code for low as.
+                              Android applications or websites with
+                              industry standard code and dedicated support.
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                               97$
@@ -613,7 +613,7 @@ animText(){
                     <Fade right>
                     <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
                               <div  className='app_land_stack_15_lft_1_class_tit'>
-                                   Agencies
+                                   Business
                                    </div>
                                    <div  className='app_land_stack_15_lft_1_class_data'>
                               For Complex projects
@@ -640,10 +640,10 @@ animText(){
                          <div id='app_land_stack_5_lft_cont'>
                               <div id='app_land_stack_5_lft_sub_cont'>
                               <div id='app_land_stack_5_lft_cont_tit'>Got any questions for us?</div>
-                              <div id='app_land_stack_5_lft_cont_sub_tit'>Contact Us at support@cytescale.com
+                              <div id='app_land_stack_5_lft_cont_sub_tit'>Contact us at support@cytescale.com
                               or Submit a query here </div>
 
-                              <div className='app_land_stack_5_lft_cont_sub_data_tit'>Talk to our great sales guys</div>
+                              <div className='app_land_stack_5_lft_cont_sub_data_tit'>Talk to our skilled team.</div>
                               <div className='app_land_stack_5_lft_cont_sub_data'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_5_lft_cont_sub_data_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Instant Responses</div>
                               <div className='app_land_stack_5_lft_cont_sub_data'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_5_lft_cont_sub_data_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Solution Assured</div>
                               </div>
@@ -664,7 +664,7 @@ animText(){
                                    <input type='text' placeholder='Enter company name if any' value={this.state.feedcompany} onChange={this.handleQueryChange.bind(this, 'feedcompany')}  className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
                                         </div>
                                         <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
-                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query</div>
+                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query*</div>
                                         <textarea id='app_land_stack_5_rgt_cont_txt' value={this.state.feedquery} onChange={this.handleQueryChange.bind(this, 'feedquery')}></textarea>
                                         </div>
                                         {
@@ -735,8 +735,7 @@ animText(){
 
 
                <div id='app_land_stack_10'>
-               We handcrafted this website with Pride and Love!
-               Thanks for checking us out! ;)
+               We handcrafted this website with Pride and Love &#x2665;
                </div>
 
 
