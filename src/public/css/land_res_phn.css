@@ -357,6 +357,12 @@ align-items: center;
      }
    }
 
+
+   #lmt_anim_txt_bdy{
+     display: block;
+     margin-left: 22px;
+}
+
 #lmt_anim{
      height: 38px;
      width: 7px;
@@ -1166,12 +1172,14 @@ background-color: rgb(0,0,0,0.0);
      width: 32px;
      height: 32px;
      margin:16px;
-     
+   }
+   .menu-item{
+     font-family: quicksand;   
    }
    #menu{
      
      height: 100vh;
-
+     font-family: quicksand;
    }
    
    /* Color/shape of burger icon bars */
@@ -1382,7 +1390,7 @@ text-align: center;
      height: auto;
      font-size:22px;
      font-weight: 700;
-     
+     padding:0px;
 padding-bottom:72px;
 }
 #app_land_stack_14_lft{
@@ -1451,6 +1459,7 @@ border-bottom-left-radius: 8px;
 }
 
 
+
 /*/////////////////////////////////////////////////*/
 
 #app_land_stack_15{
@@ -1458,20 +1467,23 @@ border-bottom-left-radius: 8px;
      display: inline-block;
      height: auto;
      font-size:22px;
+     margin: 0px;
+     padding: 0px;
      font-weight: 700;
      padding-top: 52px;
-     padding-bottom: 52px;
+     padding-bottom: 72px;
+     background-color: #F3F3F9;
      box-shadow: 0px -10px 22px rgb(0,0,0,0.09);
 }
 #app_land_stack_15_lft{
 width:100%;
-padding:42px;
+padding-top: 62px;
 text-align: left;
 height: 100%;
 }
 #app_land_stack_15_lft_tit{
-     font-size: 28px;
-     font-family: quicksand;
+     font-size: 32px;
+     font-family: roboto;
      color: #37364D;
      display: flex;
      justify-content: center;
@@ -1480,39 +1492,100 @@ height: 100%;
 }
 #app_land_stack_15_lft_tit_sub{
      font-family: quicksand;
-     font-size: 21px;
+     font-size: 17px;
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
-     margin-top: 10px;
      line-height: 170%;
      font-weight: 400;
+     padding-left: 32px;
+     padding-right: 32px;
 }
 
 
 #app_land_stack_15_lft_tit_data{
      color:#3EDC80;
-
-     display: flex;
+     display: block;
      justify-content: center;
      align-items: center;
      text-align: center;
      width: 100%; 
-     padding-top: 10px;  
+     padding-top:22px;  
+     padding-left: 22px;
+     padding-right: 22px;
+}
+
+
+
+.app_land_stack_15_lft_1_class{
+     width: 100%;
+     height: 400px;
+     margin:0px;
+     margin-top: 22px;
+     border-radius: 8px;
+     background-color: #fefefe;
+     box-shadow: 0px 6px 7px rgb(0, 0, 0,0.04);
+}
+
+
+.app_land_stack_15_lft_1_class_tit{
+ color:#37364D;    
+ padding:22px;
+ padding-top: 32px;
+ font-family: quicksand;
+ border-bottom: 1px solid #e0e0e0;
+}
+.app_land_stack_15_lft_1_class_data{
+color: #37364D;
+font-family: quicksand;
+font-size: 17px;
+font-weight: 400;
+margin-top: 12px;
+}
+
+.app_land_stack_15_lft_1_class_data_sub{
+     color: #37364D;
+font-family: quicksand;
+font-size: 16px;
+margin-top: 32px;
+padding:20px;
+padding-top: 10px;
+font-weight: 400;
+}
+.app_land_stack_15_lft_1_class_data_cost{
+ font-family: quicksand;
+     font-size: 62px;    
+}
+
+@keyframes contact_butt {
+     from {
+          background-color: #fefefe;
+          color:#2549AF;
+     }
+     to {
+          background-color: #2549AF;
+          color:#fefefe;
+     }
+   }
+.app_land_stack_15_lft_1_class_data_cost_butt{
+     width: 60%;
+     height: 42px;
+     border: 1px solid #2549AF;
+     color: #2549AF;
+     background-color: #fefefe;
+     border-radius: 8px;
      font-family: quicksand;
-     font-size: 62px;
+     font-weight: 400;
+     font-size: 20px;
+     
 
 }
-
-#app_land_stack_15_rgt{
-width:100%;
-height: 100%;
-display: block;
-font-size:22px;
-padding-bottom: 42px;
+.app_land_stack_15_lft_1_class_data_cost_butt:hover{
+     animation-name: contact_butt;
+     animation-duration: 0.5s;
+     animation-fill-mode: forwards;
 }
-
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_16{
      background-color: #000000;
@@ -1531,6 +1604,11 @@ background: linear-gradient(134.27deg, rgba(196, 196, 196, 0) 13.63%, rgba(255, 
      margin:50px;
      
 }
+
+#app_land_stack_16_cont{
+     width: 100%;
+}
+
 
 #app_land_stack_16_pro{
      width: 72px;
@@ -1569,6 +1647,7 @@ background: linear-gradient(134.27deg, rgba(196, 196, 196, 0) 13.63%, rgba(255, 
      height: auto;
      font-size:22px;
      font-weight: 700;
+     padding-top:0px;
      padding-bottom:72px;
      
 background: linear-gradient(130.87deg, #4BC2F2 0%, #44B0FF 45.35%, #6363FF 98.94%);
@@ -1611,6 +1690,9 @@ padding:22px;
 }
 #app_land_stack_17_rgt_bg_ico{
 width: 90%;
+display: block;
+margin-left:00%;
+
 }
 
 #app_land_stack_17_rgt_bdy{

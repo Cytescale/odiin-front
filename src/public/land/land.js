@@ -213,7 +213,7 @@ animText(){
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
-                                                       <Menu id='menu' width={ '70%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
+                                                       <Menu id='menu' width={ '100%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
                                                        <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
                                                        <a id="contact" className="menu-item"  onClick={scrollContact}>Contact</a>
                                                        <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
@@ -282,21 +282,17 @@ animText(){
                                         <div id='app_land_stack_1_lay_2_dat_bdy_cont'>
                                              <div id='app_land_stack_1_lay_2_dat_bdy_cont_sub'>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_main_moto_cont'>
+                                                            <div id='app_land_stack_1_lay_2_dat_bdy_main_moto_cont_bdy'>
                                                             You Design 
-                                                            {
-                                                            this.state.windowWidth<850?
-                                                            <br></br>:<span></span>
-                                                            }
-                                                           
+                                                            <br></br>
                                                             <div id='the_x'>X</div>
                                                             We Code
-                                                            {
-                                                            this.state.windowWidth<850?
-                                                            <div>
+                                                            <div id='lmt_anim_txt_bdy' >
                                                             <div id='lmt_anim_txt' >
                                                             </div>
                                                             <div id='lmt_anim'></div>
-                                                            </div>:<span></span>}
+                                                            </div>
+                                                            </div>
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_cont'>
                                                             <div id='app_land_stack_1_lay_2_dat_bdy_sub_moto_dat_cont' >
@@ -334,14 +330,14 @@ animText(){
                          
 
                </div>
-               {this.state.windowWidth<850?
+            
      <Fade bottom> 
                <div id='app_land_stack_12'>
                     <div id='app_land_stack_12_dat'>
                
                     <div id='app_land_stack_12_lft'>
                                                        <div id='app_land_stack_12_lft_dat'>
-                                                       We Make Your<br></br>Life Easier!
+                              We Make Your{this.state.windowWidth<850?<br></br>:<span></span>}Life Easier!
                                                        </div>
                     </div>
                     <div id='app_land_stack_12_rgt'>
@@ -356,7 +352,7 @@ animText(){
                     </div>
                </div>
                
-               </Fade>:<span></span> }
+               </Fade>
                
                
 
@@ -511,7 +507,7 @@ Discuss any last minute changes, we will sort it out.
                          </div>
                </div>
                </Fade>
-               {this.state.windowWidth<850?
+               
           <div id='app_land_stack_14'>
                <div id='app_land_stack_14_lft'>
                     <div id='app_land_stack_14_lft_tit' >
@@ -536,9 +532,9 @@ Discuss any last minute changes, we will sort it out.
                          </div>    
                          </Fade>
                </div>
-          </div>:<span></span>}
+          </div>
 
-          {this.state.windowWidth<850?
+          
           <div id='app_land_stack_17'>
                <div id='app_land_stack_17_lft'>
                     <div id='app_land_stack_17_lft_tit' >
@@ -560,10 +556,10 @@ Discuss any last minute changes, we will sort it out.
                     </div>
                </div>
                </Rotate>
-          </div>:<span></span>}
+          </div>
 
 
-          {this.state.windowWidth<850?
+
           <div id='app_land_stack_15'>
           <div id='app_land_stack_15_lft'>
                     <div id='app_land_stack_15_lft_tit' >
@@ -574,14 +570,63 @@ Discuss any last minute changes, we will sort it out.
                          for as low as
                     </div>
                     <div id='app_land_stack_15_lft_tit_data'>
-                         $97
+                    <Fade left>
+                    <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
+                              <div  className='app_land_stack_15_lft_1_class_tit'>
+                              Essential     
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data'>
+                              For single layout projects
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_sub'>
+                              Made for single layout
+                              Android application or website with
+                              industry standard code for low as.
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_cost'>
+                              27$
+                              </div>
+                    </div>
+                    </Fade>
+                    <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
+
+                    <div  className='app_land_stack_15_lft_1_class_tit'>
+                              Pro
+                    </div>
+                              <div  className='app_land_stack_15_lft_1_class_data'>
+                              For multi layout projects
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_sub'>
+                              Made for multi layout
+                              Android application or website with
+                              industry standard code for low as.
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_cost'>
+                              97$
+                              </div>
+                    </div>
+                    <Fade right>
+                    <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
+                              <div  className='app_land_stack_15_lft_1_class_tit'>
+                                   Agencies
+                                   </div>
+                                   <div  className='app_land_stack_15_lft_1_class_data'>
+                              For Complex projects
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_sub'>
+                                   Made for complicated projects 
+                                   for agencies and companies,
+                                   working closely with teams.
+                              </div>
+                              <div  className='app_land_stack_15_lft_1_class_data_cost'>
+                                   <button className='app_land_stack_15_lft_1_class_data_cost_butt'  onClick={scrollContact}>Contact Us</button>
+                              </div>
+                    </div>
+                    </Fade>
                     </div>
                </div>
-               <div id='app_land_stack_15_rgt'>
-                         
                </div>
-               </div>:<span></span>
-          }
+          
 
 
      <div ref={query_ref}>
@@ -693,11 +738,12 @@ Discuss any last minute changes, we will sort it out.
                               Reach Us Now at Contact@cytescale.com
                          </div>
                </div> */}
-               {this.state.windowWidth<850?
+               
                <div id='app_land_stack_16'>
                     <div id='app_land_stack_16_bg'>
 
                     </div>
+                         <div id='app_land_stack_16_cont'>
                          <div id='app_land_stack_16_pro'>
                               <img src={test_co} id='app_land_stack_16_pro_ico'></img>
                          </div>
@@ -711,7 +757,8 @@ Discuss any last minute changes, we will sort it out.
                          <div id='app_land_stack_16_tit'>
                               Co-founder
                          </div>
-               </div>:<span></span>}
+                         </div>
+               </div>
 
 {/*
 
