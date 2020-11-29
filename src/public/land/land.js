@@ -209,11 +209,11 @@ animText(){
           </div>:<span></span>}
           {this.state.windowWidth<850?this.state.theposition>0.02?<a onClick={scrollHome}><div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div></a>:<span></span>:<span></span>}
 
-
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
                                                        <Menu id='menu' width={ '100%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
+                                                       
                                                        <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
                                                        <a id="contact" className="menu-item"  onClick={scrollContact}>Contact</a>
                                                        <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
@@ -586,7 +586,7 @@ animText(){
                               <div  className='app_land_stack_15_lft_1_class_data_sub'>
                               Made for single layout
                               Android application or website.
-                              <br></br>Eg porfolios, blogs, etc.
+                              <br></br>Eg: porfolios, blogs, etc.
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                               27$
