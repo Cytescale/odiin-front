@@ -395,8 +395,8 @@ animText(){
                                              Trackable Orders    
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
-                                             Updates of your order will be uploaded on GitHub repositories.
-Easy development tracking, right?
+                                             Updates of your order will be uploaded on GitHub repositories frequently during the project. 
+                                             Easy development tracking, right?
                                              </div>
                                         </div>
                                    </div>
@@ -420,7 +420,8 @@ Easy development tracking, right?
                                              </div>
                                              <div className='app_land_stack_3_head_bdy_dat_info_class_data'>
                                              Chat with our supportive development team. 
-Discuss any last minute changes, we will sort it out.
+                                             Discuss any last minute changes, we will sort it out. Once we are on board together, contact us any time you want.
+
                                              </div>
                                         </div>
                                    </div>
@@ -514,8 +515,8 @@ Discuss any last minute changes, we will sort it out.
                          Android Frontend
                     </div>
                     <div id='app_land_stack_14_lft_tit_sub' >
-                         We provide android front end solution with scaleable architecture,
-                         in various frameworks like Java native, React native and flutter.
+                    We provide Android Front-End Solutions with Flexible Code and Scalable Architecture,
+                    in various Frameworks like Java Native, React Native and Flutter.
 
                     </div>
                </div>
@@ -541,8 +542,8 @@ Discuss any last minute changes, we will sort it out.
                          24/7 Support
                     </div>
                     <div id='app_land_stack_17_lft_tit_sub' >
-                         Industry leading customer support before and 
-                         even after the completion of orders.
+                    We will be Constantly Connected to you during the Project.
+                    Just a Chat/Call away!
                     </div>
                </div><div id='app_land_stack_17_rgt_bg'>
                          <img src={support_ico} id='app_land_stack_17_rgt_bg_ico'></img>
@@ -551,8 +552,13 @@ Discuss any last minute changes, we will sort it out.
                <div id='app_land_stack_17_rgt'>
                     
                     <div id='app_land_stack_17_rgt_bdy'>
-                         Contact us by any means, we are happy
-                         to answer your any questions 
+                    We will be readily available to be in touch with you throughout the development days
+                    (even after that, if a need occurs).
+                    Our team is well-equipped to solve all your queries in absolutely no time.
+                    Got an issue? Consider it solved, we will be just a call away!
+                    You could contact us without hesitation.
+                    The Responsive support from our side is what our customers like the most.
+                    Mail -- Chat -- Call
                     </div>
                </div>
                </Rotate>
@@ -566,8 +572,7 @@ Discuss any last minute changes, we will sort it out.
                          Low Pricing
                     </div>
                     <div id='app_land_stack_15_lft_tit_sub' >
-                         Reducing your work by 50% and giving you a head start
-                         for as low as
+                         By reducing your Work by 50%, we can literally give you a Headstart in your Tech Journey for
                     </div>
                     <div id='app_land_stack_15_lft_tit_data'>
                     <Fade left>
@@ -706,6 +711,7 @@ Discuss any last minute changes, we will sort it out.
                                              <div id='app_land_stack_9_dat_ques_cont'>
                                                   <div id='app_land_stack_9_dat_ques_tit'>3. How to make a order?</div>
                                                   <div id='app_land_stack_9_dat_ques_ans'>
+                                                                                To get on board with us, you just need to follow these steps <br></br>
                                                                                 a) Send us an email which you'll find here.
                                                                                 Let's get talking! <br></br>
                                                                                 b) Submit your designs by attaching them to the mail. <br></br>
@@ -714,9 +720,12 @@ Discuss any last minute changes, we will sort it out.
                                                   </div>
                                              </div>    
                                              <div id='app_land_stack_9_dat_ques_last_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>4. What kind of frontend solutions we offer?</div>
-                                                  <div id='app_land_stack_9_dat_ques_ans'>We provide frontend solutions for websites , webpages and andriod application in native code or in frameworks such as
-                                                  React, React Native , Java Native
+                                                  <div id='app_land_stack_9_dat_ques_tit'>4. What if I need a fully functional Website/App?</div>
+                                                  <div id='app_land_stack_9_dat_ques_ans'> We primarily offer Frontend solutions. But, if you just have an idea and 
+                                                                                          you want a complete app/website done, ask us for the details and we might have 
+                                                                                          something in the bag for you.
+                                                                                          In a scenario, where you want designs, frontend and backend of a website or an app, contact us and
+                                                                                          lets see what we can do for you.
                                                   </div>
                                              </div>
                                              
@@ -726,7 +735,8 @@ Discuss any last minute changes, we will sort it out.
 
 
                <div id='app_land_stack_10'>
-                    We handcrafted this website with pride and love 
+               We handcrafted this website with Pride and Love!
+               Thanks for checking us out! ;)
                </div>
 
 
