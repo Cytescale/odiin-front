@@ -591,6 +591,10 @@ animText(){
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                               27$
                               </div>
+                              <div className='app_land_stack_15_lft_1_get_butt'>
+
+                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now!</a>
+                              </div>
                     </div>
                     </Fade>
                     <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
@@ -608,6 +612,9 @@ animText(){
                               </div>
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                               97$
+                              </div>
+                              <div className='app_land_stack_15_lft_1_get_butt'>
+                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now!</a>
                               </div>
                     </div>
                     <Fade right>

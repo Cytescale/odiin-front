@@ -1428,7 +1428,7 @@ height: 100%;
 
 .app_land_stack_15_lft_1_class{
      width: 22%;
-     height: 400px;
+     height: 430px;
      margin:22px;
      border-radius: 8px;
      background-color: #fefefe;
@@ -1464,8 +1464,44 @@ font-weight: 400;
  font-family: quicksand;
      font-size: 62px;    
 }
+.app_land_stack_15_lft_1_get_butt{
+     width: 100%;
+     margin-top: 10px;
+    
+}
+.app_land_stack_15_lft_1_get_butt_lnk{
+     border: 1px solid #2549AF;
+     font-family: quicksand;
+     font-weight: 500;
+     width: 100%;
+     color: #fefefe;
+     padding:7px;
+     font-size: 17px;
+     padding-left: 40px;
+     padding-right: 40px;
+     border-radius: 7px;
+     height: 72px;
+     background-color: #2549AF;
+}
 
-@keyframes contact_butt {
+.app_land_stack_15_lft_1_get_butt_lnk:hover{
+     text-decoration: none;
+     animation-name: get_butt;
+     animation-duration: 0.5s;
+     animation-fill-mode: forwards;
+}
+@keyframes get_butt {
+     from {
+          background-color: #2549AF;
+          color:#fefefe;
+     }
+     to {
+          background-color: #fefefe;
+          color:#2549AF;
+          
+     }
+   }
+   @keyframes contact_butt {
      from {
           background-color: #fefefe;
           color:#2549AF;
@@ -1473,6 +1509,8 @@ font-weight: 400;
      to {
           background-color: #2549AF;
           color:#fefefe;
+          
+          
      }
    }
 .app_land_stack_15_lft_1_class_data_cost_butt{
