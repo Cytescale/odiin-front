@@ -12,5 +12,6 @@ body{
     --app-primary-color:#2F80ED;
     --main-bord-color:#275D85;
     --main-bg-color:#fefefe;
-    
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
 }
