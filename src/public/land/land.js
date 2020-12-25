@@ -592,7 +592,7 @@ animText(){
                               27$
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
-                                   <div className='app_land_stack_15_lft_1_get_butt_bg'></div>
+
                                    <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now!</a>
                               </div>
                     </div>
@@ -614,7 +614,6 @@ animText(){
                               97$
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
-                                   <div className='app_land_stack_15_lft_1_get_butt_bg'></div>
                                    <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now!</a>
                               </div>
                     </div>
