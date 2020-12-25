@@ -7,8 +7,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Nanum+Myeongjo:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
-body{
 
+@font-face {
+    font-family: 'gilroy';
+    src: local('gilroy'), url(../../assets/fonts/gilroyextrabold.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'gilroylight';
+    src: local('gilroylight'), url(../../assets/fonts/gilroylight.otf) format('opentype');
+  }
+
+
+body{
+        
     --app-primary-color:#2F80ED;
     --main-bord-color:#275D85;
     --main-bg-color:#fefefe;

@@ -4,9 +4,9 @@ import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button,Alert} from 'reac
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
-import '../css/land.css';
-import '../css/land_res_1080.css';
-import '../css/land_res_phn.css';
+import '../css/land_dark.css';
+//import '../css/land_res_1080.css';
+//import '../css/land_res_phn.css';
 import grid_svg from '../../assets/svg/grid.svg';
 import homedesign from '../../assets/svg/homedesign.svg';
 import homefront from '../../assets/svg/homefront.svg';
@@ -328,51 +328,8 @@ export default class LandClass extends React.Component{
                                              
                                             
                </div>
-               {/* <div id='app_land_stack_2' ref={what_ref}>
-               <div id='app_land_stack_12_lft'>
-                                                       <div id='app_land_stack_12_lft_dat'>
-                              We Make Your {this.state.windowWidth<850?<br></br>:<span></span>}Life Easier!
-                                                       </div>
-                    </div>
-                         <div id='app_land_stack_2_dat_cont'>
-                         
-                                   <div id='app_land_stack_2_dat_1'>
-                                        <img className='app_land_stack_2_dat_1_ico'src={homedesign}></img>  
-                                     </div>   
-                                     <div id='app_land_stack_2_dat_2'>
-                                        <div id='app_land_stack_2_dat_2_anim'></div>
-                                        
-                                     </div>   
-                                     <div id='app_land_stack_2_dat_1'>
-                                        <img className='app_land_stack_2_dat_1_ico' src={homefront}></img>  
-                                     </div>   
-                         
-                         </div>
-                         
-
-               </div>
-            
-          <Fade bottom> 
-               <div id='app_land_stack_12'>
-                    <div id='app_land_stack_12_dat'>
-               
-                    
-                    <div id='app_land_stack_12_rgt'>
-                         <div id='app_land_stack_12_rgt_dat'>
-                              <div id='app_land_stack_12_rgt_dat_tit'>We transform your beautiful designs into lines of code, offering you </div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Absolute control of your Frontend.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Pixel Perfect UI.</div>
-                         <div className='app_land_stack_12_rgt_dat_cont'><svg xmlns='http://www.w3.org/2000/svg' className='app_land_stack_12_rgt_dat_cont_ico' viewBox='0 0 512 512'><title>Checkmark</title><path fill='none' stroke='#6FCF97' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M416 128L192 384l-96-96'/></svg>Flexible Code.</div>
-                         </div>
-
-                    </div>
-                    </div>
-               </div>
-               
-               </Fade> */}
-               
-              
-
+          
+          
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_bdy'>
                     <div id='app_land_stack_3_head_main_cont'>
