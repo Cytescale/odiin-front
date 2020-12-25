@@ -233,6 +233,7 @@ export default class LandClass extends React.Component{
                                    </div>
                                    <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
+               {/* background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); */}
                <div id='app_land_stack_1' ref={home_ref}>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
                               <div id='app_land_stack_1_lay_1_eclp_cont'> 
@@ -329,7 +330,7 @@ export default class LandClass extends React.Component{
                                             
                </div>
           
-          
+{/*           
                <div id='app_land_stack_3'>
                     <div id='app_land_stack_3_bdy'>
                     <div id='app_land_stack_3_head_main_cont'>
@@ -429,7 +430,7 @@ export default class LandClass extends React.Component{
                     </div>
                     
                </div>
-                      
+                       */}
                          
                            
                             

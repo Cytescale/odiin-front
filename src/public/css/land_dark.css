@@ -50,7 +50,7 @@ background-color: #000000;
 #app_land_stack_1{
      height: 100vh;
      width: 100%;
-     background: linear-gradient(130.87deg, #4BC2F2 0%, #44B0FF 45.35%, #6363FF 98.94%);
+     
      z-index: 20px;
 }
 .app_land_stack_1_lay_class{
@@ -126,7 +126,8 @@ background: #44AFFF;
      width: 100%;
      height: 100%;
      border-radius: 6px;
-     border: 1px solid #fefefe;
+     border: 1px solid #525252;
+     background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); 
     
 }
 #app_land_stack_1_lay_2_dat_head_cont{
@@ -1114,7 +1115,7 @@ position: relative;
 
 #app_land_stack_11_rgt{
      width:50%;
-     
+     z-index: 20;
      height:100%;
      color:#fefefe;
      font-family:inter;
