@@ -39,6 +39,7 @@ import sal1 from '../../assets/sal1.png';
 import sal2 from '../../assets/sal2.png';
 import sal3 from '../../assets/sal3.png';
 import sal4 from '../../assets/sal4.png';
+import sal5 from '../../assets/sal5.png';
 import iframe_ico from '../../assets/iframe.png';
 
 import Rotate from 'react-reveal/Rotate';
@@ -435,10 +436,7 @@ export default class LandClass extends React.Component{
                        */}
                          
                            
-                            
-                             
-
-               
+                         
                <div id='app_land_stack_11' ref={contact_ref}>
                          <div id='app_land_stack_11_lft'>
                          <Fade left>
@@ -463,6 +461,16 @@ export default class LandClass extends React.Component{
                               
                          </div>
                </div>
+
+               <div id='app_land_stack_18' ref={contact_ref}>
+                         <div id='app_land_stack_18_lft'>
+                         
+                         </div>
+                         <div id='app_land_stack_18_rgt'>   
+                                 <img id='app_land_stack_18_rgt_ico' src={sal5}></img>
+                         </div>
+               </div>
+
                <div id='app_land_stack_4'>
                     <div id='app_land_stack_4_bg'></div>
                     <div id='app_land_stack_4_head_main_cont'>
