@@ -125,8 +125,7 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat{
      width: 100%;
      height: 100%;
-     border-radius: 6px;
-     border: 1px solid #525252;
+     border-radius: 22px;
      background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); 
     
 }
@@ -134,7 +133,9 @@ background: #44AFFF;
      height: 72px;
      width: 100%;
      z-index: 20;
-     background-color: #212121;   
+     background-color: #212121;
+     border-top-left-radius: 18px;
+     border-top-right-radius: 18px;   
      display: inline-flex;
      
 }
@@ -152,7 +153,7 @@ display: flex;
 font-size: 22px;
 font-weight: 600;
 font-family: quicksand;
-color:#000000;
+color:#fefefe;
 }
 #app_land_stack_1_lay_2_dat_head_logo_phn{
      font-size: 21px;
@@ -188,7 +189,7 @@ color:#fefefe;
 #bow_cont{
      width: 300px;
      height: 32px;
-     background-color: #f1f1f1;
+     background-color: #323232;
      border-radius: 320px;
 }
 
@@ -277,6 +278,7 @@ padding-right:16px;
 #app_land_stack_1_lay_2_dat_bdy_main_moto_cont_bdy{
      text-align: center;
      font-size:82px;
+     
      font-family:gilroy;
 }
 #lmt_anim_txt_cont{
@@ -337,7 +339,7 @@ font-size: 57px;
 #app_land_stack_1_lay_2_dat_bdy_sub_moto_cont{
      font-family: Quicksand;
 font-style: normal;
-color:#FEFEFE;
+color:#c1c4cb;
 font-weight: 500;
 font-size: 18px;
 line-height: 121.5%;
@@ -403,8 +405,10 @@ align-items: center;
 #app_land_stack_2_2_lft_tit{
      font-weight: 700;
      font-family: gilroylight;
-     font-size: 42px;
-     color: #fefefe;
+     font-size: 48px;
+     background: -webkit-linear-gradient( #838996 ,#F5F5F5  );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 #app_land_stack_2_2_lft_cont{
@@ -1164,14 +1168,7 @@ position: relative;
      padding-bottom:72px;
   }
 
-  #app_land_stack_11_rgt_tit{
-     color:#000000;
-     font-family: quicksand;
-     font-weight: 700;
-     font-size:32px;
-     padding-bottom:32px;
-}
-
+  
 
   #app_land_stack_12_lft_sub{
        width: 100%;

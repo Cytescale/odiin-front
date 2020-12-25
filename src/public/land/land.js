@@ -313,6 +313,8 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2_2' ref={what_ref}>
                <img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>
                                             
+             
+
                <div id='app_land_stack_2_2_lft_slop'></div>
                                              <div id='app_land_stack_2_2_lft'>
                                                   <div id='app_land_stack_2_2_lft_tit'>
@@ -506,6 +508,9 @@ export default class LandClass extends React.Component{
 
                     </div>
                </div>
+
+
+               
                <div id='app_land_stack_14_rgt'>
                <Fade left>
                     <div id='app_land_stack_14_rgt_bg'>
