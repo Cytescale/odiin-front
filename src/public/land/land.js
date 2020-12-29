@@ -287,7 +287,10 @@ export default class LandClass extends React.Component{
                                    <img className='app_land_stack_1_lay_1_iph_cont_ico'src={homeiphone}></img>
                               </div>
                          </div>
+
+
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_2'>
+
                               <div id='app_land_stack_1_lay_2_dat'>
                               {this.state.windowWidth>850?
                                         <div id='app_land_stack_1_lay_2_dat_head_cont_min'>
@@ -349,7 +352,8 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                   </div>
                               </div>    
-                         </div>
+                         </div>               
+               
                </div>
                <div id='app_land_stack_2_2' ref={what_ref}>
                <img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>
@@ -637,8 +641,8 @@ export default class LandClass extends React.Component{
                </div>
           </section>
           <Tween
-            from={{ x: '-100%' }}
-            to={{ x: '0%' }}
+            from={{ x: '-100%',Alpha:'1' }}
+            to={{ x: '0%',Alpha:'0' }}
           >
             <section className="panel green">
             <div id='app_land_stack_19'>
@@ -815,7 +819,7 @@ export default class LandClass extends React.Component{
                               <img src={test_co} id='app_land_stack_16_pro_ico'></img>
                          </div>
                          <div id='app_land_stack_16_data'>
-                              "I assure you best-in-class services
+                              "We assure you best-in-class services
                               from our end. No compromises."
                          </div>
                          <div id='app_land_stack_16_name'>
