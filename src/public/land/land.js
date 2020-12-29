@@ -348,8 +348,8 @@ export default class LandClass extends React.Component{
                                                             
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
-                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down <img id='app_land_stack_1_lay_2_ext_2_ico' src={down_ico_2}/></div>
-                                                            <div id='app_land_stack_1_lay_2_ext_2_sid_1' >Scroll  Down<img id='app_land_stack_1_lay_2_ext_2_ico' src={down_ico}/></div>
+                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down </div>
+                                                            <div id='app_land_stack_1_lay_2_ext_2_sid_1' >Scroll  Down</div>
                                                        </div>
                                                        </div>
                                                   </div>
@@ -456,7 +456,8 @@ export default class LandClass extends React.Component{
 
 
                </div>
-          
+          }
+
                <div id='app_land_stack_18' ref={contact_ref}>
                          <div id='app_land_stack_18_lft'>
                          <div>     <div id='app_land_stack_18_lft_tit'>Get in touch</div>
