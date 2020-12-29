@@ -34,7 +34,9 @@ import up_arrow from '../../assets/svg/up_arrow.svg';
 import menu_ico from '../../assets/svg/menu.svg';
 import mail_ico from '../../assets/svg/mail_outline.svg';
 import call_ico from '../../assets/svg/call.svg';
-import test_co from '../../assets/test_co.png'
+import test_co from '../../assets/test_co.png';
+import down_ico from '../../assets/svg/down.svg';
+import down_ico_2 from '../../assets/svg/down_2.svg';
 import sal1 from '../../assets/sal1.png';
 import sal2 from '../../assets/sal2.png';
 import sal3 from '../../assets/sal3.png';
@@ -173,7 +175,7 @@ export default class LandClass extends React.Component{
      let templateParams = {
           name:this.state.feedname,
           from_name: this.state.feedemail,
-          to_name: 'support@cytescale.com',
+          to_name: 'contact@cytescale.com',
           subject: "Cytescale Query",
           company: this.state.feedcompany,
           message: this.state.feedquery,
@@ -346,8 +348,8 @@ export default class LandClass extends React.Component{
                                                             
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
-                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down</div>
-                                                            <div id='app_land_stack_1_lay_2_ext_2_sid_1' >Scroll Down</div>
+                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down <img id='app_land_stack_1_lay_2_ext_2_ico' src={down_ico_2}/></div>
+                                                            <div id='app_land_stack_1_lay_2_ext_2_sid_1' >Scroll  Down<img id='app_land_stack_1_lay_2_ext_2_ico' src={down_ico}/></div>
                                                        </div>
                                                        </div>
                                                   </div>
@@ -385,7 +387,7 @@ export default class LandClass extends React.Component{
                          </div>
                          <div id='app_land_stack_11_rgt'>    
                          
-                                   <div className='app_land_stack_3_head_bdy_dat_class'>
+                                   <div className='app_land_stack_3_head_bdy_dat_class' id='app_land_stack_3_head_bdy_dat_1_id'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea1} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
                                         </div>
@@ -399,6 +401,7 @@ export default class LandClass extends React.Component{
                                              </div>
                                         </div>
                                    </div>
+                    
                     
                               <div className='app_land_stack_3_head_bdy_dat_class'>
                                    
@@ -453,20 +456,17 @@ export default class LandClass extends React.Component{
 
 
                </div>
-
-
+          
                <div id='app_land_stack_18' ref={contact_ref}>
                          <div id='app_land_stack_18_lft'>
-                         <div>
-                                   
-                                   
+                         <div>     <div id='app_land_stack_18_lft_tit'>Get in touch</div>
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 
                                    <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
 
                                    <br></br><br></br>Drop us a mail, and we will carry it further from there.
 
-                                   <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
+                                   <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Mail Us <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
                                    
                                    <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on{this.state.windowWidth<850?<br></br>:<span></span>} +918668752239</div>
                               </div>
@@ -477,12 +477,12 @@ export default class LandClass extends React.Component{
                </div>
 
                <div id='app_land_stack_4'>
-                    <div id='app_land_stack_4_bg'></div>
+                     
                     <div id='app_land_stack_4_head_main_cont'>
                               <div id='app_land_stack_4_head_main_cont_tit'>Also,<br></br>We offer you real-time order tracking that lets you keep us in check!</div>
                     </div>
                     <div id='app_land_stack_4_data_cont'> 
-                    <Carousel id='car'>
+                    <Carousel id='car' controls={false}>
                          <Carousel.Item id='carIte'>
                          <img
                               className="app_land_stack_4_data_cont_ico_class"
@@ -506,7 +506,7 @@ export default class LandClass extends React.Component{
                     </div>
                     <div id='app_land_stack_14_lft_tit_sub' >
                     We provide Android Front-end Solutions with Flexible Code and Scalable Architecture,
-                    in various Frameworks like Java native, React native and Flutter.
+                    in various Frameworks like Java native and React native.
 
                     </div>
                </div>
@@ -538,12 +538,12 @@ export default class LandClass extends React.Component{
           wrapper={<div id="pinContainer" />}
         >
           <Tween
-            from={{padding: '64px',borderRadius:'32px' }}
+            from={{padding: '74px',borderRadius:'32px' }}
             to={{ padding: '0px' ,borderRadius:'0px',ease: "Power4.easeOut"}}
           >
                <div id='app_land_stack_20'>
                     <div id='app_land_stack_20_cont'>
-                    Rocket fast development
+                    Stay ahead of competition
                     </div>
              </div>
                </Tween></Timeline></Scene></Controller>
