@@ -31,8 +31,9 @@ background-color: #000000;
 #app_land_fix_header{
      position: fixed;
      width: 100%;
-     z-index: 10;  
-     background-color:#212121;
+     z-index: 20;  
+     background-color:rgb(33,33,33,0.7);
+     backdrop-filter: blur(10px);
      box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
 
@@ -125,15 +126,29 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat{
      width: 100%;
      height: 100%;
+     
      border-radius: 22px;
      background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); 
     
+}
+
+#app_land_stack_1_lay_2_dat_head_cont_min
+{
+     height: 72px;
+     width: 100%;
+     z-index: 20;
+     background-color:rgb(33,33,33,0.7);
+     backdrop-filter: blur(10px);
+     border-top-left-radius: 18px;
+     border-top-right-radius: 18px;   
+     display: inline-flex;
+          
 }
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 72px;
      width: 100%;
      z-index: 20;
-     background-color: #212121;
+     
      border-top-left-radius: 18px;
      border-top-right-radius: 18px;   
      display: inline-flex;
@@ -359,26 +374,34 @@ align-items: center;
 }
 #app_land_stack_1_lay_2_ext_1_cont{
      position: absolute;
-     width: 300px;
-     height: 300px;
+     width: auto;
+     height: fit-content;
      bottom:0;
      left:0;
-     margin:32px;
+     right: 0;
+     
 }
+@keyframes floating { 
+     0% { transform: translate(0,  0px); } 
+     50%  { transform: translate(0, 15px); } 
+     100%   { transform: translate(0, -0px); }     
+ } 
+
 #app_land_stack_1_lay_2_ext_1_sid_1{
      
      text-align: center;
      font-family: quicksand;
      font-style: normal;
      font-weight:400;
-     font-size: 25px;
+     font-size: 22px;
      line-height: 158%;
-     color: #ADDCFF;   
-     position: absolute;  
-     margin-left: -62px;
+     color: #7E5F86;   
      bottom:0;
      margin-bottom:62px;
-     transform: rotate(90deg);
+     animation-name: floating; 
+     animation-duration: 3s; 
+     animation-iteration-count: infinite; 
+     animation-timing-function: ease-in-out; 
 
 }
 #app_land_stack_1_lay_2_ext_1_sid_2{
@@ -591,9 +614,9 @@ margin:10%;
 
 .app_land_stack_3_head_bdy_dat_class{
 width:100%;
-height: 100%;
-display: block;
-
+height: 100vh;
+padding-top: 30%;
+z-index: 0;
 }
 .app_land_stack_3_head_bdy_dat_ico_class{
 width: 100%;     
@@ -612,7 +635,7 @@ display: flex;
 
 .app_land_stack_3_head_bdy_dat_info_class_tit{
      font-family: quicksand;
-     font-size: 20px;
+     font-size: 27px;
      line-height: 158%;
      /* or 38px */
      display: flex;
@@ -638,7 +661,7 @@ display: flex;
 
      font-style: normal;
      font-weight: normal;
-     font-size: 18px;
+     font-size: 20px;
      line-height: 158%;
      /* or 30px */
      width: 100%;
@@ -782,6 +805,12 @@ display: flex;
   justify-content: center;
   align-items: center;     
 }
+
+#app_land_stack_5_lft_sub_cont{
+     display: block;
+     text-align: left;
+}
+
 #app_land_stack_5_lft_cont_tit{
      color:#FEFEFE;
      font-family: gilroy;
@@ -800,6 +829,7 @@ display: flex;
      display: flex;
   justify-content: center;
   align-items: center;     
+  text-align: left;
 }
 
 #app_land_stack_5_rgt_cont_form_cont{
@@ -1076,12 +1106,13 @@ border-bottom: 1px solid #000000;
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_10{
      width: 100%;
+     background-color: #fefefe;
      border-top: 1px  solid #bdbdbd;
      border-bottom: 1px solid #bdbdbd;
      text-align: center;
      padding:62px;
      color:#000000;
-     font-family: inter;
+     font-family: gilroylight;
      font-size: 17px;
 }
 /*/////////////////////////////////////////////////////////////*/
@@ -1095,17 +1126,16 @@ border-bottom: 1px solid #000000;
      
      }
      #app_land_stack_18_lft{
-     width:50%;
-     color:#212121;
-     font-size:38px;
-     font-family:quicksand;
-     font-weight: 600;
-     height:100%;
-     display: flex;
-     padding:52px;
-     justify-content: center;
-     background-color: rgb(0,0,0,0.0);
-     position: relative;
+          width:50%;
+          z-index: 10;
+          height:100%;
+          color:#fefefe;
+          font-family:inter;
+          padding:82px;
+          font-size:20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
      }
      #app_land_stack_18_lft_ico{
           position: absolute;
@@ -1118,6 +1148,7 @@ border-bottom: 1px solid #000000;
           bottom: 0;
      }
      
+
      #app_land_stack_18_rgt{
           width:50%;
           z-index: 20;
@@ -1133,6 +1164,7 @@ border-bottom: 1px solid #000000;
      
      #app_land_stack_18_rgt_ico{
           width: 100%;
+          transform: rotate(26.7deg);
      }
      
      .app_land_stack_18_rgt_high{
@@ -1163,24 +1195,25 @@ border-bottom: 1px solid #000000;
 /*////////////////////////////////////////////////*/
 #app_land_stack_11{
 display: inline-flex;
+position: relative;
+
 width:100%;
-height:110vh;
+height:auto;
 margin:0px;
 padding:0px;
-
 }
 #app_land_stack_11_lft{
 width:50%;
 color:#212121;
-font-size:38px;
+
 font-family:quicksand;
 font-weight: 600;
-height:100%;
-display: flex;
-padding:52px;
-justify-content: center;
+height:100vh;
 background-color: rgb(0,0,0,0.0);
-position: relative;
+position: -webkit-sticky;
+position: sticky;
+top:0;
+
 }
 #app_land_stack_11_lft_ico{
      position: absolute;
@@ -1191,6 +1224,10 @@ position: relative;
      right: 0;
      top: 0;
      bottom: 0;
+     animation-name: floating; 
+     animation-duration: 3s; 
+     animation-iteration-count: infinite; 
+     animation-timing-function: ease-in-out; 
 }
 
 #app_land_stack_11_rgt{
@@ -1201,9 +1238,7 @@ position: relative;
      font-family:inter;
      padding:82px;
      font-size:20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     
 }
 
 
@@ -1434,15 +1469,14 @@ border-bottom-left-radius: 8px;
 
 
 #app_land_stack_17{
-     width:90%;
+     width:100%;
      display: inline-flex;
      height: 100vh;
-     margin-left: 5%;
      font-size:22px;
      font-weight: 700;
      padding-top: 100px;
    background: linear-gradient(180deg, #212121 0%, #414141 100%);
-     border-radius: 22px;
+     
      z-index: 10;
 
 
@@ -1504,7 +1538,7 @@ margin-left:100%;
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_16{
      background-color: #000000;
-     height: 100vh;
+     height: 70vh;
      width: 100%;
      padding-top:82px;
      padding-bottom: 82px;
@@ -1592,7 +1626,9 @@ height: 100%;
 #app_land_stack_15_lft_tit{
      font-size: 42px;
      font-family: roboto;
-     color: #37364D;
+     background: -webkit-linear-gradient( #838996 ,#F5F5F5  );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -1602,6 +1638,7 @@ height: 100%;
      font-family: quicksand;
      font-size: 21px;
      display: flex;
+     color:#fefefe;
      justify-content: center;
      align-items: center;
      text-align: center;
@@ -1611,7 +1648,7 @@ height: 100%;
 
 
 #app_land_stack_15_lft_tit_data{
-     color:#3EDC80;
+     color:#61ED9B;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -1627,8 +1664,8 @@ height: 100%;
      height: 430px;
      margin:22px;
      border-radius: 8px;
-     background-color: #fefefe;
-     border: 1px solid #e0e0e0;
+     background-color: #212121;
+     
 }
 
 .app_land_stack_15_lft_1_class:hover{
@@ -1649,14 +1686,14 @@ height: 100%;
    }
 
 .app_land_stack_15_lft_1_class_tit{
- color:#37364D;    
+ color:#fefefe;    
  padding:22px;
  padding-top: 32px;
  font-family: quicksand;
- border-bottom: 1px solid #e0e0e0;
+ border-bottom: 1px solid #525252;
 }
 .app_land_stack_15_lft_1_class_data{
-color: #2549AF;
+color: #74C3FF;
 font-family: quicksand;
 font-size: 17px;
 font-weight: 400;
@@ -1664,7 +1701,7 @@ margin-top: 12px;
 }
 
 .app_land_stack_15_lft_1_class_data_sub{
-     color: #37364D;
+     color: #fefefe;
 font-family: quicksand;
 font-size: 16px;
 margin-top: 32px;
@@ -1687,45 +1724,42 @@ font-weight: 400;
      margin-bottom:28px;
 }
 .app_land_stack_15_lft_1_get_butt_lnk{
-     border: 1px solid #2549AF;
+     border: 1px solid #5352ED;
      font-family: quicksand;
      font-weight: 500;
-     color: #2549AF;
+     color: #fefefe;
      padding:7px;
      font-size: 17px;
      padding-left: 90px;
      padding-right: 90px;
-     border-radius: 7px;
+     border-radius: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
-     background-color: #fefefe;
+     background-color: #5352ED;
 }
 
 .app_land_stack_15_lft_1_get_butt_lnk:hover{
      text-decoration: none;
+     color:#fefefe;
      animation-name: contact_butt;
      animation-duration: 0.5s;
      animation-fill-mode: forwards;
 }
 @keyframes get_butt {
      from {
-          background-color: #2549AF;
-          color:#fefefe;
+        
      }
      to {
-          background-color: #fefefe;
-          color:#2549AF;
+        
           
      }
    }
    @keyframes contact_butt {
      from {
-          background-color: #fefefe;
-          color:#2549AF;
+        
      }
      to {
-          background-color: #2549AF;
-          color:#fefefe;
+        
           
           
      }
@@ -1739,23 +1773,60 @@ font-weight: 400;
 }
 
 .app_land_stack_15_lft_1_class_data_cost_butt{
-     border: 1px solid #2549AF;
-    
+     border: 1px solid #5352ED;
      font-family: quicksand;
      font-weight: 500;
-     color: #2549AF;
+     color: #fefefe;
      padding:7px;
      font-size: 17px;
      padding-left: 90px;
      padding-right: 90px;
-     border-radius: 7px;
-  
-    padding-bottom: 10px;
-     background-color: #fefefe;
+     border-radius: 22px;
+     padding-bottom: 10px;
+     background-color: #5352ED;
 
 }
 .app_land_stack_15_lft_1_class_data_cost_butt:hover{
      animation-name: contact_butt;
      animation-duration: 0.5s;
      animation-fill-mode: forwards;
+}
+
+
+/*///////////////////////////////////////////////////////////*/
+
+#app_land_stack_19{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     font-family: quicksand;
+     font-weight: 400;
+     justify-content: center;
+     align-items: center;
+     font-size: 72px;
+     background: -webkit-linear-gradient( #838996 ,#F5F5F5  );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;    
+}
+/*/////////////////////////////////////////////////////////////*/
+
+
+#app_land_stack_20{
+     width: 100%;
+     height: 100vh;
+     padding:64px;
+}
+#app_land_stack_20_cont{
+     width: 100%;
+     height: 100%;
+     border-radius: 32px;
+     background: black url(https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat;
+     background-size: cover; 
+     color:#fefefe;
+     font-family: Righteous;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 62px;
 }

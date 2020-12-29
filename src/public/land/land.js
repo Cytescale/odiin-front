@@ -49,6 +49,45 @@ import axios from 'axios';
 import { init } from 'ityped'
 
 import { Controller, Scene } from 'react-scrollmagic';
+import { Tween, Timeline } from 'react-gsap';
+import { StickyContainer, Sticky } from 'react-sticky';
+import styled from 'styled-components';
+
+const SectionWipes2Styled = styled.div`
+  overflow: hidden;
+  #pinContainer {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  #pinContainer .panel {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+  }
+  .panel span {
+    position: relative;
+    display: block;
+    top: 50%;
+    font-size: 80px;
+  }
+  
+  .panel.blue {
+    background-color: #000000;
+  }
+  
+  .panel.turqoise {
+    background-color: #000000;
+  }
+  
+  .panel.green {
+    background-color: #000000;
+  }
+  
+`;
+
+
 
 const texts = ["Mobile", "Web"];
 
@@ -252,10 +291,11 @@ export default class LandClass extends React.Component{
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_2'>
                               <div id='app_land_stack_1_lay_2_dat'>
                               {this.state.windowWidth>850?
-                                        <div id='app_land_stack_1_lay_2_dat_head_cont'>
+                                        <div id='app_land_stack_1_lay_2_dat_head_cont_min'>
                                                   <div id='app_land_stack_1_lay_2_dat_head_logo_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_logo'>
                                                             Cytescale</div>
+                                                            
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
                                                             <div id='bow_cont'>
@@ -304,7 +344,7 @@ export default class LandClass extends React.Component{
                                                             
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
-                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down {">"}</div>
+                                                            <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down</div>
                                                        </div>
                                                        </div>
                                                   </div>
@@ -332,19 +372,15 @@ export default class LandClass extends React.Component{
                                              
                                             
                </div>
-          
-{/*           
-               <div id='app_land_stack_3'>
-                    <div id='app_land_stack_3_bdy'>
-                    <div id='app_land_stack_3_head_main_cont'>
-                         <span id='app_land_stack_3_head_main_cont_tit'>
-                         What do we provide?
-                         </span>
-                    </div>
-                    <div id='app_land_stack_3_head_bdy_cont'> 
-                              <div id='land_col_1'>
-                              <Fade bottom>
-                              <div id='land_rw1_cl_1' >     
+           
+
+               <div id='app_land_stack_11' ref={contact_ref}>
+                         <div id='app_land_stack_11_lft'>
+               
+                              <img src={sal4} id='app_land_stack_11_lft_ico'></img>
+                         </div>
+                         <div id='app_land_stack_11_rgt'>    
+                         
                                    <div className='app_land_stack_3_head_bdy_dat_class'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea1} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
@@ -359,12 +395,9 @@ export default class LandClass extends React.Component{
                                              </div>
                                         </div>
                                    </div>
-
-                              </div>
-                              </Fade>
-                              <Fade bottom>
-                              <div id='land_rw1_cl_2' >
+                    
                               <div className='app_land_stack_3_head_bdy_dat_class'>
+                                   
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea2} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
                                         </div>
@@ -379,16 +412,7 @@ export default class LandClass extends React.Component{
                                         </div>
                                    </div>
 
-                              </div>
-                              </Fade>
-                              </div>
-
-
-                              <div id='land_col_2'>
-                              <Fade bottom>
-                              <div id='land_rw2_cl_1' >
-
-                              <div className='app_land_stack_3_head_bdy_dat_class'>
+                                   <div className='app_land_stack_3_head_bdy_dat_class'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea3} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
                                         </div>
@@ -404,12 +428,7 @@ export default class LandClass extends React.Component{
                                         </div>
                                    </div>
 
-                              </div>
-                              </Fade>
-                              <Fade bottom>
-                              <div id='land_rw2_cl_2' >
-
-                              <div className='app_land_stack_3_head_bdy_dat_class'>
+                                   <div className='app_land_stack_3_head_bdy_dat_class'>
                                         <div className='app_land_stack_3_head_bdy_dat_ico_class'>
                                                   <img src={fea4} className='app_land_stack_3_head_bdy_dat_ico_class_ico'></img>
                                         </div>
@@ -424,29 +443,18 @@ export default class LandClass extends React.Component{
                                              </div>
                                         </div>
                                    </div>
-
-                              </div>
-                              
-                              </Fade>
-                              </div>
-                    </div>
-                    </div>
-                    
-               </div>
-                       */}
                          
-                           
-                         
-               <div id='app_land_stack_11' ref={contact_ref}>
-                         <div id='app_land_stack_11_lft'>
-                         <Fade left>
-                              <img src={sal4} id='app_land_stack_11_lft_ico'></img>
-                              </Fade>
-                         {/* You seem <br></br>interested already, <br></br>Get in touch!                                    */}
                          </div>
-                         <div id='app_land_stack_11_rgt'>   
-                                   <div>
-                                   {this.state.windowWidth<850?<div id='app_land_stack_11_rgt_cont'><img className='app_land_stack_11_rgt_ico' src={homecontact}></img></div>:<div id='app_land_stack_11_rgt_tit'>Get in Touch</div>}
+
+
+
+               </div>
+
+
+               <div id='app_land_stack_18' ref={contact_ref}>
+                         <div id='app_land_stack_18_lft'>
+                         <div>
+                                   
                                    
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 
@@ -456,15 +464,8 @@ export default class LandClass extends React.Component{
 
                                    <br></br><div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={mail_ico}></img> Get in touch <a id='app_land_stack_11_rgt_high_lnk' href='mailto:contact@cytescale.com'>contact@cytescale.com</a></div>
                                    
-                              <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on{this.state.windowWidth<850?<br></br>:<span></span>} +918668752239</div>
+                                   <div className='app_land_stack_11_rgt_high'> <img className='mail_ico' src={call_ico}></img> Call on{this.state.windowWidth<850?<br></br>:<span></span>} +918668752239</div>
                               </div>
-                              
-                         </div>
-               </div>
-
-               <div id='app_land_stack_18' ref={contact_ref}>
-                         <div id='app_land_stack_18_lft'>
-                         
                          </div>
                          <div id='app_land_stack_18_rgt'>   
                                  <img id='app_land_stack_18_rgt_ico' src={sal5}></img>
@@ -488,21 +489,10 @@ export default class LandClass extends React.Component{
                               <p id='capcap'>GitHub repositories are updated constantly to let you access of the development process.</p>
                          </Carousel.Caption>
                          </Carousel.Item>
-                         {/* <Carousel.Item id='carIte'>
-                         <img
-                              className="app_land_stack_4_data_cont_ico_class"
-                              src={homegit}
-                         />
-                         <Carousel.Caption  id='carcap'>
-                              <h3>Easy Contact Options</h3>
-                              <p id='capcap'>We never leave you. feel free to contact us anytime you want.</p>
-                         </Carousel.Caption>
-                         </Carousel.Item> */}
                          </Carousel>
                     </div>
           </div>
              
-               
           <div id='app_land_stack_14'>
 
                <div id='app_land_stack_14_lft'>
@@ -516,6 +506,7 @@ export default class LandClass extends React.Component{
 
                     </div>
                </div>
+
 
 
                
@@ -534,33 +525,24 @@ export default class LandClass extends React.Component{
                </div>
           </div>
 
-          
-          <div id='app_land_stack_17'>
-               <div id='app_land_stack_17_lft'>
-                    <div id='app_land_stack_17_lft_tit' >
-                       Best in-class Support
-                    </div>
-                    <div id='app_land_stack_17_rgt_bdy'>
-                    "We will be readily available to be in touch with you throughout the development days
-                    (even after that, if a need occurs).
-                    Our team is well-equipped to solve all your queries in absolutely no time.
-                    Got an issue? Consider it solved, we will be just a call away!
-                    You could contact us without hesitation.
-                    The Responsive support from our side is what our customers like the most."
-                    <br></br>Mail -- Chat -- Call
-                    </div>    
-               </div><div id='app_land_stack_17_rgt_bg'>
-                         <img src={support_ico} id='app_land_stack_17_rgt_bg_ico'></img>
-                    </div>
-               <Rotate top right>
-               <div id='app_land_stack_17_rgt'>
-                    
-                         <img  id='app_land_stack_17_rgt_ico' src={sal3}></img>
-               </div>
-               </Rotate>
-          </div>
 
-      
+          <Controller><Scene
+        triggerHook="onLeave"
+        duration="100%"
+        pin>
+        <Timeline
+          wrapper={<div id="pinContainer" />}
+        >
+          <Tween
+            from={{padding: '64px',borderRadius:'32px' }}
+            to={{ padding: '0px' ,borderRadius:'0px',ease: "Power4.easeOut"}}
+          >
+               <div id='app_land_stack_20'>
+                    <div id='app_land_stack_20_cont'>
+                    Rocket fast development
+                    </div>
+             </div>
+               </Tween></Timeline></Scene></Controller>
 
           <div id='app_land_stack_15'>
                <div id='app_land_stack_15_slop'></div>
@@ -589,7 +571,7 @@ export default class LandClass extends React.Component{
                               27$
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
-
+                              
                                    <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now !</a>
                               </div>
                     </div>
@@ -614,6 +596,7 @@ export default class LandClass extends React.Component{
                                    <a className='app_land_stack_15_lft_1_get_butt_lnk' href='mailto:contact@cytescale.com'>Get Now !</a>
                               </div>
                     </div>
+
                     <div className='app_land_stack_15_lft_1_class' id='app_land_stack_15_lft_1' >
                               <div  className='app_land_stack_15_lft_1_class_tit'>
                                    Business
@@ -638,54 +621,125 @@ export default class LandClass extends React.Component{
                </div>
                </div>
           
-
-
-     <div ref={query_ref}>
-        
-               <div id='app_land_stack_5' >
-                         <div id='app_land_stack_5_lft_cont'>
-                              <div id='app_land_stack_5_lft_sub_cont'>
-                              <div id='app_land_stack_5_lft_cont_tit'>Got any<br></br> questions for us?</div>
-                              <div id='app_land_stack_5_lft_cont_sub_tit'>Contact us at contact@cytescale.com
-                              or Submit a query here </div>
-
-                              
-                              </div>
-                         </div>
-                         <div id='app_land_stack_5_rgt_cont'>
-                              <div id='app_land_stack_5_rgt_cont_form_cont'>
-                                   <form onSubmit={this.querySubmit}>  
-                                        <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
-                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Full Name*</div>
-                                   <input type='text' placeholder='Enter full name'     value={this.state.feedname}  onChange={this.handleQueryChange.bind(this, 'feedname')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
-                                        </div>
-                                        <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
-                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Email Address*</div>
-                                   <input type='text' placeholder='Enter email address' value={this.state.feedemail} onChange={this.handleQueryChange.bind(this, 'feedemail')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
-                                        </div> 
-                                        <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
-                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Company Name</div>
-                                   <input type='text' placeholder='Enter company name if any' value={this.state.feedcompany} onChange={this.handleQueryChange.bind(this, 'feedcompany')}  className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
-                                        </div>
-                                        <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
-                                   <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query*</div>
-                                        <textarea id='app_land_stack_5_rgt_cont_txt' value={this.state.feedquery} onChange={this.handleQueryChange.bind(this, 'feedquery')}></textarea>
-                                        </div>
-                                        {
-                                        this.state.feederrcode===1?                                
-                                        <Alert variant='danger'>
-                                        {this.state.feederr}
-                                        </Alert>:<span></span>
-                                        }
-
-
-                                        <Button variant='success' type='submit' className='app_land_stack_5_rgt_cont_form_cont_sub_butt'>Submit</Button>
-                                        </form>
-                              </div>
-
-                         </div>
-               </div>     
+          <SectionWipes2Styled>
+    <Controller>
+      <Scene
+        triggerHook="onLeave"
+        duration="300%"
+        pin
+      >
+        <Timeline
+          wrapper={<div id="pinContainer" />}
+        >
+          <section className="panel blue">
+               <div id='app_land_stack_19'>
+                    Make your move
                </div>
+          </section>
+          <Tween
+            from={{ x: '-100%' }}
+            to={{ x: '0%' }}
+          >
+            <section className="panel green">
+            <div id='app_land_stack_19'>
+                    Level-up digitally
+               </div>
+                 </section>   
+          </Tween>
+          <Tween
+            from={{ x: '100%' }}
+            to={{ x: '0%' }}
+          >
+            <section className="panel green">
+
+            <div id='app_land_stack_17'>
+               <div id='app_land_stack_17_lft'>
+                    <div id='app_land_stack_17_lft_tit' >
+                       Best in-class Support
+                    </div>
+                    <div id='app_land_stack_17_rgt_bdy'>
+                    "We will be readily available to be in touch with you throughout the development days
+                    (even after that, if a need occurs).
+                    Our team is well-equipped to solve all your queries in absolutely no time.
+                    Got an issue? Consider it solved, we will be just a call away!
+                    You could contact us without hesitation.
+                    The Responsive support from our side is what our customers like the most."
+                    <br></br>Mail -- Chat -- Call
+                    </div>    
+               </div><div id='app_land_stack_17_rgt_bg'>
+                         <img src={support_ico} id='app_land_stack_17_rgt_bg_ico'></img>
+                    </div>               
+               <div id='app_land_stack_17_rgt'>
+                    
+                         <img  id='app_land_stack_17_rgt_ico' src={sal3}></img>
+               </div>
+
+          </div>
+
+            </section>
+          </Tween>
+          <Tween
+            from={{ y: '-100%' }}
+            to={{ y: '0%' }}
+          >
+            <section className="panel bordeaux">
+        
+
+
+        <div ref={query_ref}>
+           
+                  <div id='app_land_stack_5' >
+                            <div id='app_land_stack_5_lft_cont'>
+                                 <div id='app_land_stack_5_lft_sub_cont'>
+                                 <div id='app_land_stack_5_lft_cont_tit'>Got any<br></br> questions for us?</div>
+                                 <div id='app_land_stack_5_lft_cont_sub_tit'>Contact us at contact@cytescale.com
+                                 or Submit a query here </div>
+   
+                                 
+                                 </div>
+                            </div>
+                            <div id='app_land_stack_5_rgt_cont'>
+                                 <div id='app_land_stack_5_rgt_cont_form_cont'>
+                                      <form onSubmit={this.querySubmit}>  
+                                           <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
+                                      <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Full Name*</div>
+                                      <input type='text' placeholder='Enter full name'     value={this.state.feedname}  onChange={this.handleQueryChange.bind(this, 'feedname')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                           </div>
+                                           <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
+                                      <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Email Address*</div>
+                                      <input type='text' placeholder='Enter email address' value={this.state.feedemail} onChange={this.handleQueryChange.bind(this, 'feedemail')} className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                           </div> 
+                                           <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
+                                      <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Company Name</div>
+                                      <input type='text' placeholder='Enter company name if any' value={this.state.feedcompany} onChange={this.handleQueryChange.bind(this, 'feedcompany')}  className='app_setting_main_bdy_tit_main_sub_opt_cont_data'></input>
+                                           </div>
+                                           <div className='app_setting_main_bdy_tit_main_sub_opt_cont'>
+                                      <div className='app_setting_main_bdy_tit_main_sub_opt_cont_tit'>Query*</div>
+                                           <textarea id='app_land_stack_5_rgt_cont_txt' value={this.state.feedquery} onChange={this.handleQueryChange.bind(this, 'feedquery')}></textarea>
+                                           </div>
+                                           {
+                                           this.state.feederrcode===1?                                
+                                           <Alert variant='danger'>
+                                           {this.state.feederr}
+                                           </Alert>:<span></span>
+                                           }
+   
+   
+                                           <Button variant='success' type='submit' className='app_land_stack_5_rgt_cont_form_cont_sub_butt'>Submit</Button>
+                                           </form>
+                                 </div>
+   
+                            </div>
+                  </div>     
+                  </div></section>
+          </Tween>
+        </Timeline>
+      </Scene>
+    </Controller>
+  </SectionWipes2Styled>
+
+          
+          
                <div id='app_land_stack_9' >
                          <div id='app_land_stack_9_tit'>FAQ</div>          
                          <div id='app_land_stack_9_dat'>
