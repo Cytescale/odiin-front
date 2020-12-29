@@ -239,19 +239,14 @@ export default class LandClass extends React.Component{
          var setWid = (this.state.theposition*100)+"%";
         return(
         <div className='app_bdy_land_main_bdy'>
-          {this.state.theposition>0.02?
-          <div className='app_float_butt'>
-                    <a className='app_float_butt_lnk' onClick={scrollContact}>Contact Us</a>
-          </div>:<span></span>}
+          
           {this.state.windowWidth<850?this.state.theposition>0.02?<a onClick={scrollHome}><div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div></a>:<span></span>:<span></span>}
-
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
                                                        <Menu id='menu' width={ '100%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
                                                        
                                                        <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
-                                                       <a id="contact" className="menu-item"  onClick={scrollContact}>Contact</a>
                                                        <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
                                                        <a id="contact" className="menu-item"onClick={scrollQuery} >Query</a>
                                                        </Menu>:<span></span>
@@ -264,10 +259,14 @@ export default class LandClass extends React.Component{
                                                   <div id='app_land_stack_1_lay_2_dat_head_lnk_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_head_lnk_cont_dat'>
                                                        <div className='pp_land_stack_1_lay_2_dat_head_lnk_class' id='app_land_stack_1_lay_2_dat_head_lnk_1_cont'><a onClick={scrollHome} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Home</a></div>
-                                                       <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_2_cont'><a onClick={scrollContact} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Contact</a></div>
                                                        <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_3_cont'><a onClick={scrollWhat} className='app_land_stack_1_lay_2_dat_head_lnk_1' >What we do?</a></div>
                                                        <div  className='pp_land_stack_1_lay_2_dat_head_lnk_class'  id='app_land_stack_1_lay_2_dat_head_lnk_4_cont'><a onClick={scrollQuery} className='app_land_stack_1_lay_2_dat_head_lnk_1' >Query</a></div>
                                                        </div>
+                                                  </div>
+                                                  <div id='app_land_stack_1_lay_2_dat_con_cont'>
+                                                       <div id='app_land_stack_1_lay_2_dat_con_cont_bg'></div>
+                                                       <button id='app_land_stack_1_lay_2_dat_con_butt'>Contact</button>
+                                                       
                                                   </div>
                                         
                                    </div>
@@ -345,6 +344,7 @@ export default class LandClass extends React.Component{
                                                        </div>
                                                        <div id='app_land_stack_1_lay_2_ext_1_cont' >
                                                             <div id='app_land_stack_1_lay_2_ext_1_sid_1' >Scroll Down</div>
+                                                            <div id='app_land_stack_1_lay_2_ext_2_sid_1' >Scroll Down</div>
                                                        </div>
                                                        </div>
                                                   </div>
@@ -515,13 +515,13 @@ export default class LandClass extends React.Component{
                     <div id='app_land_stack_14_rgt_bg'>
                         Designs <br></br>to<br></br>Reality<br></br>in<br></br>Flexible<br></br>Code
                     </div>
-                    </Fade>
-                         <Fade right>
+               </Fade>
+                    <Fade right>
                          <div id='app_land_stack_14_rgt_phn_bdy'>     
                               <img src={iframe_ico} id='app_land_stack_14_rgt_phn_bdy_ico'></img> 
                            
                          </div>    
-                         </Fade>
+               </Fade>
                </div>
           </div>
 
