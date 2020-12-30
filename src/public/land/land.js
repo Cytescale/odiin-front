@@ -240,8 +240,7 @@ export default class LandClass extends React.Component{
                           }
          var setWid = (this.state.theposition*100)+"%";
         return(
-        <div className='app_bdy_land_main_bdy'>
-          
+        <div className='app_bdy_land_main_bdy'>      
           {this.state.windowWidth<850?this.state.theposition>0.02?<a onClick={scrollHome}><div id='up_arr_cont'><img id='up_arr_cont_ico' src={up_arrow}></img></div></a>:<span></span>:<span></span>}
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
@@ -360,7 +359,7 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2_2' ref={what_ref}>
                <img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>
                                             
-               
+            
 
                <div id='app_land_stack_2_2_lft_slop'></div>
                                              <div id='app_land_stack_2_2_lft'>
@@ -382,9 +381,9 @@ export default class LandClass extends React.Component{
 
                <div id='app_land_stack_11' ref={contact_ref}>
                          <div id='app_land_stack_11_lft'>
-                              <Fade left>
+                              
                               <img src={sal4} id='app_land_stack_11_lft_ico'></img>
-                              </Fade>
+                              
                          </div>
                          <div id='app_land_stack_11_rgt'>    
                          
@@ -460,7 +459,7 @@ export default class LandClass extends React.Component{
        
                <div id='app_land_stack_18' ref={contact_ref}>
                          <div id='app_land_stack_18_lft'>
-                         <div>     <div id='app_land_stack_18_lft_tit'>Get in touch</div>
+                                   <div>     <div id='app_land_stack_18_lft_tit'>Get in touch</div>
                                    Do not hesitate to book a call with us if you are in a spot of getting us on board. Let’s get talking!
 
                                    <br></br><br></br>Also, if you have any queries with the pricing structure, reach out to us. We constantly have a lot of benefits in the cost structure for students, teams and businesses. 
@@ -490,7 +489,7 @@ export default class LandClass extends React.Component{
                               src={homegit}
                          />
                          <Carousel.Caption id='carcap' >
-                              <h3>Git Hub Updates</h3>
+                              <h3 id='carcap_tit'>Git Hub Updates</h3>
                               <p id='capcap'>GitHub repositories are updated constantly to let you access of the development process.</p>
                          </Carousel.Caption>
                          </Carousel.Item>
@@ -539,7 +538,7 @@ export default class LandClass extends React.Component{
           wrapper={<div id="pinContainer" />}
         >
           <Tween
-            from={{padding: '74px',borderRadius:'32px' }}
+            from={{padding: '84px',borderRadius:'32px' }}
             to={{ padding: '0px' ,borderRadius:'0px',ease: "Power4.easeOut"}}
           >
                <div id='app_land_stack_20'>
@@ -556,7 +555,7 @@ export default class LandClass extends React.Component{
                          Low Pricing
                     </div>
                     <div id='app_land_stack_15_lft_tit_sub' >
-                         By reducing your Work by 50%, we can literally give you a Headstart in your Tech Journey for
+                         By reducing your Work by 50%, we can literally give you a Headstart in your Tech journey for
                     </div>
                     <div id='app_land_stack_15_lft_tit_data'>
                     
@@ -638,12 +637,12 @@ export default class LandClass extends React.Component{
         >
           <section className="panel blue">
                <div id='app_land_stack_19'>
-                    Make your move
+                    Make your move...
                </div>
           </section>
           <Tween
-            from={{ x: '-100%',Alpha:'1' }}
-            to={{ x: '0%',Alpha:'0' }}
+            from={{ x: '-100%',opacity:'0' }}
+            to={{ x: '0%',opacity:'1' }}
           >
             <section className="panel green">
             <div id='app_land_stack_19'>
@@ -660,7 +659,7 @@ export default class LandClass extends React.Component{
             <div id='app_land_stack_17'>
                <div id='app_land_stack_17_lft'>
                     <div id='app_land_stack_17_lft_tit' >
-                       Best in-class Support
+                       Best-in-class Support
                     </div>
                     <div id='app_land_stack_17_rgt_bdy'>
                     "We will be readily available to be in touch with you throughout the development days
@@ -697,8 +696,7 @@ export default class LandClass extends React.Component{
                             <div id='app_land_stack_5_lft_cont'>
                                  <div id='app_land_stack_5_lft_sub_cont'>
                                  <div id='app_land_stack_5_lft_cont_tit'>Got any<br></br> questions for us?</div>
-                                 <div id='app_land_stack_5_lft_cont_sub_tit'>Contact us at contact@cytescale.com
-                                 or Submit a query here </div>
+                                 <div id='app_land_stack_5_lft_cont_sub_tit'>Submit a query here or say hi : contact@cytescale.com </div>
    
                                  
                                  </div>
