@@ -20,8 +20,13 @@
     font-family: 'gilroylight';
     src: local('gilroylight'), url(../../assets/fonts/gilroylight.otf) format('opentype');
   }
-
-
+  @font-face {
+    font-family: 'ahronbd';
+    src: local('ahronbd'), url(../../assets/fonts/ahronbd.ttf) format('truetype');
+  }
+  
+  
+  
 body{
     background-color: #000000;
     --app-primary-color:#2F80ED;

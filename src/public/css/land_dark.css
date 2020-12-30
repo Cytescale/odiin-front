@@ -183,7 +183,7 @@ background: #44AFFF;
      margin-right: 0px;
      background-color: rgb(0,0,0,0);
      border-style: solid;
-     border-width: 3px;
+     border-width: 1px;
      border-radius: 0px;
      border-color: #6FCF97;
      color:#6FCF97;
@@ -493,7 +493,7 @@ align-items: center;
 
 #app_land_stack_2_2_lft_tit{
      font-weight: 300;
-     font-family: Righteous;
+     font-family: ahronbd;
      font-size: 48px;
      background: -webkit-linear-gradient( #838996 ,#F5F5F5  );
      -webkit-background-clip: text;
@@ -1240,11 +1240,11 @@ border-bottom: 1px solid #000000;
 
      @keyframes floating_sat { 
           0% { 
-               transform: translate(0,  0px) rotate(26deg); 
+               transform: translate(0,  0px) rotate(16deg); 
           
                } 
           50%  { transform: translate(0, 15px); } 
-          100%   { transform: translate(0, -0px)  rotate(26deg); }     
+          100%   { transform: translate(0, -0px)  rotate(16deg); }     
       } 
      
      #app_land_stack_18_rgt_ico{

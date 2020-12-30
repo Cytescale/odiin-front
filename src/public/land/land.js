@@ -360,7 +360,7 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2_2' ref={what_ref}>
                <img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>
                                             
-             
+               
 
                <div id='app_land_stack_2_2_lft_slop'></div>
                                              <div id='app_land_stack_2_2_lft'>
@@ -382,8 +382,9 @@ export default class LandClass extends React.Component{
 
                <div id='app_land_stack_11' ref={contact_ref}>
                          <div id='app_land_stack_11_lft'>
-               
+                              <Fade left>
                               <img src={sal4} id='app_land_stack_11_lft_ico'></img>
+                              </Fade>
                          </div>
                          <div id='app_land_stack_11_rgt'>    
                          
@@ -456,8 +457,7 @@ export default class LandClass extends React.Component{
 
 
                </div>
-          }
-
+       
                <div id='app_land_stack_18' ref={contact_ref}>
                          <div id='app_land_stack_18_lft'>
                          <div>     <div id='app_land_stack_18_lft_tit'>Get in touch</div>
