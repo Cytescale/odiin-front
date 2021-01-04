@@ -766,7 +766,7 @@ export default class LandClass extends React.Component{
                                              </div>
 
                                              <div id='app_land_stack_9_dat_ques_cont'>
-                                                  <div id='app_land_stack_9_dat_ques_tit'>2.How does order tracking exactly work?</div>
+                                                  <div id='app_land_stack_9_dat_ques_tit'>2. How does order tracking exactly work?</div>
                                                   <div id='app_land_stack_9_dat_ques_ans'>
                                                   We keep you updated at every major/minor updates on E-mail, Github or the way you prefer.
                                                   The development process is completely transparent and you can ask for any queries to the development team,
