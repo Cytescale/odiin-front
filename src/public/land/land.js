@@ -361,7 +361,7 @@ export default class LandClass extends React.Component{
                <div id='app_land_stack_2_2_lft_slop'></div>
                                              <div id='app_land_stack_2_2_lft'>
                                                   <div id='app_land_stack_2_2_lft_tit'>
-                                                       We make your life easier
+                                                       We make your life easier!
                                                   </div>
                                                   <div id='app_land_stack_2_2_lft_cont'>
                                                        We transform your beautiful designs into lines of code <br></br>
