@@ -69,8 +69,9 @@ height: 32px;
 #app_land_fix_header{
      position: fixed;
      width: 100%;
-
+     height: 100vh;
      z-index: 10;
+     backdrop-filter: blur(0px);
      background: rgba(255, 255, 255,0);
      box-shadow: 0px 6px 6px rgb(0,0,0,0.0);
 }
@@ -473,7 +474,7 @@ align-items: center;
 #app_land_stack_2_2_lft_tit{
      font-family: sen;
      font-weight: 800;
-     font-size: 38px;
+     font-size: 32px;
      margin-left: -10px;
      background: #fefefe;
      -webkit-background-clip: text;
@@ -761,7 +762,7 @@ align-items: center;
 
 #app_land_stack_4_data_cont{
      width: 100%;
-
+     
      background: linear-gradient(89.68deg, #3EDC80 0.24%, #37C5F1 0.24%, #69EDA0 96.47%);
      color: #000000;
      border-radius: 0px;
@@ -1182,10 +1183,8 @@ width:100%;
 height:80vh;
 margin:0px;
 padding:0px;
-
 overflow-x:hidden;
 background-color: #fefefe;
-
 }
 #app_land_stack_11_lft{
 width:100%;
@@ -1244,7 +1243,6 @@ background-color: rgb(0,0,0,0.0);
    .menu-item{
      font-family: quicksand;
      font-weight: 600;   
-
      padding-bottom: 10px;
      border-bottom: 2px solid #e0e0e0;
    }
@@ -1463,7 +1461,6 @@ text-align: center;
      padding-top:100px;
      padding-left: 00%;
 padding-right:00%;
-     
 }
 #app_land_stack_14_lft{
 width:100%;
@@ -1504,8 +1501,6 @@ display: block;
 font-size:22px;
 padding-top: 72px;
 padding-right: 0px;
-position: relative;
-
 
 }
 #app_land_stack_14_rgt_bg{
@@ -1534,11 +1529,9 @@ border-bottom-left-radius: 8px;
 box-shadow: 0px 0px 28px rgb(0,0,0,0.0);
 }
 #app_land_stack_14_rgt_phn_bdy_ico{
-     width: 100%;
+     width: 80%;
      height: 100%;
-     border-top-left-radius: 8px;
-border-bottom-left-radius: 8px;    
-
+     border-radius: 8px;
 }
 
 
@@ -1914,11 +1907,12 @@ margin-left:100%;
 #app_land_stack_20{
      width: 100%;
      height: 100vh;
-     padding:64px;
+     padding:0px;
+     margin-top: 100%;
 }
 #app_land_stack_20_cont{
      width: 100%;
-     height: 100%;
+     height: 100vh;
      /* background: black url(https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat; */
      background: black url('../../assets/earth.jpeg') no-repeat;
      background-size: cover; 

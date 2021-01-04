@@ -247,7 +247,6 @@ export default class LandClass extends React.Component{
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
                                                        <Menu id='menu' width={ '100%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
-                                                       
                                                        <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
                                                        <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
                                                        <a id="contact" className="menu-item"onClick={scrollQuery} >Query</a>
@@ -520,7 +519,7 @@ export default class LandClass extends React.Component{
                </Fade>
                     <Fade right>
                          <div id='app_land_stack_14_rgt_phn_bdy'>     
-                              <img src={iframe_ico} id='app_land_stack_14_rgt_phn_bdy_ico'></img> 
+                              <img src={and1} id='app_land_stack_14_rgt_phn_bdy_ico'></img> 
                            
                          </div>    
                </Fade>
@@ -544,25 +543,14 @@ export default class LandClass extends React.Component{
                     Stay ahead of competition
                     </div>
              </div>
-               </Tween></Timeline></Scene></Controller>:<Controller><Scene
-        triggerHook="onLeave"
-        duration="100%"
-        pin>
-        <Timeline
-          wrapper={<div id="pinContainer" />}
-        >
-          <Tween
-            from={{padding: '32px',borderRadius:'0px' }}
-            to={{ padding: '0px' ,borderRadius:'0px',ease: "Power4.easeOut"}}
-          >
-               <div id='app_land_stack_20'>
-                   
-                    <div id='app_land_stack_20_cont'>
-                              Stay ahead of competition
-                    </div>
-             </div>
                </Tween></Timeline></Scene></Controller>
-               
+               :    <span>
+                    <div id='app_land_stack_20'>
+                         <div id='app_land_stack_20_cont'>
+                                   Stay ahead of competition
+                         </div>
+                    </div>
+                    </span>
                }
 
 
