@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
 import '../css/land_dark.css';
 //import '../css/land_res_1080.css';
-//import '../css/land_res_phn.css';
+import '../css/land_res_phn.css';
 import grid_svg from '../../assets/svg/grid.svg';
 import homedesign from '../../assets/svg/homedesign.svg';
 import homefront from '../../assets/svg/homefront.svg';
@@ -53,6 +53,7 @@ import { init } from 'ityped'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import { StickyContainer, Sticky } from 'react-sticky';
+
 import styled from 'styled-components';
 
 const SectionWipes2Styled = styled.div`
@@ -357,10 +358,7 @@ export default class LandClass extends React.Component{
                
                </div>
                <div id='app_land_stack_2_2' ref={what_ref}>
-               <img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>
-                                            
-            
-
+               {this.state.windowWidth>850?<img id='app_land_stack_2_2_rgt_ico'src={sal2}></img>:<span></span>}
                <div id='app_land_stack_2_2_lft_slop'></div>
                                              <div id='app_land_stack_2_2_lft'>
                                                   <div id='app_land_stack_2_2_lft_tit'>
@@ -529,7 +527,7 @@ export default class LandClass extends React.Component{
                </div>
           </div>
 
-
+          {this.state.windowWidth>850?
           <Controller><Scene
         triggerHook="onLeave"
         duration="100%"
@@ -546,7 +544,29 @@ export default class LandClass extends React.Component{
                     Stay ahead of competition
                     </div>
              </div>
+               </Tween></Timeline></Scene></Controller>:<Controller><Scene
+        triggerHook="onLeave"
+        duration="100%"
+        pin>
+        <Timeline
+          wrapper={<div id="pinContainer" />}
+        >
+          <Tween
+            from={{padding: '32px',borderRadius:'0px' }}
+            to={{ padding: '0px' ,borderRadius:'0px',ease: "Power4.easeOut"}}
+          >
+               <div id='app_land_stack_20'>
+                   
+                    <div id='app_land_stack_20_cont'>
+                              Stay ahead of competition
+                    </div>
+             </div>
                </Tween></Timeline></Scene></Controller>
+               
+               }
+
+
+
 
           <div id='app_land_stack_15'>
                <div id='app_land_stack_15_slop'></div>
