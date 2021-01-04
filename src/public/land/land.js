@@ -246,7 +246,7 @@ export default class LandClass extends React.Component{
           {this.state.theposition>0.02?
                <div id='app_land_fix_header'>
                                    {this.state.windowWidth<850?
-                                                       <Menu id='menu' width={ '100%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
+                                                       <Menu id='menu' width={ '90%' }  customBurgerIcon={ <img className='menu_ico_butt' src={menu_ico}/> } >                                                       
                                                        <a id="home" className="menu-item" onClick={scrollHome}>Home</a>
                                                        <a id="contact" className="menu-item"onClick={scrollWhat}>What We Do?</a>
                                                        <a id="contact" className="menu-item"onClick={scrollQuery} >Query</a>
@@ -649,8 +649,8 @@ export default class LandClass extends React.Component{
                </div>
           </section>
           <Tween
-            from={{ x: '-100%',opacity:'0' }}
-            to={{ x: '0%',opacity:'1' }}
+            from={{ x: '-100%' }}
+            to={{ x: '0%' }}
           >
             <section className="panel green">
             <div id='app_land_stack_19'>
