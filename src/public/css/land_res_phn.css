@@ -1603,7 +1603,7 @@ height: 100%;
 #app_land_stack_15_lft_tit{
      font-size: 32px;
      font-family: sen;
-     background: -webkit-linear-gradient( #000000 ,#F5F5F5  );
+     background: -webkit-linear-gradient( #14348e ,#14348e  );
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
      color: #000000;
@@ -1962,7 +1962,7 @@ margin-left:100%;
      font-family: Righteous;
      display: flex;
      justify-content: center;
-     padding-top: 15%;
+     padding-top: 40%;
      font-size:32px;
 }
 
