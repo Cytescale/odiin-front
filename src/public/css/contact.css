@@ -186,6 +186,15 @@
 
           }
           
+
+          #app_contact_bdy_head_log_link{
+               color: #000000;
+          }
+          #app_contact_bdy_head_log_link:hover{
+               text-decoration: none;
+          }
+          
+
           #app_contact_bdy_head{
                position: fixed;
                top:0;
