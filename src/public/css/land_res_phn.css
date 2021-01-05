@@ -158,14 +158,15 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_con_cont{
      
      height: calc(100%);
-     width: fit-content;
+     width: auto;
      right: 0;
      z-index: 10000000;
      pointer-events: auto;
      display: block;
      justify-content: right;
      text-align: right;
-     padding:10px;
+     padding:15px;
+     
 }
 
 @keyframes cont_anim { 
@@ -183,12 +184,8 @@ background: #44AFFF;
      }  
   } 
  #app_land_stack_1_lay_2_dat_con_cont:hover > #app_land_stack_1_lay_2_dat_con_cont_bg{
-      animation-name: cont_anim;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
- }
- #app_land_stack_1_lay_2_dat_con_butt:hover{
-      color:#212121;
+      animation-name: none;
+  
  }
  
  #app_land_stack_1_lay_2_dat_con_cont_bg{
@@ -200,18 +197,21 @@ background: #44AFFF;
  }
  
  #app_land_stack_1_lay_2_dat_con_butt{
-      width: 100px;
+      width: fit-content;
       height: 100%;
+
       right: 0;
       z-index: 20;
       pointer-events: auto;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 500;
       font-family: sen;
       margin-right: 0px;
       background-color: #6FCF97;
       border-style: none;
       border-width: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
       border-radius: 6px;
       border-color: #6FCF97;
       color:#fefefe;
