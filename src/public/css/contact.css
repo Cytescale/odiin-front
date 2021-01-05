@@ -16,7 +16,9 @@
           text-decoration: none;
      }
      
-
+     #app_contact_bdy_form_bas_cont{
+          margin-top: 32px;
+     }
      #app_contact_bdy_head{
           position: fixed;
           top:0;
@@ -160,12 +162,23 @@
      #app_cont_sub_butt{
           width: 150px;
           height: 52px;
-          margin-top: 22px;
+     margin-left: 12px;          
           background-color: #6FCF97;
           color: #fefefe;
           border-style: none;
      }
-
+     #cont_sub_cont_err{
+          width: 100%;
+          display: flex;
+          flex: 1;
+          
+     }
+     #cont_sub_cont{
+          margin-top: 32px;
+          width: 100%;
+          display: inline-flex;
+     }
+     
      /*///////////////////////////////////////////////////////////*/
      /*///////////////////////////////////////////////////////////*/
      /*///////////////////////////////////////////////////////////*/
@@ -186,9 +199,20 @@
 
           }
           
+          #cont_sub_cont_err{
+               width: 100%;
+               display: flex;
+               flex: 1;
+               
+          }
+          #cont_sub_cont{
+               margin-top: 16px;
+               width: 100%;
+               display: block;
+          }
 
           #app_contact_bdy_head_log_link{
-               color: #000000
+               color: #fff;
                ;
           }
           #app_contact_bdy_head_log_link:hover{
@@ -199,12 +223,14 @@
           #app_contact_bdy_head{
                position: fixed;
                top:0;
+               background-color: rgb(33,33,33);
                z-index: 99999;
                left:0;
                right: 0;
-               padding:0px;
+               padding:0;
+               padding-top:15px;
+               padding-bottom: 15px;
                width: 100%;
-               padding-top: 32px;
                display: flex;
                justify-content: center;
                align-items: center;
@@ -212,10 +238,13 @@
           #app_contact_bdy_head_log{
                font-family: quicksand;
                font-size: 28px;
-               color:#000000;
+               color:#fefefe;
                width: 100%;
                font-weight: 600;
-          
+               display: flex;
+               padding-left: 0px;
+               justify-content: center;
+               align-items: center;
           }
          
           
@@ -273,6 +302,7 @@
                background-color: rgb(0,0,0,0);
                border-style: solid;
                border-width: 1px;
+               
                border-radius: 0px;
                border-color: #6FCF97;
                color:#6FCF97;
@@ -317,6 +347,9 @@
           .app_contact_form_txt_class::placeholder{
                font-size: 16px;
           }
+          #app_contact_bdy_form_bas_cont{
+               margin-top: 32px;
+          }
           .app_contact_form_txt_class_cont{
           
                margin-top: 18px;
@@ -347,7 +380,7 @@
           #app_cont_sub_butt{
                width: 150px;
                height: 52px;
-               margin-top: 22px;
+               margin-top:0px;
                background-color: #6FCF97;
                color: #fefefe;
                border-style: none;

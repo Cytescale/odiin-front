@@ -1240,12 +1240,18 @@ border-bottom: 1px solid #000000;
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_10{
      width: 100%;
-     border-top: 1px  solid #bdbdbd;
-     border-bottom: 1px solid #bdbdbd;
+     background-color: #fefefe;
      text-align: center;
      padding:62px;
-     font-family: quicksand;
-     font-size: 16px;
+     color:#000000;
+     font-family: sen;
+     font-size: 17px;
+
+}
+#app_land_stack_10_dat{
+     padding:0px;
+     border-radius: 12px;
+     box-shadow: 0px 0px 00px rgb(0, 0, 0,0.09);
 }
 /*////////////////////////////////////////////////*/
 #app_land_stack_11{

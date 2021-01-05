@@ -17,7 +17,8 @@ export default class ContactClass extends React.Component{
           feedquery:'',
           feederrcode:0,
           textIndex: 0,
-          feederr:'Empty Error'
+          feederr:'Empty Error',
+          feedsucc:'Get a hobby dude'
         }
         this.querySubmit = this.querySubmit.bind(this);
      }
@@ -54,9 +55,10 @@ export default class ContactClass extends React.Component{
                 templateParams,
                'user_pG1FPpxntH0JfibLEaJWt'
               );
+          this.setState({feederrcode:2});
            this.resetForm()
         }
-
+        
         resetForm() {
           this.setState({
                feedname: '',
@@ -82,7 +84,7 @@ export default class ContactClass extends React.Component{
                     <div id='app_contact_bdy_form_cont'>
                     <div id='app_contact_bdy_form'>
                          <div id='app_contact_bdy_form_tit'>Contact Form</div>
-                         <form onSubmit={this.querySubmit}> 
+                         <form id='app_contact_bdy_form_bas_cont' onSubmit={this.querySubmit}> 
                          <div className='app_contact_form_txt_class_cont'>
                               <div className='app_contact_form_txt_class_tit'>Your name*</div>
                          <input type="text"    value={this.state.feedname}  onChange={this.handleQueryChange.bind(this, 'feedname')}  className='app_contact_form_txt_class'></input>
@@ -106,13 +108,21 @@ export default class ContactClass extends React.Component{
                               <div className='app_contact_form_txt_class_tit'>Your Message*</div>
                          <textarea placeholder='Write your message'  value={this.state.feedquery} onChange={this.handleQueryChange.bind(this, 'feedquery')} id='app_contact_form_txt_class_mes'></textarea>
                          </div>
+                                            <div id='cont_sub_cont'>
                                               {
                                            this.state.feederrcode===1?                                
-                                           <Alert variant='danger'>
+                                           <Alert variant='danger' id='cont_sub_cont_err'>
                                            {this.state.feederr}
                                            </Alert>:<span></span>
                                            }
-                         <button type="submit" id='app_cont_sub_butt'>Submit</button>
+                                              {
+                                           this.state.feederrcode===2?                                
+                                           <Alert variant='success'  id='cont_sub_cont_err'>
+                                           {this.state.feedsucc}
+                                           </Alert>:<span></span>
+                                           }
+                                             <button type="submit" id='app_cont_sub_butt'>Submit</button>
+                                             </div>
                          </form>
                     </div>
                     </div>

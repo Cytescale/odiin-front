@@ -816,7 +816,9 @@ export default class LandClass extends React.Component{
 
 
                <div id='app_land_stack_10'>
+                    <div id='app_land_stack_10_dat'>
                We handcrafted this website with Pride and Love &#x2665;
+               </div>
                </div>
 
 
