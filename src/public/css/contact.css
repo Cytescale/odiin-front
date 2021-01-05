@@ -188,7 +188,8 @@
           
 
           #app_contact_bdy_head_log_link{
-               color: #000000;
+               color: #000000
+               ;
           }
           #app_contact_bdy_head_log_link:hover{
                text-decoration: none;
