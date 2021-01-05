@@ -158,13 +158,14 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat_con_cont{
      
      height: calc(100%);
-     width: 160px;
+     width: fit-content;
      right: 0;
      z-index: 10000000;
      pointer-events: auto;
      display: block;
-     justify-content: end;
-     text-align: end;
+     justify-content: right;
+     text-align: right;
+     padding:10px;
 }
 
 @keyframes cont_anim { 
@@ -204,14 +205,14 @@ background: #44AFFF;
       right: 0;
       z-index: 20;
       pointer-events: auto;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 500;
       font-family: sen;
       margin-right: 0px;
       background-color: #6FCF97;
-      border-style: solid;
+      border-style: none;
       border-width: 1px;
-      border-radius: 0px;
+      border-radius: 6px;
       border-color: #6FCF97;
       color:#fefefe;
  }
