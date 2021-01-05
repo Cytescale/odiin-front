@@ -54,6 +54,8 @@ import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import { StickyContainer, Sticky } from 'react-sticky';
 
+import history from '../home/history';
+
 import styled from 'styled-components';
 
 const SectionWipes2Styled = styled.div`
@@ -121,6 +123,14 @@ export default class LandClass extends React.Component{
           
           this.listenToScroll();
 }
+
+     routeChange = () =>{ 
+     let path = `contact`; 
+     history.push(path);
+     window.location.reload();
+   }
+ 
+
   handleResize = (e) => {
   this.setState({ windowWidth: window.innerWidth });
  };
@@ -130,6 +140,7 @@ export default class LandClass extends React.Component{
 }
 
  componentDidMount() {
+
   window.addEventListener("resize", this.handleResize); 
      window.addEventListener('scroll', this.listenToScroll);
      setInterval(() => {
@@ -266,7 +277,7 @@ export default class LandClass extends React.Component{
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_con_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_con_cont_bg'></div>
-                                                       <button id='app_land_stack_1_lay_2_dat_con_butt'>Contact</button>
+                                                       <button id='app_land_stack_1_lay_2_dat_con_butt' onClick={this.routeChange}>Contact</button>
                                                        
                                                   </div>
                                         
@@ -624,9 +635,10 @@ export default class LandClass extends React.Component{
                               <div  className='app_land_stack_15_lft_1_class_data_cost'>
                                  
                               </div>
-                              <div className='app_land_stack_15_lft_1_class_data_cost_butt_cont'>
-                              <button className='app_land_stack_15_lft_1_class_data_cost_butt'  onClick={scrollContact}>Contact Us</button>
-                              </div>
+                              <div className='app_land_stack_15_lft_1_get_butt'>
+                              
+                              <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.localhost:3000/contact'>Contact Us</a>
+                         </div>
                     </div>
                     
                     </div>

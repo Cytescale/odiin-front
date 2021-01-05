@@ -5,6 +5,7 @@ import LoginPage from  '../login/login.js';
 import HomePage from '../home/home.js';
 import LandPage from '../land/land.js';
 import ContactPage  from '../contact/contact.js';
+
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -19,6 +20,7 @@ export default class Routers extends React.Component {
            
     }
 
+  
 
     isAuth(){
         var data=cookies.get('user_token');
