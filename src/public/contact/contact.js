@@ -76,7 +76,7 @@ export default class ContactClass extends React.Component{
                <div id='app_contact_bdy'>
                     <div id='app_contact_bdy_head'>
                          <div id='app_contact_bdy_head_log'>
-                              <a id='app_contact_bdy_head_log_link' href='https://www.localhost:3000'>Cytescale</a>
+                              <a id='app_contact_bdy_head_log_link' href='https://www.cytescale:3000'>Cytescale</a>
                          </div>
                     </div>
                     <div id='app_contact_bdy_form_cont'>
