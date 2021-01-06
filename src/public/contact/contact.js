@@ -18,7 +18,7 @@ export default class ContactClass extends React.Component{
           feederrcode:0,
           textIndex: 0,
           feederr:'Empty Error',
-          feedsucc:'Get a hobby dude'
+          feedsucc:'Received, we will get back to you soon.'
         }
         this.querySubmit = this.querySubmit.bind(this);
      }

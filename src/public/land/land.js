@@ -880,7 +880,7 @@ export default class LandClass extends React.Component{
                     <div id='app_land_stack_7_rgt'>
                          <div id='app_land_stack_7_rgt_dat'>
                          <a className='app_land_stack_7_lnk_class'></a>
-                         <a className='app_land_stack_7_lnk_class' href='////www.facebook.com/Cytescale-104775144804086'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
+                         <a className='app_land_stack_7_lnk_class' href='////www.facebook.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.twitter.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.instagram.com/cytescale?igshid=6dl3co5b77wz'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
                          {/* <a className='app_land_stack_7_lnk_class' href='////www.github.com/Cytescale'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a> */}
