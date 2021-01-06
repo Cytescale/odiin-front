@@ -190,13 +190,13 @@
 
           body{
           overflow-x: hidden;
+          background-color: #fefefe;
           }
           #app_contact_bdy{
-               height: 100vh;
+               height: 100%;
                width: 100%;
                background:none;
                background-size: cover;  
-
           }
           
           #cont_sub_cont_err{
