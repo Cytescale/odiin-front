@@ -595,7 +595,7 @@ export default class LandClass extends React.Component{
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
                               
-                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com/contact'>Get Now !</a>
+                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com:3000/contact'>Get Now !</a>
                               </div>
                     </div>
                     
@@ -616,7 +616,7 @@ export default class LandClass extends React.Component{
                               97$
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
-                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com/contact'>Get Now !</a>
+                                   <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com:3000/contact'>Get Now !</a>
                               </div>
                     </div>
 
@@ -637,7 +637,7 @@ export default class LandClass extends React.Component{
                               </div>
                               <div className='app_land_stack_15_lft_1_get_butt'>
                               
-                              <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com/contact'>Contact Us</a>
+                              <a className='app_land_stack_15_lft_1_get_butt_lnk' href='https://www.cytescale.com:3000/contact'>Contact Us</a>
                          </div>
                     </div>
                     
