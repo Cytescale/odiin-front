@@ -125,7 +125,7 @@ export default class LandClass extends React.Component{
 }
 
      routeChange = () =>{ 
-     let path = `contact`; 
+     let path = `3000:/contact`; 
      history.push(path);
      window.location.reload();
    }
