@@ -163,6 +163,7 @@ background: #44AFFF;
 }
 #app_land_stack_1_lay_2_dat_con_butt:hover{
      color:#212121;
+     text-decoration: none;
 }
 
 #app_land_stack_1_lay_2_dat_con_cont_bg{
@@ -187,6 +188,10 @@ background: #44AFFF;
      border-radius: 0px;
      border-color: #6FCF97;
      color:#6FCF97;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
 }
 
 

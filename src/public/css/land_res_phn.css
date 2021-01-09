@@ -215,6 +215,10 @@ background: #44AFFF;
       border-radius: 6px;
       border-color: #6FCF97;
       color:#fefefe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
  }
  
 #app_land_stack_1_lay_2_dat{

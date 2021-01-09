@@ -277,8 +277,8 @@ export default class LandClass extends React.Component{
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_con_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_con_cont_bg'></div>
-                                                       <button id='app_land_stack_1_lay_2_dat_con_butt' onClick={this.routeChange}>Contact</button>
-                                                       
+                                                       {/* <button id='app_land_stack_1_lay_2_dat_con_butt' onClick={this.routeChange}>Contact</button> */}
+                                                      <a id='app_land_stack_1_lay_2_dat_con_butt' href='https://www.cytescale.com:3000/contact'>Contact</a>
                                                   </div>
                                         
                                    </div>
