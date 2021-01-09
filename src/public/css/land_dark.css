@@ -31,8 +31,9 @@ background-color: #000000;
 #app_land_fix_header{
      position: fixed;
      width: 100%;
-     z-index: 10;  
-     background-color:#fefefe;
+     z-index: 20;  
+     background-color:rgb(33,33,33,0.7);
+     backdrop-filter: blur(10px);
      box-shadow: 0px 6px 6px rgb(0,0,0,0.09);
 }
 
@@ -50,7 +51,7 @@ background-color: #000000;
 #app_land_stack_1{
      height: 100vh;
      width: 100%;
-     background: linear-gradient(130.87deg, #4BC2F2 0%, #44B0FF 45.35%, #6363FF 98.94%);
+     
      z-index: 20px;
 }
 .app_land_stack_1_lay_class{
@@ -125,14 +126,89 @@ background: #44AFFF;
 #app_land_stack_1_lay_2_dat{
      width: 100%;
      height: 100%;
-     border-radius: 6px;
-     border: 1px solid #fefefe;
+     
+     border-radius: 22px;
+     background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); 
     
+}
+
+#app_land_stack_1_lay_2_dat_con_cont{
+     
+     height: calc(100% - 7px);
+     width: 160px;
+     right: 0;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+@keyframes cont_anim { 
+    from{
+     width: 0%;
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
+     color:#6FCF97;
+    }
+    to{
+     width: 100%;
+     border-top-right-radius: 0px;
+     border-bottom-right-radius: 0px;
+     color:#212121;
+    }  
+ } 
+#app_land_stack_1_lay_2_dat_con_cont:hover > #app_land_stack_1_lay_2_dat_con_cont_bg{
+     animation-name: cont_anim;
+     animation-duration: 0.5s;
+     animation-fill-mode: forwards;
+}
+#app_land_stack_1_lay_2_dat_con_butt:hover{
+     color:#212121;
+}
+
+#app_land_stack_1_lay_2_dat_con_cont_bg{
+     position: absolute;
+     width: 00%;
+     left:0;
+     background-color: #6FCF97;
+     height: 100%;
+}
+
+#app_land_stack_1_lay_2_dat_con_butt{
+     width: 160px;
+     height: 100%;
+     right: 0;
+     z-index: 20;
+     font-size: 22px;
+     font-weight: 500;
+     margin-right: 0px;
+     background-color: rgb(0,0,0,0);
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 0px;
+     border-color: #6FCF97;
+     color:#6FCF97;
+}
+
+
+#app_land_stack_1_lay_2_dat_head_cont_min
+{
+     height: 72px;
+     width: 100%;
+     z-index: 10000;
+     background-color:rgb(33,33,33,0.7);
+     backdrop-filter: blur(10px);
+     border-top-left-radius: 18px;
+     border-top-right-radius: 18px;   
+     display: inline-flex;
+          
 }
 #app_land_stack_1_lay_2_dat_head_cont{
      height: 72px;
      width: 100%;
-     background-color: #fefefe;   
+     z-index: 20;
+     
+     border-top-left-radius: 18px;
+     border-top-right-radius: 18px;   
      display: inline-flex;
      
 }
@@ -150,14 +226,14 @@ display: flex;
 font-size: 22px;
 font-weight: 600;
 font-family: quicksand;
-color:#000000;
+color:#fefefe;
 }
 #app_land_stack_1_lay_2_dat_head_logo_phn{
      font-size: 21px;
 font-weight: 600;
 margin-left: 32px;
 font-family: quicksand;
-color:#000000;
+color:#fefefe;
 
 }
 
@@ -186,7 +262,7 @@ color:#000000;
 #bow_cont{
      width: 300px;
      height: 32px;
-     background-color: #f1f1f1;
+     background-color: #323232;
      border-radius: 320px;
 }
 
@@ -198,7 +274,7 @@ color:#000000;
 }
 
 .app_land_stack_1_lay_2_dat_head_lnk_1{
-     color:#ABABAB;
+     color:#fefefe;
      
 }
 
@@ -275,6 +351,7 @@ padding-right:16px;
 #app_land_stack_1_lay_2_dat_bdy_main_moto_cont_bdy{
      text-align: center;
      font-size:82px;
+     
      font-family:gilroy;
 }
 #lmt_anim_txt_cont{
@@ -335,7 +412,7 @@ font-size: 57px;
 #app_land_stack_1_lay_2_dat_bdy_sub_moto_cont{
      font-family: Quicksand;
 font-style: normal;
-color:#FEFEFE;
+color:#c1c4cb;
 font-weight: 500;
 font-size: 18px;
 line-height: 121.5%;
@@ -355,68 +432,87 @@ align-items: center;
 }
 #app_land_stack_1_lay_2_ext_1_cont{
      position: absolute;
-     width: 300px;
-     height: 300px;
+     width: auto;
+     height: fit-content;
      bottom:0;
      left:0;
-     margin:32px;
-}
-#app_land_stack_1_lay_2_ext_1_sid_1{
+     right: 0;
      
+}
+@keyframes floating { 
+     0% { transform: translate(0,  0px); } 
+     50%  { transform: translate(0, 15px); } 
+     100%   { transform: translate(0, -0px); }     
+ } 
+
+#app_land_stack_1_lay_2_ext_1_sid_1{
      text-align: center;
      font-family: quicksand;
      font-style: normal;
      font-weight:400;
-     font-size: 25px;
+     font-size: 22px;
      line-height: 158%;
-     color: #ADDCFF;   
-     position: absolute;  
-     margin-left: -62px;
+     color: #4A2D51;   
      bottom:0;
-     margin-bottom:62px;
-     transform: rotate(90deg);
+     margin-bottom: -22px;
+     margin-left: -32px;
+     animation-name: floating; 
+     animation-duration: 2.5s; 
+     animation-iteration-count: infinite; 
+     animation-timing-function: ease-in-out; 
 
 }
-#app_land_stack_1_lay_2_ext_1_sid_2{
-          position: absolute;
-          bottom:0;
-     margin-left: 12px;
-     margin-bottom: 5px;          
+#app_land_stack_1_lay_2_ext_2_ico{
+     width: 22px;
+     color:#fefefe;
+     fill:#fefefe;
+     
+}
+
+
+#app_land_stack_1_lay_2_ext_2_sid_1{
      text-align: center;
-     font-family: Inter;
+     font-family: quicksand;
      font-style: normal;
-     font-weight: 600;
-     font-size: 20px;
-     line-height: 158%;
-     color: #ADDCFF;
+     font-weight:400;
+     font-size: 22px;
+     color: #7E5F86;   
+     margin-bottom: 52px;
+     animation-name: floating; 
+     animation-duration: 3s; 
+     animation-iteration-count: infinite; 
+     animation-timing-function: ease-in-out; 
 }
 /*////////////////////////////////////////////////////*/
 #app_land_stack_2_2{
      height:650px;
      width: 100%;
      position: relative;
+     
 }    
 
 #app_land_stack_2_2_lft_tit{
-     font-weight: 700;
-     font-family: gilroylight;
-     font-size: 42px;
-     color: #145789;
+     font-family: sen;
+     font-weight: 800;
+     font-size: 48px;
+     margin-left: -10px;
+     background: #fefefe;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 
 #app_land_stack_2_2_lft_cont{
-     font-family: gilroylight;
-     font-weight: 400;
-     
-     margin-top: 10px;
+     font-family: sen;
+     font-weight: 500;
+     color: #fefefe;
+     margin-top: 20px;
      font-size: 19px;
      line-height: 2;
      letter-spacing: 0px;
 }
-
 #app_land_stack_2_2_lft{
-     position: absolute;
-     width: 60%;
+position: absolute;
+width: 60%;
 height: auto;
 margin:10%;
 
@@ -425,9 +521,9 @@ margin:10%;
      position: absolute;
      width: 100%;
      height: 300px;
-     bottom: -50%;
-     z-index:-10;
-     background-color: #FDF8F1;
+     bottom: -40%;
+     z-index:0;
+     background: linear-gradient(90.21deg, rgba(196, 196, 196, 0) -0.99%, #101010 69.39%);background-color: #101010;
      transform: skewY(7.5deg);
      transform-origin: 100%;    
 }
@@ -436,7 +532,7 @@ margin:10%;
      height: 650px;    
      position: absolute;
      right: 0;
-     z-index:-10;
+     z-index:0;
 }
 
 
@@ -516,8 +612,7 @@ margin:10%;
      bottom: 0;
      left: 0;
      right: 0;
-    
-          background:  #FDF8F1 ;
+     background:  #151515;
      padding-bottom: 22px;    
      padding-top: 42px;    
 }
@@ -564,7 +659,7 @@ margin:10%;
      
      width: 100%;  
      padding-bottom: 51px;   
-     border-bottom: 1px solid #e0e0e0;
+     border-bottom: 1px solid #525252;
 }
 #land_rw1_cl_2{
      margin-top: 51px;
@@ -575,7 +670,7 @@ margin:10%;
      width: 100%;
      
      padding-bottom: 51px;   
-     border-bottom: 1px solid #e0e0e0;
+     border-bottom: 1px solid #525252;
 }
 #land_rw2_cl_2{
      margin-top: 51px;
@@ -583,22 +678,24 @@ margin:10%;
      margin-bottom: 62px;
 }
 
+#app_land_stack_3_head_bdy_dat_1_id{
+     margin-top: 30%;
+}
 .app_land_stack_3_head_bdy_dat_class{
 width:100%;
-height: 100%;
-display: block;
-
+height: 80vh;
 }
 .app_land_stack_3_head_bdy_dat_ico_class{
 width: 100%;     
 height: 25%;
 display: flex;
+z-index: 0;
   justify-content: center;
   align-items: center;    
    
 }
 .app_land_stack_3_head_bdy_dat_info_class{
-     
+     z-index: 0;
      width: 100%;
      height: 100%;
 
@@ -606,32 +703,35 @@ display: flex;
 
 .app_land_stack_3_head_bdy_dat_info_class_tit{
      font-family: quicksand;
-     font-size: 20px;
+     font-size: 27px;
      line-height: 158%;
      /* or 38px */
      display: flex;
      justify-content: center;
      align-items: center;     
-     color: #000000;
+     color: #fefefe;
      font-weight: 600;
      margin-top:32px;
+     z-index: 0;
 }
 
 #app_land_stack_3_head_main_cont_tit{
-     
+     color: #fefefe;
+     z-index: 0;
 }
 
 
 .app_land_stack_3_head_bdy_dat_ico_class_ico{
      height: 150px;
      width: 150px;
+     z-index: 0;
 }
 
 .app_land_stack_3_head_bdy_dat_info_class_data{
 
      font-style: normal;
      font-weight: normal;
-     font-size: 18px;
+     font-size: 20px;
      line-height: 158%;
      /* or 30px */
      width: 100%;
@@ -639,11 +739,12 @@ display: flex;
      padding-right:52px;
      text-align: center;
      margin-top:14px;
-     color: #000000;
+     color: #fefefe;
      display: flex;
   justify-content: center;
   align-items: center;     
          font-family: quicksand;
+         z-index: 0;
 }
 
 
@@ -656,14 +757,7 @@ display: flex;
      position: relative  ;
      
 }
-#app_land_stack_4_bg{
-     position: absolute;
-     z-index: -20;
-     background: linear-gradient(180deg, #f1f1f1 0%,  #FFFFFF 100%);
-     width: 100%;
-     height: 50%;
-     top:20%;
-}
+
 #app_land_stack_4_head_main_cont{
      width: 50%;
      margin-left:32px;
@@ -671,7 +765,7 @@ display: flex;
      margin-top:64px;
      margin-bottom: 64px;
      background: linear-gradient(131.81deg, #6363FF 0%, #9D9DFF 0.01%, #6363FF 102.58%);
-     font-family: quicksand;
+     font-family: sen;
      font-style: normal;
      font-weight: bold;
      font-size: 40px;
@@ -684,22 +778,24 @@ display: flex;
      border-radius: 32px;
      padding-left: 72px;
      padding-right: 72px;
+     z-index: 10;
 }
 
 #app_land_stack_4_data_cont{
      width: 50%;
      height: calc(100%-64px);
-     background-color: #f7f7f7;
+     background: linear-gradient(89.68deg, #3EDC80 0.24%, #37C5F1 0.24%, #69EDA0 96.47%);
      color: #000000;
      border-radius: 32px;
      margin-left: 16px;
      margin-right: 32px;    
      margin-top: 64px;
      margin-bottom:64px;
+     z-index: 10;
 }
 
 #car{
-     color: #000000;
+     color: #fefefe;
      width:100%;
      height: 100%;
      display: flex;
@@ -721,13 +817,15 @@ display: flex;
 {
   content: '>';
   font-size: 55px;
-  color: red;
+  color: #fefefe;
+ 
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: red;
+  color: #fefefe;
+ 
 }
 
 .carousel-indicators li {
@@ -742,21 +840,25 @@ display: flex;
      height: 100%;
      font-family: Quicksand;
      width: 100%;
-
+     margin-top: -112px;
      color: #000000;
 }
 #carcap{
-     padding-top:32px;
+     font-family: sen;
+     
      z-index: 0;
-     color: #000000;
-}
 
+     color: #fefefe;
+}
+#carcap_tit{
+     font-weight: 700;
+}
 .app_land_stack_4_data_cont_ico_class{
      width: 100%;
      padding:190px;
 }
 #capcap{
-
+font-weight: 300;
 }
 
 
@@ -775,6 +877,12 @@ display: flex;
   justify-content: center;
   align-items: center;     
 }
+
+#app_land_stack_5_lft_sub_cont{
+     display: block;
+     text-align: left;
+}
+
 #app_land_stack_5_lft_cont_tit{
      color:#FEFEFE;
      font-family: gilroy;
@@ -793,15 +901,17 @@ display: flex;
      display: flex;
   justify-content: center;
   align-items: center;     
+  text-align: left;
 }
 
 #app_land_stack_5_rgt_cont_form_cont{
      width: 70%;
      float: right;
-     height: 100%;
+     height: 95%;
      background-color: #fefefe;
      box-shadow: 0px 6px 6px rgb(1,1,1,0.3);
      padding:32px;
+     margin-top: 10%;
      border-radius: 8px;
 }
 .app_setting_main_bdy_tit_main_sub_opt_cont_data{
@@ -814,9 +924,9 @@ display: flex;
 
 #app_land_stack_5_lft_cont_sub_tit{
      color:#FEFEEF;
-     font-size:22px;
+     font-size:23px;
      font-family: quicksand;
-     width: 70%;
+     width: 100%;
      font-weight: 400;
      margin-top: 10px;
 }
@@ -1069,58 +1179,173 @@ border-bottom: 1px solid #000000;
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_10{
      width: 100%;
-     border-top: 1px  solid #bdbdbd;
-     border-bottom: 1px solid #bdbdbd;
+     background-color: #fefefe;
      text-align: center;
-     padding:62px;
+     padding:64px;
      color:#000000;
-     font-family: inter;
+     font-family: sen;
      font-size: 17px;
+
 }
+#app_land_stack_10_dat{
+     padding:62px;
+     border-radius: 12px;
+     box-shadow: 0px 0px 20px rgb(0, 0, 0,0.09);
+}
+/*/////////////////////////////////////////////////////////////*/
+
+#app_land_stack_18{
+     display: inline-flex;
+     width:100%;
+     height:80vh;
+     margin:0px;
+     padding:0px;
+     z-index: 0;
+          
+}
+
+#app_land_stack_18_lft_tit{
+     font-size: 38px;;
+     margin-bottom: 22px;
+     font-family: sen;
+     font-weight: 800;
+     color:#fefefe;
+     
+}
+
+     #app_land_stack_18_lft{
+          width:48%;
+          z-index: 10;
+          height:calc(100%-52px);
+          color:#fefefe;
+          background: linear-gradient(360deg, #000000 0%, #212121 100%);
+          font-family:sen;
+          padding:42px;
+          margin:32px;
+          font-size:20px;
+          display: flex;
+          border-radius: 8px;
+          justify-content: center;
+          align-items: center;
+          
+     }
+     #app_land_stack_18_lft_ico{
+          position: absolute;
+
+          width: 100%;
+          z-index:0;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+     }
+     
+
+     #app_land_stack_18_rgt{
+          width:50%;
+          z-index: 0;
+          height:100%;
+          color:#fefefe;
+          font-family:inter;
+          padding:82px;
+          font-size:20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     @keyframes floating_sat { 
+          0% { 
+               transform: translate(0,  0px) rotate(16deg); 
+          
+               } 
+          50%  { transform: translate(0, 15px); } 
+          100%   { transform: translate(0, -0px)  rotate(16deg); }     
+      } 
+     
+     #app_land_stack_18_rgt_ico{
+          width: 100%;
+          transform: rotate(26.7deg);
+          animation-name: floating_sat; 
+          animation-duration: 3s; 
+          animation-iteration-count: infinite; 
+          animation-timing-function: ease-in-out; 
+     
+     }
+     
+     .app_land_stack_18_rgt_high{
+          font-size:22px;
+          font-family:quicksand;
+          z-index: -10;
+          color:#fefefe;
+          font-weight: 800;
+          margin-top: 12px;
+     }
+     .mail_ico{
+          width: 28px;
+          height: 28px;
+          margin-right: 7px;
+          vertical-align: middle;
+          
+     }    
+     
+     #app_land_stack_18_rgt_tit{
+          color:#fefefe;
+          font-family: quicksand;
+          font-weight: 700;
+          z-index: 0;
+          font-size:42px;
+          padding-bottom:32px;
+     }
+     
+
+
 /*////////////////////////////////////////////////*/
 #app_land_stack_11{
 display: inline-flex;
+position: relative;
+z-index: 0;
 width:100%;
-height:110vh;
+height:auto;
 margin:0px;
 padding:0px;
-
 }
 #app_land_stack_11_lft{
 width:50%;
 color:#212121;
-font-size:38px;
 font-family:quicksand;
 font-weight: 600;
-height:100%;
-display: flex;
-padding:52px;
-justify-content: center;
+height:100vh;
 background-color: rgb(0,0,0,0.0);
-position: relative;
+position: -webkit-sticky;
+position: sticky;
+top:0;
+
 }
 #app_land_stack_11_lft_ico{
      position: absolute;
-     
      width: 100%;
-     z-index: -10;
+     z-index:0;
      left: 0;
      right: 0;
      top: 0;
      bottom: 0;
+   
+     animation-name: floating; 
+     animation-duration: 3s; 
+     animation-iteration-count: infinite; 
+     animation-timing-function: ease-in-out; 
 }
 
 #app_land_stack_11_rgt{
      width:50%;
-     
+     z-index: 20;
      height:100%;
-     color:#000000;
+     color:#fefefe;
      font-family:inter;
      padding:82px;
      font-size:20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     
 }
 
 
@@ -1129,7 +1354,7 @@ position: relative;
 .app_land_stack_11_rgt_high{
      font-size:22px;
      font-family:quicksand;
-     color:#000000;
+     color:#fefefe;
      font-weight: 800;
      margin-top: 12px;
 }
@@ -1137,13 +1362,14 @@ position: relative;
      width: 28px;
      height: 28px;
      vertical-align: middle;
-
-}
+     
+}    
 
 #app_land_stack_11_rgt_tit{
-     color:#000000;
+     color:#fefefe;
      font-family: quicksand;
      font-weight: 700;
+     z-index: 0;
      font-size:42px;
      padding-bottom:32px;
 }
@@ -1160,14 +1386,7 @@ position: relative;
      padding-bottom:72px;
   }
 
-  #app_land_stack_11_rgt_tit{
-     color:#000000;
-     font-family: quicksand;
-     font-weight: 700;
-     font-size:32px;
-     padding-bottom:32px;
-}
-
+  
 
   #app_land_stack_12_lft_sub{
        width: 100%;
@@ -1276,7 +1495,7 @@ font-size:22px;
      padding-top:100px;
      padding-left: 20%;
 padding-right: 20%;
-     background-color: #fefefe;
+     
 }
 #app_land_stack_14_lft{
 width:100%;
@@ -1286,7 +1505,7 @@ height: 100%;
 }
 #app_land_stack_14_lft_tit{
      font-size: 42px;
-     font-family:gilroy;
+     font-family:quicksand;
      color: #32de84;
      padding-bottom:10px;
      vertical-align: middle;
@@ -1296,11 +1515,13 @@ height: 100%;
      width: 52px;
      margin-right:12px;
      color: #32de84;
+
 }
 
 #app_land_stack_14_lft_tit_sub{
      font-family: quicksand;
      font-size: 22px;
+     color: #fefefe;
      width: 100%;
      line-height: 170%;
      font-weight: 400;
@@ -1325,7 +1546,7 @@ position: relative;
      line-height: 100%;
      padding:22px;
      color:#e0e0e0;
-     background: -webkit-linear-gradient( #f5f5f5 ,#e0e0e0  );
+     background: -webkit-linear-gradient( #E1BC8A ,#FBE1BE  );
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent; 
      font-family: Bebas Neue;
@@ -1356,14 +1577,13 @@ border-bottom-left-radius: 8px;
 
 
 #app_land_stack_17{
-     width:90%;
+     width:100%;
      display: inline-flex;
      height: 100vh;
-     margin-left: 5%;
      font-size:22px;
      font-weight: 700;
      padding-top: 100px;
-     background-color: #1E90FF;
+     background: linear-gradient(270deg, #212121 0%, #414141 100%);
      
      z-index: 10;
 
@@ -1378,7 +1598,7 @@ height: 100%;
 }
 #app_land_stack_17_lft_tit{
      font-size: 58px;
-     font-family: inter;
+     font-family: Lexend Deca;
      color: #fefefe;
 
 }
@@ -1416,9 +1636,9 @@ margin-left:100%;
      color:#fefefe;
      margin-top: 32px;
      line-height: 2;
-     font-weight: 400;
-     font-family: quicksand;
-     font-size: 18px;
+     font-weight:400;
+     font-family: sen;
+     font-size: 20px;
      
 
 }
@@ -1426,7 +1646,7 @@ margin-left:100%;
 /*/////////////////////////////////////////////////////////////////////*/
 #app_land_stack_16{
      background-color: #000000;
-     height: 100vh;
+     height: 70vh;
      width: 100%;
      padding-top:82px;
      padding-bottom: 82px;
@@ -1513,27 +1733,30 @@ height: 100%;
 }
 #app_land_stack_15_lft_tit{
      font-size: 42px;
-     font-family: roboto;
-     color: #37364D;
+     font-family: sen;
+     background: -webkit-linear-gradient( #E1BC8A ,#FBE1BE  );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
      display: flex;
      justify-content: center;
      align-items: center;
      padding-bottom:10px;
 }
 #app_land_stack_15_lft_tit_sub{
-     font-family: quicksand;
+     font-family: sen;
      font-size: 21px;
      display: flex;
+     color:#fefefe;
      justify-content: center;
      align-items: center;
      text-align: center;
      line-height: 170%;
-     font-weight: 400;
+     font-weight: 300;
 }
 
 
 #app_land_stack_15_lft_tit_data{
-     color:#3EDC80;
+     color:#61ED9B;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -1549,8 +1772,8 @@ height: 100%;
      height: 430px;
      margin:22px;
      border-radius: 8px;
-     background-color: #fefefe;
-     border: 1px solid #e0e0e0;
+     
+     
 }
 
 .app_land_stack_15_lft_1_class:hover{
@@ -1563,22 +1786,23 @@ height: 100%;
 @keyframes price_lay {
      from {
           box-shadow: 0px 0px 0px rgb(0, 0, 0,0.1);
+          background-color: #000000;
      }
      to {
           box-shadow: 0px 0px 20px rgb(0, 0, 0,0.1);
-
+          background-color: #212121;
      }
    }
 
 .app_land_stack_15_lft_1_class_tit{
- color:#37364D;    
+ color:#fefefe;    
  padding:22px;
  padding-top: 32px;
  font-family: quicksand;
- border-bottom: 1px solid #e0e0e0;
+ border-bottom: 1px solid #222222;
 }
 .app_land_stack_15_lft_1_class_data{
-color: #2549AF;
+color: #74C3FF;
 font-family: quicksand;
 font-size: 17px;
 font-weight: 400;
@@ -1586,7 +1810,7 @@ margin-top: 12px;
 }
 
 .app_land_stack_15_lft_1_class_data_sub{
-     color: #37364D;
+     color: #fefefe;
 font-family: quicksand;
 font-size: 16px;
 margin-top: 32px;
@@ -1596,7 +1820,8 @@ font-weight: 400;
 }
 .app_land_stack_15_lft_1_class_data_cost{
  font-family: inter;
-     font-size: 62px;  
+     font-size: 52px;  
+     margin-top: 0px;
        
 }
 .app_land_stack_15_lft_1_get_butt{
@@ -1609,47 +1834,43 @@ font-weight: 400;
      margin-bottom:28px;
 }
 .app_land_stack_15_lft_1_get_butt_lnk{
-     border: 1px solid #2549AF;
+     border: 1px solid #5352ED;
      font-family: quicksand;
      font-weight: 500;
-     color: #2549AF;
+     color: #fefefe;
      padding:7px;
      font-size: 17px;
      padding-left: 90px;
      padding-right: 90px;
-     border-radius: 7px;
+     border-radius: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
-     background-color: #fefefe;
+     background-color: #5352ED;
 }
 
 .app_land_stack_15_lft_1_get_butt_lnk:hover{
      text-decoration: none;
+     color:#fefefe;
      animation-name: contact_butt;
      animation-duration: 0.5s;
      animation-fill-mode: forwards;
 }
 @keyframes get_butt {
      from {
-          background-color: #2549AF;
-          color:#fefefe;
+       
      }
      to {
-          background-color: #fefefe;
-          color:#2549AF;
+      
           
      }
    }
    @keyframes contact_butt {
      from {
-          background-color: #fefefe;
-          color:#2549AF;
+          border-radius: 32px;
      }
      to {
-          background-color: #2549AF;
-          color:#fefefe;
-          
-          
+          border-radius: 3px;
+          background-color: #7A79FA;
      }
    }
 
@@ -1661,23 +1882,61 @@ font-weight: 400;
 }
 
 .app_land_stack_15_lft_1_class_data_cost_butt{
-     border: 1px solid #2549AF;
-    
+     border: 1px solid #5352ED;
      font-family: quicksand;
      font-weight: 500;
-     color: #2549AF;
+     color: #fefefe;
      padding:7px;
      font-size: 17px;
      padding-left: 90px;
      padding-right: 90px;
-     border-radius: 7px;
-  
-    padding-bottom: 10px;
-     background-color: #fefefe;
+     border-radius: 22px;
+     padding-bottom: 10px;
+     background-color: #5352ED;
 
 }
 .app_land_stack_15_lft_1_class_data_cost_butt:hover{
      animation-name: contact_butt;
      animation-duration: 0.5s;
      animation-fill-mode: forwards;
+}
+
+
+/*///////////////////////////////////////////////////////////*/
+
+#app_land_stack_19{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     font-family: quicksand;
+     font-weight: 400;
+     justify-content: center;
+     align-items: center;
+     font-size: 72px;
+     background: -webkit-linear-gradient( #838996 ,#F5F5F5  );
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;    
+}
+/*/////////////////////////////////////////////////////////////*/
+
+
+#app_land_stack_20{
+     width: 100%;
+     height: 100vh;
+     padding:64px;
+}
+#app_land_stack_20_cont{
+     width: 100%;
+     height: 100%;
+     
+     /* background: black url(https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat; */
+     background: black url('../../assets/earth.jpeg') no-repeat;
+     background-size: cover; 
+     color:#fefefe;
+     font-family: Righteous;
+     display: flex;
+     justify-content: center;
+     padding-top: 10%;
+     text-align: center;
+     font-size: 62px;
 }

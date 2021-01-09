@@ -4,6 +4,8 @@ import history from '../home/history';
 import LoginPage from  '../login/login.js';
 import HomePage from '../home/home.js';
 import LandPage from '../land/land.js';
+import ContactPage  from '../contact/contact.js';
+
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -18,6 +20,7 @@ export default class Routers extends React.Component {
            
     }
 
+  
 
     isAuth(){
         var data=cookies.get('user_token');
@@ -48,7 +51,10 @@ export default class Routers extends React.Component {
                     <LoginPage {...this.props} setLog={this.setLoggedIn.bind(this)}/>
                     </Route>
                     <Route path="/dash">
-                    {this.state.isLogged===true?<HomePage {...this.props}/>:<LoginPage {...this.props} setLog={this.setLoggedIn.bind(this)} />}
+                   <HomePage {...this.props}/>
+                    </Route>
+                    <Route path="/contact">
+                   <ContactPage {...this.props}/>
                     </Route>
                 </Switch>
             </Router>
