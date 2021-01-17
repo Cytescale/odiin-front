@@ -16,7 +16,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 @font-face {
     font-family: 'gilroy';
@@ -40,4 +40,16 @@ body{
     --main-bg-color:#2e2525;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+ 
+body::-webkit-scrollbar-track {
+  
+}
+ 
+body::-webkit-scrollbar-thumb {
+  
 }
