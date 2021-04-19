@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import { Router, Switch, Route,Redirect  } from "react-router";
 import history from '../home/history';
-// import LoginPage from  '../login/login.js';
-// import HomePage from '../home/home.js';
 import LandPage from '../land/land.js';
-//import LandPage2 from '../land/land_2.js';
 import ContactPage  from '../contact/contact.js';
-// import DashPage from '../dsah/dash';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 

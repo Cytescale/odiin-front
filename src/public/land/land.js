@@ -1,33 +1,22 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ReactTextTransition, { presets } from "react-text-transition";
-import {Accordion,Card,Popover,OverlayTrigger,Carousel, Button,Alert} from 'react-bootstrap';
-import ScrollAnimation from 'react-animate-on-scroll';
+import {Carousel, Button,Alert} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/priApp.css';
 import '../css/land_dark.css';
-//import '../css/land_res_1080.css';
 import '../css/land_res_phn.css';
-import grid_svg from '../../assets/svg/grid.svg';
-import homedesign from '../../assets/svg/homedesign.svg';
-import homefront from '../../assets/svg/homefront.svg';
 import fea1 from  '../../assets/svg/fea1.svg';
 import fea2 from  '../../assets/svg/fea2.svg';
 import fea3 from  '../../assets/svg/fea3.svg';
 import fea4 from  '../../assets/svg/fea4.svg';
 import homegit from '../../assets/svg/homegit.svg';
-import homesupportico from '../../assets/landsupport.png';
-import homecontact from '../../assets/landcontact.png';
 import homeiphone from  '../../assets/svg/iphone.svg';
 import Fade from 'react-reveal/Fade';
 import face_log from '../../assets/logo_facebook.svg';
 import gog_log from '../../assets/logo_twitter.svg';
 import link_log from '../../assets/logo_link.svg';
 import * as emailjs from 'emailjs-com'
-import icon2  from '../../assets/svg/icon2.svg';
-import icon3  from '../../assets/svg/icon3.svg';
-import icon4  from '../../assets/svg/icon4.svg';
 import support_ico from '../../assets/svg/support.svg';
-import git_log from '../../assets/logo_github.svg';
 import and1 from '../../assets/and1.png';
 import int_log from '../../assets/logo_inst.svg';
 import up_arrow from '../../assets/svg/up_arrow.svg';
@@ -35,27 +24,14 @@ import menu_ico from '../../assets/svg/menu.svg';
 import mail_ico from '../../assets/svg/mail_outline.svg';
 import call_ico from '../../assets/svg/call.svg';
 import test_co from '../../assets/test_co.png';
-import down_ico from '../../assets/svg/down.svg';
-import down_ico_2 from '../../assets/svg/down_2.svg';
-import sal1 from '../../assets/sal1.png';
 import sal2 from '../../assets/sal2.png';
 import sal3 from '../../assets/sal3.png';
 import sal4 from '../../assets/sal4.png';
 import sal5 from '../../assets/sal5.png';
-import iframe_ico from '../../assets/iframe.png';
-
-import Rotate from 'react-reveal/Rotate';
-import Figma_trans_logo from '../../assets/figma_trans_logo.png';
 import { slide as Menu } from 'react-burger-menu'
-import axios from 'axios';
-import { init } from 'ityped'
-
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
-import { StickyContainer, Sticky } from 'react-sticky';
-
 import history from '../home/history';
-
 import styled from 'styled-components';
 
 const SectionWipes2Styled = styled.div`
@@ -277,14 +253,11 @@ export default class LandClass extends React.Component{
                                                   </div>
                                                   <div id='app_land_stack_1_lay_2_dat_con_cont'>
                                                        <div id='app_land_stack_1_lay_2_dat_con_cont_bg'></div>
-                                                       {/* <button id='app_land_stack_1_lay_2_dat_con_butt' onClick={this.routeChange}>Contact</button> */}
-                                                      <a id='app_land_stack_1_lay_2_dat_con_butt' href='https://www.cytescale.com:3000/contact'>Contact</a>
                                                   </div>
                                         
                                    </div>
                                    <div id='app_prog_cont' style={{width:setWid}}></div>                          
                </div>:<span></span>}
-               {/* background: linear-gradient(257.4deg, #641E44 0%, #081932 100%); */}
                <div id='app_land_stack_1' ref={home_ref}>
                          <div className='app_land_stack_1_lay_class' id='app_land_stack_1_lay_1'>
                               <div id='app_land_stack_1_lay_1_eclp_cont'> 
@@ -293,7 +266,6 @@ export default class LandClass extends React.Component{
                                         <div id='app_land_stack_1_lay_1_eclp_3'></div>
                               </div>
                               <div id='app_land_stack_1_lay_1_grid_cont'>
-                                   {/* <img className='app_land_stack_1_lay_1_grid_cont_ico'src={grid_svg}></img> */}
                               </div>
                               <div id='app_land_stack_1_lay_1_iph_cont'>
                                    <img className='app_land_stack_1_lay_1_iph_cont_ico'src={homeiphone}></img>
@@ -820,17 +792,6 @@ export default class LandClass extends React.Component{
                We handcrafted this website with Pride and Love &#x2665;
                </div>
                </div>
-
-
-               {/* <div id='app_land_stack_13'>
-                         <div id='app_land_stack_13_lft'>
-                              We knew you were interested
-                         </div>
-                         <div id='app_land_stack_13_rgt'>
-                              Reach Us Now at Contact@cytescale.com
-                         </div>
-               </div> */}
-               
                <div id='app_land_stack_16'>
                     <div id='app_land_stack_16_bg'>
 
@@ -852,38 +813,13 @@ export default class LandClass extends React.Component{
                          </div>
                </div>
 
-{/*
-
-
-               <div id='app_land_stack_6'>
-                    <div id='app_land_stack_6_left_cont'>
-                              Dashboard
-                    </div>
-                    <div id='app_land_stack_6_rgt_cont'>
-                              <div id='app_land_stack_6_rgt_data'>
-                              Coming Soon
-                              </div>
-                    </div>
-
-
-               </div> */}
                <div id='app_land_stack_7'>
-                    {/* <div id='app_land_stack_7_lft'>
-                    <a className='app_land_stack_7_lnk_logo' href='#'>Cytescale</a>
-                         <a className='app_land_stack_7_lnk_class' href='#'>Home</a>
-                         <a className='app_land_stack_7_lnk_class' href='#'>Privacy</a>4
-                         <a className='app_land_stack_7_lnk_class' href='#'>Contact</a>
-                         <a className='app_land_stack_7_lnk_class' href='#'>Terms of use</a>
-                         <a className='app_land_stack_7_lnk_class' href='#'>About Us</a>
-                         <a className='app_land_stack_7_lnk_class' href='#'>Refund policy</a>
-                    </div> */}
                     <div id='app_land_stack_7_rgt'>
                          <div id='app_land_stack_7_rgt_dat'>
                          <a className='app_land_stack_7_lnk_class'></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.facebook.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={face_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.twitter.com/cytescale'><img className='app_land_stack_7_lnk_ico'src={gog_log}></img></a>
                          <a className='app_land_stack_7_lnk_class' href='////www.instagram.com/cytescale?igshid=6dl3co5b77wz'><img className='app_land_stack_7_lnk_ico'src={int_log}></img></a>
-                         {/* <a className='app_land_stack_7_lnk_class' href='////www.github.com/Cytescale'><img className='app_land_stack_7_lnk_ico'src={git_log}></img></a> */}
                          <a className='app_land_stack_7_lnk_class' href='////www.linkedin.com/in/cytescale-team-71208b1ab'><img className='app_land_stack_7_lnk_ico'src={link_log}></img></a>
                          </div>
                     </div>
@@ -892,5 +828,3 @@ export default class LandClass extends React.Component{
         </div>);
      }
 }
-
-// 6363FF
